@@ -1,0 +1,1786 @@
+{"tfcdata" : [
+  {
+    "tfccode": 1,
+    "tfcname": "University Departments of Anna University, Chennai - CEG Campus, Sardar Patel Road, Guindy, Chennai 600 025"
+  },
+  {
+    "tfccode": 2,
+    "tfcname": "University Departments of Anna University, Chennai - ACT Campus, Sardar Patel Road, Guindy, Chennai 600 025"
+  },
+  {
+    "tfccode": 3,
+    "tfcname": "School of Architecture and Planning, Anna University,Chennai 600025"
+  },
+  {
+    "tfccode": 4,
+    "tfcname": "University Departments of Anna University, Chennai - MIT Campus, Chrompet, Tambaram Taluk, Chengalpattu District 600 044"
+  },
+  {
+    "tfccode": 5,
+    "tfcname": "Annamalai University Faculty of Engineering and Technology,Annamalai nagar,Cuddalore"
+  },
+  {
+    "tfccode": 1013,
+    "tfcname": "University College of Engineering, Villupuram, Kakuppam, Villupuram District 605103"
+  },
+  {
+    "tfccode": 1014,
+    "tfcname": "University College of Engineering, Tindivanam, Melpakkam, Tindivanam, Villupuram District 604001"
+  },
+  {
+    "tfccode": 1015,
+    "tfcname": "University College of Engineering, Arni, Arni to Devikapuram Road, Thatchur, Arni, Thiruvannamalai District 632326"
+  },
+  {
+    "tfccode": 1026,
+    "tfcname": "University College of Engineering, Kancheepuram, Ponnerikarai Campus, NH4, Chennai-Bangalore Highway, Karaipettai Village & Post, Kancheepuram District 631552"
+  },
+  {
+    "tfccode": 1101,
+    "tfcname": "Aalim Muhammed Salegh College of Engineering, Muthapudupet, Avadi IAF, Chennai 600055"
+  },
+  {
+    "tfccode": 1106,
+    "tfcname": "Jaya Engineering College, Thirunindravur, Chennai 602024"
+  },
+  {
+    "tfccode": 1107,
+    "tfcname": "Jaya Institute of Technology, Kanchipadi Post, Thiruvallur-Tiruttani NH Road, Thiruvallur District 631204"
+  },
+  {
+    "tfccode": 1110,
+    "tfcname": "Prathyusha Engineering college, Aranvoyalkuppam, Thiruvallur District 602025"
+  },
+  {
+    "tfccode": 1112,
+    "tfcname": "R M D Engineering College (Autonomous), Kavaraipettai, Gummidipoondi, Thiruvallur District 601206"
+  },
+  {
+    "tfccode": 1113,
+    "tfcname": "R M K Engineering College (Autonomous), Kavaraipettai, Gummidipoondi, Thiruvallur District 601206"
+  },
+  {
+    "tfccode": 1114,
+    "tfcname": "S A Engineering College (Autonomous), Thiruverkadu, Chennai 600077"
+  },
+  {
+    "tfccode": 1115,
+    "tfcname": "Sri Ram Engineering College, Perumalpattu, Veppampattu (R S), Thiruvallur District 602 024"
+  },
+  {
+    "tfccode": 1116,
+    "tfcname": "Sri Venkateswara College of Engineering and Technology, Thirupachur, Thiruvallur District 631203"
+  },
+  {
+    "tfccode": 1118,
+    "tfcname": "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous), Avadi-Alamathi Road, Chennai 600 062"
+  },
+  {
+    "tfccode": 1120,
+    "tfcname": "Velammal Engineering College (Autonomous), Ambattur-Redhills Road, Chennai 600066"
+  },
+  {
+    "tfccode": 1121,
+    "tfcname": "Sri Venkateswara Institute of Science and Technology, Kozhundalur, Thiruvallur District 631203"
+  },
+  {
+    "tfccode": 1122,
+    "tfcname": "Vel Tech High Tech Dr. Rangarajan Dr. Sakunthala Engineering College (Autonomous), Avadi-Alamathi Road, Chennai 600 062"
+  },
+  {
+    "tfccode": 1123,
+    "tfcname": "Gojan School of Business and Technology, Alamathi, Chennai 600062"
+  },
+  {
+    "tfccode": 1124,
+    "tfcname": "SAMS College of Engineering and Technology, Panappakkam, Chennai-Tirupathi Road, Uthukkottai Taluk, Thiruvallur District 601102"
+  },
+  {
+    "tfccode": 1125,
+    "tfcname": "PMR Engineering College,Adayalampattu, Chennai-600095"
+  },
+  {
+    "tfccode": 1126,
+    "tfcname": "J N N Institute of Engineering, Ushaa Garden, Kannigaipair Village, Uthukottai Taluk, Thiruvallur District 601102"
+  },
+  {
+    "tfccode": 1127,
+    "tfcname": "St. Peters College of Engineering and Technology, College Road, Avadi, Chennai 600 054"
+  },
+  {
+    "tfccode": 1128,
+    "tfcname": "R M K College of Engineering and Technology (Autonomous), Puduvoyal, Gummidipoondi Taluk, Thiruvallur District 601206"
+  },
+  {
+    "tfccode": 1133,
+    "tfcname": "Annai Veilankannis College of Engineering, Gandhi Road, Nedungundram, Chennai 600048"
+  },
+  {
+    "tfccode": 1137,
+    "tfcname": "Annai Mira College of Engineering and Technology, Arcot Road, Arappakkam Village, Walaja Taulk, Ranipet District 632 517"
+  },
+  {
+    "tfccode": 1140,
+    "tfcname": "Jeppiaar Institute of Technology,kunnam Village,Sriperumpudur Taulk,Kancheepuram District 631604"
+  },
+  {
+    "tfccode": 1149,
+    "tfcname": "St. Josephs Institute of Technology (Autonomous), Jeppiaar Nagar, Old Mahabalipuram Road (OMR), Chennai 600119"
+  },
+  {
+    "tfccode": 1150,
+    "tfcname": "Sri Jayaram Institute of Engineering and Technology, 51 N, Elavur, 58N, Natham, Gummidipoondi Taluk, Thiruvallur District 601201"
+  },
+  {
+    "tfccode": 1202,
+    "tfcname": "D M I College of Engineering, Palanchoor, Nazrethpet, Chennai 602103"
+  },
+  {
+    "tfccode": 1207,
+    "tfcname": "Kings Engineering College, Sriperumpudur Taluk, Kancheepuram District 602105"
+  },
+  {
+    "tfccode": 1209,
+    "tfcname": "Pallavan College of Engineering, Thimmasamudram, Kancheepuram District 631502"
+  },
+  {
+    "tfccode": 1210,
+    "tfcname": "Panimalar Engineering College (Autonomous), Nazarethpet, Poonamallee, Chennai 602123"
+  },
+  {
+    "tfccode": 1211,
+    "tfcname": "Rajalakshmi Engineering College (Autonomous), Thandalam, Sriperumpudur Taluk, Kancheepuram District 602105"
+  },
+  {
+    "tfccode": 1212,
+    "tfcname": "Rajiv Gandhi College of Engineering, Nemili, Sriperumpudur Taluk, Kancheepuram District 602105"
+  },
+  {
+    "tfccode": 1213,
+    "tfcname": "S K R Engineering College, Poonamallee, Chennai 600123"
+  },
+  {
+    "tfccode": 1216,
+    "tfcname": "Saveetha Engineering College (Autonomous), Thandalam, Sriperumpudur Taluk, Kancheepuram District 602105"
+  },
+  {
+    "tfccode": 1217,
+    "tfcname": "Sree Sastha Institute of Engineering and Technology, Chembarambakkam, Chennai 600103"
+  },
+  {
+    "tfccode": 1218,
+    "tfcname": "Sri Muthukumaran Institute of Technology, Near Mangadu, Chennai 600069"
+  },
+  {
+    "tfccode": 1219,
+    "tfcname": "Sri Venkateswara College of Engineering (Autonomous), Post Bag No.1, Chennai-Bengaluru High Road, Pennalur, Irungattukottai S.O., Sriperumbudur Taluk, Kancheepuram District 602105"
+  },
+  {
+    "tfccode": 1221,
+    "tfcname": "Jaya College of Engineering and Technology, Parivakkam, Poonamallee, Chennai 600056"
+  },
+  {
+    "tfccode": 1222,
+    "tfcname": "P B College of Engineering, Irungkattukottai, Sriperumpudur Taluk, Kancheepuram District 602117"
+  },
+  {
+    "tfccode": 1225,
+    "tfcname": "Loyola Institute of Technology, Mevaloorkuppam, B Village, Palanchoor, Nazarethpet Post, Chennai 600123"
+  },
+  {
+    "tfccode": 1226,
+    "tfcname": "P T Lee Chengalvaraya Naicker College of Engineering and Technology, Oovery, Veliyur Post, Kancheepuram District 631 502"
+  },
+  {
+    "tfccode": 1228,
+    "tfcname": "Alpha College of Engineering, No.34, Udayavar Koil Street, Poonamallee, Thirumazhisai, Chennai - 600124"
+  },
+  {
+    "tfccode": 1229,
+    "tfcname": "Indira Institute of Engineering and Technology, VGR Gardens, Pandur, Thiruvallur District 631203"
+  },
+  {
+    "tfccode": 1230,
+    "tfcname": "Apollo Engineering College, Mevaloorkuppam, Valarpuram Post, Sriperumpudur, Kancheepuram District 602105"
+  },
+  {
+    "tfccode": 1232,
+    "tfcname": "A R M College of Engineering and Technology, Sattamangalam, Maraimalainagar, Chengalpattu District 603209"
+  },
+  {
+    "tfccode": 1233,
+    "tfcname": "Adhi College of Engineering and Technology, Pazhayaseevaram, Madura Sankarapuram Village, Kancheepuram District 631605"
+  },
+  {
+    "tfccode": 1235,
+    "tfcname": "Jei Mathaajee College of Engineering, Vishaandikuppam,Karappettai (via), Siruvakkam, Kancheepuram District 631 552"
+  },
+  {
+    "tfccode": 1237,
+    "tfcname": "Velammal Institute of Technology, Chennai-Kolkatta Highway, Panchetti Village, Ponneri Taluk, Thiruvallur District 601204"
+  },
+  {
+    "tfccode": 1238,
+    "tfcname": "G R T Institute of Engineering and Technology, GRT Mahalakshmi Nagar, Chennai-Tirupathi Highway, Tiruttani Taluk, Thiruvallur District 631209"
+  },
+  {
+    "tfccode": 1241,
+    "tfcname": "T J S Engineering College, Peruvoyal, Near Kavaraipettai, Gummidipoondi Taluk, Thiruvallur District 601206"
+  },
+  {
+    "tfccode": 1243,
+    "tfcname": "Madha Institute of Engineering and Technology, Erandamkattalai Village, Sadhananthapuram, Thandalam Post, Chennai 602101"
+  },
+  {
+    "tfccode": 1301,
+    "tfcname": "Mohammed Sathak A J College of Engineering, Old Mahabalipuram Road (OMR), Egattur, Chengalpattu District 603103"
+  },
+  {
+    "tfccode": 1303,
+    "tfcname": "Anand Institute of Higher Technology, Old Mahabalipuram Road (OMR), Kazhipattur, Chengalpattu District 603103"
+  },
+  {
+    "tfccode": 1304,
+    "tfcname": "Easwari Engineering College (Autonomous), Ramapuram, Chennai 600089"
+  },
+  {
+    "tfccode": 1306,
+    "tfcname": "Jeppiaar Engineering College, Old Mahabalipuram Road (OMR), Chennai 600119"
+  },
+  {
+    "tfccode": 1307,
+    "tfcname": "Jerusalem College of Engineering (Autonomous), Narayanapuram, Pallikaranai, Chennai 600 100"
+  },
+  {
+    "tfccode": 1309,
+    "tfcname": "Meenakshi Sundararajan Engineering College, Kodambakkam, Chennai 600024"
+  },
+  {
+    "tfccode": 1310,
+    "tfcname": "Misrimal Navajee Munoth Jain Engineering College, Rajiv Gandhi Salai (OMR), Thorappakkam, Chennai 600096"
+  },
+  {
+    "tfccode": 1311,
+    "tfcname": "K C G College of Technology, Karappakkam, Chennai 600096"
+  },
+  {
+    "tfccode": 1313,
+    "tfcname": "Shree Motilal Kanhaiyalal (SMK)Fomra Institute of Technology, Old Mahabalipuram Road (OMR), Kelambakkam, Chengalpattu District 603103"
+  },
+  {
+    "tfccode": 1315,
+    "tfcname": "Sri Sivasubramaniya Nadar College of Engineering (Autonomous), Kalavakkam, Old Mahabalipuram Road (OMR), Chengalpattu District 603110"
+  },
+  {
+    "tfccode": 1316,
+    "tfcname": "Agni College of Technology, Old Mahabalipuram Road (OMR), Thalambur Village, Chengalpattu District 603103"
+  },
+  {
+    "tfccode": 1317,
+    "tfcname": "St. Joseph’s College of Engineering (Autonomous), Old Mahabalipuram Road (OMR), Chennai 600 119"
+  },
+  {
+    "tfccode": 1318,
+    "tfcname": "T.J Institute of Technology, Karapakkam, Chennai - 600097"
+  },
+  {
+    "tfccode": 1319,
+    "tfcname": "Thangavelu Engineering College, Karappakkam, Chennai 600097"
+  },
+  {
+    "tfccode": 1321,
+    "tfcname": "Central Institute of Petrochemicals Engineering and Technology (Formerly Central Institute of Plastics Engineering and Technology) (CIPET), Guindy, Chennai 600032"
+  },
+  {
+    "tfccode": 1322,
+    "tfcname": "Dhanalakshmi Srinivasan College of Engineering and Technology, East Coast Road, Poonjeri, Chennai 603104"
+  },
+  {
+    "tfccode": 1324,
+    "tfcname": "Sri Sai Ram Institute of Technology (Autonomous), West Tambaram, Chennai 600044"
+  },
+  {
+    "tfccode": 1325,
+    "tfcname": "St. Joseph College of Engineering, Trinity Campus, Nemili, Sriperumpudur Taluk, Kancheepuram District 602105"
+  },
+  {
+    "tfccode": 1333,
+    "tfcname": "Vi Institute of Technology, Sirunkundram Village & Post, Chengalpattu District 603108"
+  },
+  {
+    "tfccode": 1334,
+    "tfcname": "ARS College of Engineering, Maraimalai Nagar Post, Chengalpattu District 603209"
+  },
+  {
+    "tfccode": 1335,
+    "tfcname": "Sri Krishna Institute of Technology, Panapakkam, Padappai, Chennai 601301"
+  },
+  {
+    "tfccode": 1399,
+    "tfcname": "Chennai Institute of Technology, Puduper Village, Nandambakkam Post, Kundrathur, Chennai 600069"
+  },
+  {
+    "tfccode": 1401,
+    "tfcname": "Adhiparasakthi Engineering College, Melmaruvathur, Chengalpattu District 603319"
+  },
+  {
+    "tfccode": 1402,
+    "tfcname": "Annai Teresa College of Engineering, Thirunavalur, Kallakkurichi District 607204"
+  },
+  {
+    "tfccode": 1405,
+    "tfcname": "Dhanalakshmi College of Engineering, Manimangalam, Chennai 601301"
+  },
+  {
+    "tfccode": 1407,
+    "tfcname": "G K M College of Engineering and Technology, Alappakkam-Mappedu Road, Chennai 600063"
+  },
+  {
+    "tfccode": 1408,
+    "tfcname": "I F E T College of Engineering (Autonomous), Gangarampalayam, Villupuram District 605108"
+  },
+  {
+    "tfccode": 1409,
+    "tfcname": "Karpaga Vinayaga College of Engineering and Technology, Palayanoor Post, Maduranthagam Taluk, Chengalpattu District 603308"
+  },
+  {
+    "tfccode": 1411,
+    "tfcname": "Madha Engineering College, Kundrathur, Chennai 600069"
+  },
+  {
+    "tfccode": 1412,
+    "tfcname": "Mailam Engineering College, Mailam, Villupuram District 604304"
+  },
+  {
+    "tfccode": 1413,
+    "tfcname": "Sri Venkateswaraa College of Technology, Sirukulathur, Vadakkal Village, Pondur Post, Sriperumbudur Taluk, Kancheepuram District 602105"
+  },
+  {
+    "tfccode": 1414,
+    "tfcname": "Prince Shri Venkateshwara Padmavathy Engineering College, Ponmar, Chennai 600048"
+  },
+  {
+    "tfccode": 1415,
+    "tfcname": "T S M Jain College of Technology, Melur Village, Kallakurichi District 606201"
+  },
+  {
+    "tfccode": 1416,
+    "tfcname": "Jaya Sakthi Engineering College, Thirunindravur, Chennai 602024"
+  },
+  {
+    "tfccode": 1419,
+    "tfcname": "Sri Sai Ram Enginering College (Autonomous), West Tambaram, Chennai 600044"
+  },
+  {
+    "tfccode": 1420,
+    "tfcname": "Tagore Engineering College, Rathnamangalam, Vandalur Post, Chennai 600048"
+  },
+  {
+    "tfccode": 1421,
+    "tfcname": "V R S College of Engineering and Technology, Arasur, Villupuram District 607107"
+  },
+  {
+    "tfccode": 1422,
+    "tfcname": "SRM Valliammai Engineering College (Autonomous), Kattankulathur, Chennai 603203"
+  },
+  {
+    "tfccode": 1423,
+    "tfcname": "Asan Memorial College of Engineering and Technology,Chengalpattu-603 001."
+  },
+  {
+    "tfccode": 1424,
+    "tfcname": "Dhaanish Ahmed College of Engineering, Padappai, Chennai 601301"
+  },
+  {
+    "tfccode": 1426,
+    "tfcname": "Sri Ramanujar Engineering College, Vandalur, Kolappakkam, Chennai 600127"
+  },
+  {
+    "tfccode": 1427,
+    "tfcname": "Sri Krishna Engineering College, Panappakkam, Padappai, Chennai 601301"
+  },
+  {
+    "tfccode": 1428,
+    "tfcname": "E S Engineering College, Chennai Trunk Road, Ayyankoilpattu, Villupuram District 605602"
+  },
+  {
+    "tfccode": 1430,
+    "tfcname": "Maha Bharathi Engineering College, A Vasudevanur, Chinnasalem, Kallakurichi District 606201"
+  },
+  {
+    "tfccode": 1431,
+    "tfcname": "New Prince Shri Bhavani College of Engineering and Technology, Vengaivasal Main Road, Gowrivakkam, Chennai 600073"
+  },
+  {
+    "tfccode": 1432,
+    "tfcname": "Rajalakshmi Institute of Technology, Irulapalayam, Kuthampakkam Post, Kancheepuram District, Chennai 600124"
+  },
+  {
+    "tfccode": 1434,
+    "tfcname": "Surya Group of Institutions, GST Road, Vikravandi Village, Villupuram District 605652"
+  },
+  {
+    "tfccode": 1436,
+    "tfcname": "A R Engineering College, Vadakuchipalayam, Kappiyampuliyur Post, Villupuram District 605601"
+  },
+  {
+    "tfccode": 1437,
+    "tfcname": "Rrase College of Engineering, Padappai, Kancheepuram 601301"
+  },
+  {
+    "tfccode": 1438,
+    "tfcname": "Sree Krishna College of Engineering, Anaicut Post, Unnai Village, Vellore District 632101"
+  },
+  {
+    "tfccode": 1441,
+    "tfcname": "A K T Memorial College of Engineering and Technology, Neelamangalam Village, Kallakurichi District 606202"
+  },
+  {
+    "tfccode": 1442,
+    "tfcname": "Prince Dr. K Vasudevan College of Engineering and Technology, Medavakkam-Mambakkam Road, Ponmar, Chennai 600127"
+  },
+  {
+    "tfccode": 1444,
+    "tfcname": "Chendu College of Engineering and Technology, Zamin Endathur Village, Madurantakam Taluk, Chengalpattu District 600127"
+  },
+  {
+    "tfccode": 1445,
+    "tfcname": "Sri Rangapoopathi College of Engineering, Alampoondi Village, Gingee, Villupuram District 604151"
+  },
+  {
+    "tfccode": 1449,
+    "tfcname": "Saraswathy College of Engineering and Technology, NH-45, Main Road, Olakkur, Tindivanam Taluk, Villupuram District 604307"
+  },
+  {
+    "tfccode": 1450,
+    "tfcname": "Loyola ICAM College of Engineering and Technology, Loyola College Campus, Nungambakkam, Chennai 600034"
+  },
+  {
+    "tfccode": 1452,
+    "tfcname": "PERI Institute of Technology, Mannivakkam, West Tambaram, Chennai 600048"
+  },
+  {
+    "tfccode": 1501,
+    "tfcname": "Adhiparasakthi College of Engineering, Kalavai, Ranipet District 632506"
+  },
+  {
+    "tfccode": 1503,
+    "tfcname": "Arulmigu Meenakshi Amman College of Engineering, Vadamavandal,Thiruvannamalai District 604410"
+  },
+  {
+    "tfccode": 1504,
+    "tfcname": "Arunai Engineering College, Mathur, Thiruvannamalai District 606603"
+  },
+  {
+    "tfccode": 1505,
+    "tfcname": "C Abdul Hakeem College of Engineering and Technology, Melvisharam, Ranipet District 632509"
+  },
+  {
+    "tfccode": 1507,
+    "tfcname": "Ganadipathy Tulsi’s Jain Engineering College, Kaniyambadi, Vellore District 632102"
+  },
+  {
+    "tfccode": 1509,
+    "tfcname": "Meenakshi College of Engineering, Vembuliamman Koil Street, K K Nagar (West), Chennai 600078"
+  },
+  {
+    "tfccode": 1510,
+    "tfcname": "Priyadarshini Engineering College, Vaniyambadi Post, Thiruppattur District 635751"
+  },
+  {
+    "tfccode": 1511,
+    "tfcname": "Ranipettai Engineering College, Thenkadappanthangal, Ranipet District 632513"
+  },
+  {
+    "tfccode": 1512,
+    "tfcname": "S K P Engineering College, Thiruvannamalai District 606611"
+  },
+  {
+    "tfccode": 1513,
+    "tfcname": "Sri Balaji Chockalingam Engineering College, Arni, Thiruvannamalai District 632317"
+  },
+  {
+    "tfccode": 1516,
+    "tfcname": "Thanthai Periyar Government Institute of Technology, Bagayam, Vellore District 632002"
+  },
+  {
+    "tfccode": 1517,
+    "tfcname": "Thirumalai Engineering College, Kilambi, Kancheepuram District 631551"
+  },
+  {
+    "tfccode": 1518,
+    "tfcname": "Thiruvalluvar College of Engineering and Technology, Vandavasi, Thiruvannamalai District 604505"
+  },
+  {
+    "tfccode": 1519,
+    "tfcname": "Bharathidasan Engineering College, Nattrampalli Post, Thiruppathur District 635854"
+  },
+  {
+    "tfccode": 1520,
+    "tfcname": "Kingston Engineering College, Chithoor Main Road, Christianpet Village, Katpadi Taluk, Vellore District 632059"
+  },
+  {
+    "tfccode": 1523,
+    "tfcname": "Global Institute of Engineering and Technology, Bangalore-Chennai Highway, Melvisharam, Walajah Taluk, Ranipet District 632506"
+  },
+  {
+    "tfccode": 1524,
+    "tfcname": "Annamalaiar College of Engineering, Modaiyur Village, Polur Taluk, Thiruvannamalai District 606902"
+  },
+  {
+    "tfccode": 1525,
+    "tfcname": "Podhigai College of Engineering and Technology, Vinayakapuram, Adiyur Post, Tirupattur District 635601"
+  },
+  {
+    "tfccode": 1526,
+    "tfcname": "Sri Krishna College of Engineering, Tiruttani High Road, Arakkonam, Ranipet District 631003"
+  },
+  {
+    "tfccode": 1529,
+    "tfcname": "Oxford College of Engineering, Venmani Village, Karaipoondi Post, Polur Taluk, Thiruvannamalai District 606803"
+  },
+  {
+    "tfccode": 1533,
+    "tfcname": "Panimalar Engineering College Chennai City Campus, No.23, Railway Colony 2nd Street, Nelson Manickam Road, Chennai - 600029"
+  },
+  {
+    "tfccode": 1605,
+    "tfcname": "Idhaya Engineering College for Women, Chinnasalem, Kallakkurichi District 606201"
+  },
+  {
+    "tfccode": 2005,
+    "tfcname": "Government College of Technology (Autonomous), Thadagam Road, Coimbatore District 641013"
+  },
+  {
+    "tfccode": 2006,
+    "tfcname": "PSG College of Technology (Autonomous), Peelamedu, Coimbatore District 641004"
+  },
+  {
+    "tfccode": 2007,
+    "tfcname": "Coimbatore Institute of Technology (Autonomous), Civil Aerodrome Post, Coimbatore District 641014"
+  },
+  {
+    "tfccode": 2025,
+    "tfcname": "Anna University Regional Campus - Coimbatore, Maruthamalai Main Road, Navavoor Bharathiyar University Post, Somayampalayam, Coimbatore District 641046"
+  },
+  {
+    "tfccode": 2302,
+    "tfcname": "Sri Shanmugha College of Engineering and Technology, Morur Bit II Village, Salem District 637304"
+  },
+  {
+    "tfccode": 2314,
+    "tfcname": "Muthayammal College of Engineering, Kakkaveri Post, Namakkal District 637408"
+  },
+  {
+    "tfccode": 2327,
+    "tfcname": "N S N College of Engineering and Technology, Karur-Madurai NH7, Manalmedu, Karur District 639003"
+  },
+  {
+    "tfccode": 2328,
+    "tfcname": "K S R Institute for Engineering and Technology, Thokkavadi, Namakkal District 637215"
+  },
+  {
+    "tfccode": 2329,
+    "tfcname": "Rathinam Technical Campus, Pollachi Road, Eachanari, Coimbatore District 641021"
+  },
+  {
+    "tfccode": 2332,
+    "tfcname": "Aishwarya College of Engineering and Technology, Errattaikaradu Paruvachi Post, Anthiyur (Via), Bhavani Taluk, Erode District 638312"
+  },
+  {
+    "tfccode": 2338,
+    "tfcname": "Asian College of Engineering and Technology, Asian College Road, Kondayampalayam, Near Saravanampatti, Coimbatore District 641110"
+  },
+  {
+    "tfccode": 2341,
+    "tfcname": "Ganesh College of Engineering, Attur Main Road, Mettupatti, Salem District 636111"
+  },
+  {
+    "tfccode": 2342,
+    "tfcname": "Sri Ranganathar Institute of Engineering and Technology, Thudialur-Kovilpalay Road, Coimbatore District 641110"
+  },
+  {
+    "tfccode": 2343,
+    "tfcname": "Indian Institute of Handloom Technology, Foulke's Compound, Thillai Nagar, Salem District 636001"
+  },
+  {
+    "tfccode": 2345,
+    "tfcname": "Dhirajlal Gandhi College of Technology, Sikkanampatty, (Opp. to Airport), Omalur Taluk, Salem District 636309"
+  },
+  {
+    "tfccode": 2346,
+    "tfcname": "Shree Sathyam College of Engineering and Technology, NH-47, Manjakkalpatti, Kuppanur Post, Sankari Taluk, Salem District 637301"
+  },
+  {
+    "tfccode": 2347,
+    "tfcname": "AVS College of Technology, Attur Main Road, Near AVS College of Arts & Science, Chinnagoundapuram, Salem District 636106"
+  },
+  {
+    "tfccode": 2349,
+    "tfcname": "Dhaanish Ahmed Institute of Technology, Pichanur Post, (Near K G Chavadi), Coimbatore District 641105"
+  },
+  {
+    "tfccode": 2350,
+    "tfcname": "Jairupaa College of Engineering, Thottiapalayam, Kathankanni Post, Kangayam, Tiruppur District 641 604"
+  },
+  {
+    "tfccode": 2354,
+    "tfcname": "Pollachi Institute of Engineering and Technology, Main Road, Poosaripatti, Pollachi Taluk, Coimbatore District 642205"
+  },
+  {
+    "tfccode": 2356,
+    "tfcname": "Arulmurugan College of Engineering, Karvazhi Road, Thennilai Post, Karur District 639206"
+  },
+  {
+    "tfccode": 2357,
+    "tfcname": "V S B College of Engineering Technical Campus, Ealur Pirivu, Solavampalayam Post, Coimbatore District 642109"
+  },
+  {
+    "tfccode": 2360,
+    "tfcname": "Suguna College of Engineering, Kalappatti Road, Civil Aerodrome Post, Coimbatore District 641014"
+  },
+  {
+    "tfccode": 2367,
+    "tfcname": "Arjun College of Technology, Chettiyakkapalayam, Kinathukadavu, Coimbatore District 642120"
+  },
+  {
+    "tfccode": 2368,
+    "tfcname": "Vishnu Lakshmi College of Engineering and Technology, Vellalore Post, Coimbatore District 641111"
+  },
+  {
+    "tfccode": 2369,
+    "tfcname": "Government College of Engineering, Chettikkarai Post, Dharmapuri District 635704"
+  },
+  {
+    "tfccode": 2377,
+    "tfcname": "PSG Institute of Technology and Applied Research, Avinashi Road, Neelambur, Coimbatore 641062"
+  },
+  {
+    "tfccode": 2601,
+    "tfcname": "Adhiyamaan College of Engineering (Autonomous), Hosur, Krishnagiri District 635109"
+  },
+  {
+    "tfccode": 2602,
+    "tfcname": "Annai Mathammal Sheela Engineering College, Erumapatty Post, Namakkal District 637013"
+  },
+  {
+    "tfccode": 2603,
+    "tfcname": "Government College of Engineering (Autonomous), Bargur, Krishnagiri District 635104"
+  },
+  {
+    "tfccode": 2606,
+    "tfcname": "Jayam College of Engineering and Technology, Nallanur Post, Dharmapuri District 636813"
+  },
+  {
+    "tfccode": 2607,
+    "tfcname": "K S Rangasamy College of Technology (Autonomous), Tiruchengode, Namakkal District 637215"
+  },
+  {
+    "tfccode": 2608,
+    "tfcname": "M Kumarasamy College of Engineering (Autonomous), Thalavapalayam, Karur District 639113"
+  },
+  {
+    "tfccode": 2609,
+    "tfcname": "Mahendra Engineering College (Autonomous), Mahendhirapuri, Mallasamudram, Namakkal District 637503"
+  },
+  {
+    "tfccode": 2610,
+    "tfcname": "Muthayammal Engineering College (Autonomous), Rasipuram, Namakkal District 637408"
+  },
+  {
+    "tfccode": 2611,
+    "tfcname": "Paavai Engineering College (Autonomous) , NH-7, Pachal Post, Namakkal District 637018"
+  },
+  {
+    "tfccode": 2612,
+    "tfcname": "P G P College of Engineering and Technology, Paramathi Post, Namakkal District 637207"
+  },
+  {
+    "tfccode": 2613,
+    "tfcname": "K S R College of Engineering (Autonomous), Tiruchengode, Namakkal District 637215"
+  },
+  {
+    "tfccode": 2614,
+    "tfcname": "S S M College of Engineering, Komarapalayam, Namakkal District 638183"
+  },
+  {
+    "tfccode": 2615,
+    "tfcname": "Government College of Engineering (Autonomous), Karuppur, Salem District 636011"
+  },
+  {
+    "tfccode": 2616,
+    "tfcname": "Sapthagiri College of Engineering, Periyanahalli Post, Dharmapuri District 635205"
+  },
+  {
+    "tfccode": 2617,
+    "tfcname": "Sengunthar Engineering College (Autonomous), Tiruchengode, Namakkal District 637205"
+  },
+  {
+    "tfccode": 2618,
+    "tfcname": "Sona College of Technology (Autonomous), Suramangalam Post, Salem District 636005"
+  },
+  {
+    "tfccode": 2620,
+    "tfcname": "Vivekanandha College of Engineering for Women (Autonomous), Sathinaickenpalayam, Elayampalayam Village, Kumaramangalam, Namakkal District 637205"
+  },
+  {
+    "tfccode": 2621,
+    "tfcname": "Er. Perumal Manimekalai College of Engineering, Near Koneripalli, Hosur, Krishnagiri District 635117"
+  },
+  {
+    "tfccode": 2622,
+    "tfcname": "V S B Engineering College, Kovai Road, Karur District 639111"
+  },
+  {
+    "tfccode": 2623,
+    "tfcname": "Mahendra College of Engineering, Attur Road, Minnampalli, Valapady, Salem District 636106"
+  },
+  {
+    "tfccode": 2624,
+    "tfcname": "Gnanamani College of Technology, Pachal Post, Namakkal District 637018"
+  },
+  {
+    "tfccode": 2625,
+    "tfcname": "The Kavery Engineering College, M Kalipatti Post, Mecheri, Salem District 634456"
+  },
+  {
+    "tfccode": 2627,
+    "tfcname": "Selvam College of Technology, Pappanaickenpatti Post, Namakkal District 637003"
+  },
+  {
+    "tfccode": 2628,
+    "tfcname": "Paavai College of Engineering, NH-7, Pachal Post, Namakkal District 637018"
+  },
+  {
+    "tfccode": 2630,
+    "tfcname": "Chettinad College of Engineering and Technology, NH-67, Trichy Main Road, Puliyur C F, Karur District 639114"
+  },
+  {
+    "tfccode": 2632,
+    "tfcname": "Mahendra Institute of Technology (Autonomous), Mahendhirapuri, Mallasamudram, Namakkal District 637503"
+  },
+  {
+    "tfccode": 2633,
+    "tfcname": "Vidyaa Vikas College of Engineering and Technology, Varahoorampatti, Tiruchengode, Namakkal District 637 214"
+  },
+  {
+    "tfccode": 2634,
+    "tfcname": "Excel Engineering College (Autonomous), NH-544, Salem Main Road, Pallakapalayam, Sankari West Post, Komarapalayam Taluk, Namakkal District - 637303"
+  },
+  {
+    "tfccode": 2635,
+    "tfcname": "CMS College of Engineering, Emapuram Post, Namakkal District 637003"
+  },
+  {
+    "tfccode": 2636,
+    "tfcname": "A V S Engineering College, Military Road, Ammapet, Salem District 636003"
+  },
+  {
+    "tfccode": 2638,
+    "tfcname": "Mahendra Engineering College for Women, Kumaramangalam, Namakkal District 637205"
+  },
+  {
+    "tfccode": 2639,
+    "tfcname": "Narasu's Sarathy Institute of Technology, Poosaripatty Village, Omalur Taluk, Salem District 636305"
+  },
+  {
+    "tfccode": 2640,
+    "tfcname": "Jayalakshmi Institute of Technology, Thoppur, Dharmapuri District 635352"
+  },
+  {
+    "tfccode": 2641,
+    "tfcname": "Varuvan Vadivelan Institute of Technology, Nallanahalli, Dharmapuri District 636701"
+  },
+  {
+    "tfccode": 2642,
+    "tfcname": "P S V College of Engineeering and Technology, Mittapalli, Balinayanapalli Post, Elathagiri, Krishnagiri District 635108"
+  },
+  {
+    "tfccode": 2643,
+    "tfcname": "Bharathiyar Institute of Engineering for Women, Deviayakurichi, Attur Taluk, Salem District 636112"
+  },
+  {
+    "tfccode": 2646,
+    "tfcname": "Tagore Institute of Engineering and Technology, Deviyakurichi, Attur Taluk, Salem District 636112"
+  },
+  {
+    "tfccode": 2647,
+    "tfcname": "J K K Nataraja College of Engineering and Technology, Komarapalayam Amani, Thattankuttai Panchayat, Namakkal District 638183"
+  },
+  {
+    "tfccode": 2648,
+    "tfcname": "Annapoorana Engineering College (Autonomous), Sankari Main Road, NH-47, Periaseeragapadi, Salem District 636308"
+  },
+  {
+    "tfccode": 2650,
+    "tfcname": "Christ The King Engineering College, Cecilia Gardens, Chikkarampalayam Village, Coimbatore District 641104"
+  },
+  {
+    "tfccode": 2651,
+    "tfcname": "Jai Shriram Engineering College, Dharapuram Road, Avinashi Palayam, Tiruppur District 638660"
+  },
+  {
+    "tfccode": 2652,
+    "tfcname": "AL-Ameen Engineering College (Autonomous), Karundevan Palayam, Nanjai Uthukuli Post, Erode District 638104"
+  },
+  {
+    "tfccode": 2653,
+    "tfcname": "Knowledge Institute of Technology, KIOT Campus, Kakapalayam Post, Salem District 637504"
+  },
+  {
+    "tfccode": 2656,
+    "tfcname": "Builders Engineering college, Nathakadaiyur, Erode Road, Palayakottai Village, Kangeyam, Tiruppur District 638108"
+  },
+  {
+    "tfccode": 2658,
+    "tfcname": "V S A Group of Institutions, NH-47, Uthamasola Puram Post, Salem District 636010"
+  },
+  {
+    "tfccode": 2659,
+    "tfcname": "Salem College of Engineering and Technology, Salem-Attur Main Road, NH-68, Mettupatty Perumapalayam, Salem District 636111"
+  },
+  {
+    "tfccode": 2661,
+    "tfcname": "Vivekanandha College of Technology for Women, Sathinaickenpalayam, Elayampalayam Village, Kumaramangalam, Namakkal District 637205"
+  },
+  {
+    "tfccode": 2665,
+    "tfcname": "Mahendra Institute of Engineering and Technology, Mahendrapuri, Mallasamudram, Namakkal District 637503"
+  },
+  {
+    "tfccode": 2673,
+    "tfcname": "Sree Sakthi Engineering College, Bettathapuram, Bilichi Village, Karamadai, Coimbatore District 641104"
+  },
+  {
+    "tfccode": 2683,
+    "tfcname": "Shreenivasa Engineering College, B Pallipatti, Bommidi, Pappireddipatti Taluk, Dharmapuri District 635301"
+  },
+  {
+    "tfccode": 2702,
+    "tfcname": "Bannari Amman Institute of Technology (Autonomous), Sathyamanagalam, Erode District 638401"
+  },
+  {
+    "tfccode": 2704,
+    "tfcname": "Coimbatore Institute of Engineering and Technolgoy (Autonomous), Narasipuram Post, Coimbatore District 641109"
+  },
+  {
+    "tfccode": 2705,
+    "tfcname": "CSI College of Engineering, Ketti, The Nilgiris 643215"
+  },
+  {
+    "tfccode": 2706,
+    "tfcname": "Dr. Mahalingam College of Engineering and Technology (Autonomous), Mackinaickenpatti Post, Pollachi Taluk, Coimbatore District 642003"
+  },
+  {
+    "tfccode": 2707,
+    "tfcname": "Erode Sengunthar Engineering College (Autonomous), Thudupathi Post, Erode District 638057"
+  },
+  {
+    "tfccode": 2708,
+    "tfcname": "Hindusthan College of Engineering and Technology (Autonomous), Othakkalmandapam Post, Coimbatore District 641032"
+  },
+  {
+    "tfccode": 2709,
+    "tfcname": "Government College of Engineering (Formerly Institute of Road and Transport Technology), Vasavi College Post, Erode District 638316"
+  },
+  {
+    "tfccode": 2710,
+    "tfcname": "Karpagam College of Engineering (Autonomous), Othakkalmandapam, Coimbatore District 641032"
+  },
+  {
+    "tfccode": 2711,
+    "tfcname": "Kongu Engineering College (Autonomous), Perundurai, Erode District 638052"
+  },
+  {
+    "tfccode": 2712,
+    "tfcname": "Kumaraguru College of Technology (Autonomous), Chinnavedampatti Post, Coimbatore District 641006"
+  },
+  {
+    "tfccode": 2713,
+    "tfcname": "M P Nachimuthu M Jaganathan Engineering College, Chennimalai, Erode District 638112"
+  },
+  {
+    "tfccode": 2715,
+    "tfcname": "Nandha Engineering College (Autonomous), Pitchandampalayam Post, Erode District 638052"
+  },
+  {
+    "tfccode": 2716,
+    "tfcname": "Park College of Engineering and Technology, Kaniyur, Coimbatore District 641659"
+  },
+  {
+    "tfccode": 2717,
+    "tfcname": "Sasurie College of Engineering, Vijayamangalam, Tiruppur District 638056"
+  },
+  {
+    "tfccode": 2718,
+    "tfcname": "Sri Krishna College of Enginering and Technology (Autonomous) , Kuniamuthur, Coimbatore District 641008"
+  },
+  {
+    "tfccode": 2719,
+    "tfcname": "Sri Ramakrishna Engineering College (Autonomous), Vattamalaipalayam, Coimbatore District 641022"
+  },
+  {
+    "tfccode": 2721,
+    "tfcname": "Tamilnadu College of Engineering, Karumathampatti Post, Coimbatore District 641659"
+  },
+  {
+    "tfccode": 2722,
+    "tfcname": "Sri Krishna College of Technology (Autonomous) , Kovaipudur Post, Coimbatore District 641042"
+  },
+  {
+    "tfccode": 2723,
+    "tfcname": "Velalar College of Engineering and Technology (Autonomous), Thindal Post, Erode District 638012"
+  },
+  {
+    "tfccode": 2725,
+    "tfcname": "Sri Ramakrishna Institute of Technology (Autonomous), Pachapalayam, Coimbatore District 641010"
+  },
+  {
+    "tfccode": 2726,
+    "tfcname": "SNS College of Technology (Autonomous), Kalappatti Post, Coimbatore District 641035"
+  },
+  {
+    "tfccode": 2727,
+    "tfcname": "Sri Shakthi Institute of Engineering and Technology (Autonomous), L&T Bye-Pass, Venkitapuram Post, Comibatore District 641062"
+  },
+  {
+    "tfccode": 2729,
+    "tfcname": "Nehru Institute of Engineering and Technology, Thirumalayampalayam Post, Coimbatore District 641105"
+  },
+  {
+    "tfccode": 2731,
+    "tfcname": "R V S College of Engineering and Technology, Kannampalayam, Sulur, Coimbatore District 641402"
+  },
+  {
+    "tfccode": 2732,
+    "tfcname": "Info Institute of Engineering, Sarkar Samakulam, Coimbatore District 641107"
+  },
+  {
+    "tfccode": 2733,
+    "tfcname": "Angel College of Engineering and Technology, P.K.Palayam, Ugayanur Village, Tirupur District 641 665"
+  },
+  {
+    "tfccode": 2734,
+    "tfcname": "SNS College of Engineering (Autonomous), Sathy Main Road, Kurumbapalayam Post, Coimbatore District 641107"
+  },
+  {
+    "tfccode": 2735,
+    "tfcname": "Karpagam Institute of Technology, Seerapalayam Village, L&T By pass Road, Coimbatore District 641021"
+  },
+  {
+    "tfccode": 2736,
+    "tfcname": "Dr. N G P Institute of Technology, Kalapatti Road, Coimbatore District 641035"
+  },
+  {
+    "tfccode": 2737,
+    "tfcname": "Sri Sai Ranganathan Engineering College, Zahirnaickenpalayam Village, Viraliyur Post, Thondamuthur Via, Coimbatore District 641109"
+  },
+  {
+    "tfccode": 2739,
+    "tfcname": "Sri Eshwar College of Engineering (Autonomous), Kondampatti Post, Vadasithur (Via), Kinathukadavu, Coimbatore District 641202"
+  },
+  {
+    "tfccode": 2740,
+    "tfcname": "Hindusthan Institute of Technology (Autonomous), Othakkalmandapam, Coimbatore District 641032"
+  },
+  {
+    "tfccode": 2741,
+    "tfcname": "P A College of Engineering and Technology (Autonomous), Palladam Road, Pollachi, Coimbatore District 642002"
+  },
+  {
+    "tfccode": 2743,
+    "tfcname": "Dhanalakshmi Srinivasan College of Engineering (CBE), NH47, Palakkad Main Road, Navakkarai Post, Near Nandhi Temple, Coimbatore District 641105"
+  },
+  {
+    "tfccode": 2744,
+    "tfcname": "Adithya Institute of Technology, Kurumbapalayam Village, Coimbatore District 641107"
+  },
+  {
+    "tfccode": 2745,
+    "tfcname": "Kathir College of Engineering, Neelambur, Avinashi Road, Coimbatore District 641062"
+  },
+  {
+    "tfccode": 2747,
+    "tfcname": "Shree Venkateshwara Hi-Tech Engineering College, Othakuthirai, K Mettupalayam Post, Gobichettipalayam, Erode District 638455"
+  },
+  {
+    "tfccode": 2748,
+    "tfcname": "Surya Engineering College, Mettukadai, Kathirampatti Post, Erode District 638107"
+  },
+  {
+    "tfccode": 2749,
+    "tfcname": "Easa College of Engineering and Technology, NH-47, Coimbatore-Palakkad Main Road, Navakarai Post, Coimbatore District 641105"
+  },
+  {
+    "tfccode": 2750,
+    "tfcname": "KIT - Kalaignar Karunanidhi Institute of Technology (Autonomous), Kannampalayam, Coimbatore District 641402"
+  },
+  {
+    "tfccode": 2751,
+    "tfcname": "KGISL Institute of Technology, KGISL Campus, Thudiyalur Road, Saravanampatti, Coimbatore District 641035"
+  },
+  {
+    "tfccode": 2752,
+    "tfcname": "Nandha College of Technology, Pitchandampalayam Post, Erode District 638052"
+  },
+  {
+    "tfccode": 2753,
+    "tfcname": "PPG Institute of Technology, Vilankurichi Village, Coimbatore District 641035"
+  },
+  {
+    "tfccode": 2755,
+    "tfcname": "Nehru Institute of Technology, Thirumalayampalayam Post, Coimbatore District 641105"
+  },
+  {
+    "tfccode": 2758,
+    "tfcname": "J K K Munirajah College of Technology, T N Palayam, Gobi Taluk, Erode District 638506"
+  },
+  {
+    "tfccode": 2761,
+    "tfcname": "United Institute of Technology, Gadalore Village, Perianaickenpalayam, Coimbatore District 641020"
+  },
+  {
+    "tfccode": 2762,
+    "tfcname": "Jansons Institute of Technology, Karumathampatty, Somaur, Coimbatore District 641659"
+  },
+  {
+    "tfccode": 2763,
+    "tfcname": "Akshaya College of Engineering and Technology, Kinathukadavu, Coimbatore District 642109"
+  },
+  {
+    "tfccode": 2764,
+    "tfcname": "K P R Institute of Engineering and Technology (Autonomous), Kollupalayam Village, Arasur Panchayat, Coimbatore District 641407"
+  },
+  {
+    "tfccode": 2767,
+    "tfcname": "SRG Engineering College, Aniyapuram Post, Namakkal District 637017"
+  },
+  {
+    "tfccode": 2768,
+    "tfcname": "Park College of Technology, Prema Ravi Nagar, Karumathampatti, Coimbatore - 641 659"
+  },
+  {
+    "tfccode": 2769,
+    "tfcname": "J C T College of Engineering and Technology, Pichanur, Coimbatore District 641105"
+  },
+  {
+    "tfccode": 2770,
+    "tfcname": "Studyworld College of Engineering, Madukarai Post, Coimbatore - 641 105."
+  },
+  {
+    "tfccode": 2772,
+    "tfcname": "C M S College of Engineering and Technology, Appachigoundenpathy, Kumittipathi Post, Coimbatore District 641032"
+  },
+  {
+    "tfccode": 2776,
+    "tfcname": "R V S Technical Campus-Coimbatore, Kumaran Kottam Campus, Kannampalayam, Sulur, Coimbatore District 641 402"
+  },
+  {
+    "tfccode": 3011,
+    "tfcname": "University College of Engineering, Tiruchirappalli, (Bharathidasan Institute of Technology), Tiruchirappalli District 620024"
+  },
+  {
+    "tfccode": 3016,
+    "tfcname": "University College of Engineering, Ariyalur, Kathankudikadu Village, Thelur Post, Ariyalur District 621704"
+  },
+  {
+    "tfccode": 3018,
+    "tfcname": "University College of Engineering, Thirukkuvalai, Nagappattinam District 610204"
+  },
+  {
+    "tfccode": 3019,
+    "tfcname": "University College of Engineering, Panruti, Chennai-Kumbakonam Highway, Panikkankuppam, Panruti, Cuddalore District 607106"
+  },
+  {
+    "tfccode": 3021,
+    "tfcname": "University College of Engineering, Pattukkottai, ECR Road, Rajamadam, Pattukkottai Taluk, Thanjavur District 614701"
+  },
+  {
+    "tfccode": 3403,
+    "tfcname": "Mahalakshmi Engineering College, Trichy-Salem Highways, (Near No.1 Tollgate), Melpathu, Siruganbur Post, Tiruchirappalli District 621213"
+  },
+  {
+    "tfccode": 3410,
+    "tfcname": "Krishnasamy College of Engineering and Technology, S Kumarapuram, Cuddalore District 607109"
+  },
+  {
+    "tfccode": 3425,
+    "tfcname": "C K College of Engineering and Technology, Chellangkuppam, Cuddalore District 607003"
+  },
+  {
+    "tfccode": 3454,
+    "tfcname": "Sri Ramakrishna College of Engineering, Sri Saradha Nagar, NH-45, Perambalur District 621113"
+  },
+  {
+    "tfccode": 3456,
+    "tfcname": "K S K College of Engineering and Technology, Thanjavur Main Road, Darasuram, Kumbakonam, Thanjavur District 612702"
+  },
+  {
+    "tfccode": 3460,
+    "tfcname": "Surya College of Engineering, Konalai, Tiruchirappalli District 621132"
+  },
+  {
+    "tfccode": 3461,
+    "tfcname": "Arifa Institute of Technology(Formly Haji sheik Ismail Engineering College), Esanoor, Keelaiyur Post, Thirukkuvalai Taluk, Nagapattinam District 611103"
+  },
+  {
+    "tfccode": 3462,
+    "tfcname": "Ariyalur Engineering College, NH-227, Trichy-Chithambaram NH, Karuppur-Senapathy Post, Ariyalur District 621707"
+  },
+  {
+    "tfccode": 3464,
+    "tfcname": "Government College of Engineering, Gandarvakottai Road, Sengipatti, Thanjavur District 613402"
+  },
+  {
+    "tfccode": 3465,
+    "tfcname": "Government College of Engineering, Srirangam, Sethurappatti, Tiruchirappalli District 620012"
+  },
+  {
+    "tfccode": 3466,
+    "tfcname": "Nelliandavar Institute of Technology, Nerunjikorai Village, Pudhupalayam, Ariyalur Taluk, Ariyalur District 621704"
+  },
+  {
+    "tfccode": 3701,
+    "tfcname": "K Ramakrishnan College of Technology (Autonomous), Kariyamanickam Road, Samayapuram, Manachanallur Taluk, Tiruchirappalli District 621112"
+  },
+  {
+    "tfccode": 3760,
+    "tfcname": "Sir Issac Newton College of Engineering and Technology, Anthanapeetai Post, Papakoil, Nagappattinam District 611102"
+  },
+  {
+    "tfccode": 3766,
+    "tfcname": "Star Lion College of Engineering and Technology, Manankorai Main Road, Manankorai Village, Thanjavur District 614206"
+  },
+  {
+    "tfccode": 3782,
+    "tfcname": "OASYS Institute of Technology , Pulivalam Village, Musiri Taluk, Tiruchirappalli District 621006"
+  },
+  {
+    "tfccode": 3786,
+    "tfcname": "M.A.M. School of Engineering, Siruganur, Tiruchirappalli District 621105"
+  },
+  {
+    "tfccode": 3795,
+    "tfcname": "SRM TRP Engineering College, Irungalur, Manachanallur Taluk, Tiruchirappalli District 621105"
+  },
+  {
+    "tfccode": 3801,
+    "tfcname": "A V C College of Engineering, Mannampandal Post, MayiladuthuraiDistrict 609305"
+  },
+  {
+    "tfccode": 3803,
+    "tfcname": "Anjalai Ammal Mahalingam Engineering College, Kovilvenni, Thiruvarur District 614403"
+  },
+  {
+    "tfccode": 3804,
+    "tfcname": "Arasu Engineering College, Chennai Main Road, Kumbakonam, Thanjavur District 612501"
+  },
+  {
+    "tfccode": 3805,
+    "tfcname": "Dhanalakshmi Srinivasan Engineering College (Autonomous), Thuraiyur Road, Perambalur District 621212"
+  },
+  {
+    "tfccode": 3806,
+    "tfcname": "E G S Pillay Engineering College (Autonomous), Nagapattinam District 611002"
+  },
+  {
+    "tfccode": 3807,
+    "tfcname": "J J College of Engineering and Technology, Poolankulathupatti Post, Thiruchirappalli District 620009"
+  },
+  {
+    "tfccode": 3808,
+    "tfcname": "Jayaram College of Engineering and Technology, Karattampatti, Pagalavadi Po,Thuraivur, Trichy-621014"
+  },
+  {
+    "tfccode": 3809,
+    "tfcname": "Kurinji College of Engineering and Technology, Manapparai, Tiruchirappalli District 621307"
+  },
+  {
+    "tfccode": 3810,
+    "tfcname": "M.A.M. College of Engineering, Siruganur, Tiruchirappalli District 621105"
+  },
+  {
+    "tfccode": 3811,
+    "tfcname": "M I E T Engineering College, Trichy-Pudukkottai Road, Tiruchirappalli District 620007"
+  },
+  {
+    "tfccode": 3812,
+    "tfcname": "Mookambigai College of Engineering, Keeranur, Pudukkottai District 622502"
+  },
+  {
+    "tfccode": 3813,
+    "tfcname": "Oxford Engineering College,Karumandapam,Pirattiyur,Trichy-620 009"
+  },
+  {
+    "tfccode": 3814,
+    "tfcname": "P R Engineering College, Vallam, Thanjavur District 613403"
+  },
+  {
+    "tfccode": 3815,
+    "tfcname": "Pavendar Bharathidasan College of Engineering and Technology, Pudukkottai Main Road, Tiruchirappalli District 622515"
+  },
+  {
+    "tfccode": 3817,
+    "tfcname": "Roever Engineering College, Elambalur, Perambalur District 621212"
+  },
+  {
+    "tfccode": 3819,
+    "tfcname": "Saranathan College of Engineering, Panjappur, Tiruchirappalli District 620012"
+  },
+  {
+    "tfccode": 3820,
+    "tfcname": "Trichy Engineering College, Konalai, Tiruchirappalli District 621132"
+  },
+  {
+    "tfccode": 3821,
+    "tfcname": "A R J College of Engineering and Technology, Mannargudi Taluk, Thiruvarur District 614001"
+  },
+  {
+    "tfccode": 3822,
+    "tfcname": "Dr.Navalar Nedunchezhiyan College of Engineering,Raja Nagar,Vaithiyanathapuram,tholudur, Cuddalore-606303"
+  },
+  {
+    "tfccode": 3825,
+    "tfcname": "St. Joseph's College of Engineering and Technology, Elupatti Village, Rawaspatti Post, Thanjavur District 613403"
+  },
+  {
+    "tfccode": 3826,
+    "tfcname": "Kongunadu College of Engineering and Technology (Autonomous), Tholurpatti, Thottiyam, Tiruchirappalli District 621215"
+  },
+  {
+    "tfccode": 3829,
+    "tfcname": "M.A.M. College of Engineering and Technology, Trichy-Chennai Trunk Road, Siruganur, Tiruchirappalli District 621105"
+  },
+  {
+    "tfccode": 3830,
+    "tfcname": "K Ramakrishnan College of Engineering (Autonomous), Kariyamanickam Road, Samayapuram, Manachanallur Taluk, Tiruchirappalli District 621112"
+  },
+  {
+    "tfccode": 3831,
+    "tfcname": "Indra Ganesan College of Engineering, Madurai Main Road, Manikandam, Tiruchirappalli District 620012"
+  },
+  {
+    "tfccode": 3833,
+    "tfcname": "Parisutham Institute of Technology and Science, Ring Road, Nanjikottai, Thanjavur District 613006"
+  },
+  {
+    "tfccode": 3841,
+    "tfcname": "CARE College of Engineering (Formerly C.A.R.E Group of Institutions), Thayanoor Village, Thayanoor Village, Kuttappatti, Srirangam Taluk, Tiruchirappalli District 620009"
+  },
+  {
+    "tfccode": 3843,
+    "tfcname": "M R K Institute of Technology, Nattarmangalam Village, Kattumannarkoil, Cuddalore District 608306"
+  },
+  {
+    "tfccode": 3844,
+    "tfcname": "Shivani Engineering College, Trichy-Dindigul NH Road, Poolangulathupatti, Tiruchirappalli - 620009"
+  },
+  {
+    "tfccode": 3845,
+    "tfcname": "Imayam College of Engineering, Kannanur, Thuraiyur, Tiruchirappalli District 621206"
+  },
+  {
+    "tfccode": 3846,
+    "tfcname": "Mother Terasa College of Engineering and Technology, Mettusalai Post and Taluk, Pudukkottai District 622102"
+  },
+  {
+    "tfccode": 3848,
+    "tfcname": "Vandayar Engineering College, Pulavarnatham Post, Mariamman Koil (Via), Thanjavur District 613001"
+  },
+  {
+    "tfccode": 3849,
+    "tfcname": "Annai College of Engineering and Technology, Anakudi Road, Kovilacheri, Kumbakonam, Thanjavur District 612503"
+  },
+  {
+    "tfccode": 3850,
+    "tfcname": "Vetri Vinayaha College of Engineering and Technology, Namakkal-Trichy Main Road, Tholurpatti Village, Thottiam, Tiruchirappalli District 621215"
+  },
+  {
+    "tfccode": 3852,
+    "tfcname": "Sri Bharathi Engineering College for Women, Kaikkuruchi Village, Alangudi Taluk, Pudukkottai District 622303"
+  },
+  {
+    "tfccode": 3854,
+    "tfcname": "Mahath Amma Institute of Engineering and Technology (MIET), Ariyur, Annavasal Road, Illupur Taluk, Pudukkottai District 622101"
+  },
+  {
+    "tfccode": 3855,
+    "tfcname": "As-Salam College of Engineering and Technology, Thirumangalakudi, Aduthurai, Thiruvidaimaruthur, Thanjavur District 612102"
+  },
+  {
+    "tfccode": 3857,
+    "tfcname": "Meenakshi Ramaswamy Engineering College, Trichy Main Road, Thathanur, Udayarpalayam, Ariyalur District 621804"
+  },
+  {
+    "tfccode": 3860,
+    "tfcname": "St. Anne's College of Engineering and Technology, Anguchettypalayam, Siruvathur Post, Panruti, Cuddalore District 607110"
+  },
+  {
+    "tfccode": 3905,
+    "tfcname": "Kings College of Engineering, Punalkulam, Pudukkottai District 613303"
+  },
+  {
+    "tfccode": 3908,
+    "tfcname": "Mount Zion College of Engineering and Technology, Pilivalam Post, Pudukkottai District 622507"
+  },
+  {
+    "tfccode": 3918,
+    "tfcname": "Shanmuganathan Engineering College, Pillivalam Post, Pudukkottai District 622507"
+  },
+  {
+    "tfccode": 3920,
+    "tfcname": "Sudharsan Engineering College, Sathiyamangalam Post, Pudukkottai District 622501"
+  },
+  {
+    "tfccode": 3923,
+    "tfcname": "M N S K College of Engineering, Vallathirakkottai Post, Pudukkottai District 622305"
+  },
+  {
+    "tfccode": 3926,
+    "tfcname": "Chendhuran College of Engineering and Technology, Madurai Road, Lenavilakku, Pilivalam Post, Pudukkottai - 622 507"
+  },
+  {
+    "tfccode": 4020,
+    "tfcname": "Anna University Regional Campus - Tirunelveli, Trivandrum Road, Palayamkottai, Tirunelveli District 627007"
+  },
+  {
+    "tfccode": 4023,
+    "tfcname": "University College of Engineering, Nagercoil, Nagercoil Industrial Estate, Konam, Kanyakumari District 629004"
+  },
+  {
+    "tfccode": 4024,
+    "tfcname": "University V.O.C. College of Engineering, Thoothukudi, Near V.O.C. College, Millerpuram, Thoothukudi District 628008"
+  },
+  {
+    "tfccode": 4669,
+    "tfcname": "Thamirabharani Engineering College, Chathirampudukulam Village, Thatchanallur, Tirunelveli District 627358"
+  },
+  {
+    "tfccode": 4670,
+    "tfcname": "Rohini College of Engineering & Technology, Anjugramam-Kanyakumari Main Road, Palkulam, Variyoor Post, Kanyakumari District 629401"
+  },
+  {
+    "tfccode": 4672,
+    "tfcname": "Stella Mary's College of Engineering, Arunthengan Vilai, Azhikal Post, Kanyakumari District 629202"
+  },
+  {
+    "tfccode": 4675,
+    "tfcname": "Universal College of Engineering and Technology, Anbagam Campus, Radhapuram Road, Vallioor, Tirunelveli District 627117"
+  },
+  {
+    "tfccode": 4676,
+    "tfcname": "Renganayagi Varatharaj College of Engineering, Salvarpatti, Sivakasi, Virudhunagar District 626128"
+  },
+  {
+    "tfccode": 4677,
+    "tfcname": "Lourdes Mount College of Engineering and Technology, Marthandam-Karungal Road, Chundavilai, Mullanganavilai, Nattalam Post, Kanyakumari District 629195"
+  },
+  {
+    "tfccode": 4678,
+    "tfcname": "Ramco Institute of Technology, North venganallur Village, Krishnapuram Panchayat, Rajapalayam, Virudhunagar District 626117"
+  },
+  {
+    "tfccode": 4680,
+    "tfcname": "AAA College of Engineering and Technology, Kamarajar Educational Road, Amathur Village, Sivakasi, Virudhunagar District 626005"
+  },
+  {
+    "tfccode": 4686,
+    "tfcname": "Good Shepherd College of Engineering and Technology, Maruthamparai, Kanyakumari District 629101"
+  },
+  {
+    "tfccode": 4864,
+    "tfcname": "V V College of Engineering, Arasoor Village, Idaichivilai Post, Santhakulam Taluk, Thoothukudi District 628656"
+  },
+  {
+    "tfccode": 4917,
+    "tfcname": "Sethu Institute of Technology (Autonomous), Kariapatti Post, Virudhunagar District 626115"
+  },
+  {
+    "tfccode": 4925,
+    "tfcname": "Sun College of Engineering and Technology, Ammandivilai & Post, Kanyakumari District - 629204"
+  },
+  {
+    "tfccode": 4927,
+    "tfcname": "Maria College of Engineering and Technology, Attoor Puliyamoodu Junction, Thiruvattar Post, Kanyakumari District 629177"
+  },
+  {
+    "tfccode": 4928,
+    "tfcname": "MAR Ephraem College of Engineering & Technology, Malankara Hills, Elavuvillai, Marthandam, Kanyakumari District 629171"
+  },
+  {
+    "tfccode": 4929,
+    "tfcname": "M E T Engineering College, Mogals Garden, Thovalai Village, Aralvaimozhi Town Panchayat, Thovalai, Kanyakumari District 629304"
+  },
+  {
+    "tfccode": 4931,
+    "tfcname": "Grace College of Engineering, Chandy Nagar, Mullakkadu, Thoothukudi District 628005"
+  },
+  {
+    "tfccode": 4932,
+    "tfcname": "Immanuel Arasar J.J. College of Engineering, Edavilagam, Nattalam, Marthandam, Kanyakumari-629165"
+  },
+  {
+    "tfccode": 4933,
+    "tfcname": "St. Mother Theresa Engineering College, Vagaikulam, Thoothukudi District 628102"
+  },
+  {
+    "tfccode": 4934,
+    "tfcname": "Holy Cross Engineering College, Vagaikulam, Sri Mulakarai, Srivaikuntam, Thoothukudi District 628851"
+  },
+  {
+    "tfccode": 4937,
+    "tfcname": "A.R College of Engineering and Technology, A.R Nagar, Kadayam-Alangulam Road, Therkkumadathoor P.o,Ambasamudram Taluk,Tirunelveli-627423"
+  },
+  {
+    "tfccode": 4938,
+    "tfcname": "Sivaji College of Engineering and Technology, Manivilla Palulai Panchayat, Vilavancode, Kanyakumari District 629171"
+  },
+  {
+    "tfccode": 4941,
+    "tfcname": "Unnamalai Institute of Technology, Ayyaneri, Kovilpatti, Thoothukudi District 628502"
+  },
+  {
+    "tfccode": 4943,
+    "tfcname": "Satyam College of Engineering and Technology,Satyam Nagar,Aralvoimozhi,Kanyakumari-629301"
+  },
+  {
+    "tfccode": 4944,
+    "tfcname": "Arunachala College of Engineering for Women, Thanka Gardens, Manavilai, Vellichanthai, Nagercoil, Kanyakumari District 629203"
+  },
+  {
+    "tfccode": 4946,
+    "tfcname": "D M I Engineering College, Aralvaimozhi Village, Thovalai, Kanyakumari District 629301"
+  },
+  {
+    "tfccode": 4948,
+    "tfcname": "Rajas Institute of Technology , Ozhuginasery, Nagercoil, Kanyakumari District 629001"
+  },
+  {
+    "tfccode": 4949,
+    "tfcname": "PSN Institute of Technology and Science,Melathediyoor, Tirunelveli-627 152"
+  },
+  {
+    "tfccode": 4952,
+    "tfcname": "C S I Institute of Technology, Thovalai, Kanyakumari District 629302"
+  },
+  {
+    "tfccode": 4953,
+    "tfcname": "CAPE Institute of Technology, Levingipuram, Tirunelveli District 627114"
+  },
+  {
+    "tfccode": 4954,
+    "tfcname": "Dr. Sivanthi Aditanar College of Engineering, Tiruchendur, Thoothukudi District 628215"
+  },
+  {
+    "tfccode": 4955,
+    "tfcname": "Francis Xavier Engineering College (Autonomous), Vannarpettai, Tirunelveli District 627003"
+  },
+  {
+    "tfccode": 4956,
+    "tfcname": "Jayamatha Engineering College, Aralvaimozhi, Kanyakumari District\n- 629301"
+  },
+  {
+    "tfccode": 4957,
+    "tfcname": "Jayaraj Annapackiam CSI College of Engineering, Nazareth, Thoothukudi District 628617"
+  },
+  {
+    "tfccode": 4959,
+    "tfcname": "Kamaraj College of Engineering and Technology (Autonomous), Virudhunagar District 626001"
+  },
+  {
+    "tfccode": 4960,
+    "tfcname": "Mepco Schlenk Engineering College (Autonomous), Sivakasi, Virudhunagar District 626005"
+  },
+  {
+    "tfccode": 4961,
+    "tfcname": "Nellai College of Engineering (Formerly National College of Engineering), Maruthakulam Post, Tirunelveli District 627151"
+  },
+  {
+    "tfccode": 4962,
+    "tfcname": "National Engineering College (Autonomous), Kovilpatti, Thoothukudi District 628503"
+  },
+  {
+    "tfccode": 4964,
+    "tfcname": "PSN College of Engineering and Technology (Autonomous),Melathediyoor, Tirunelveli-627 152"
+  },
+  {
+    "tfccode": 4965,
+    "tfcname": "P S R Engineering College (Autonomous), Appayanaickenpatti, Sevalpatty, Virudhunagar District 626140"
+  },
+  {
+    "tfccode": 4966,
+    "tfcname": "PET Engineering College, Vallioor Post, Tirunelveli District 627117"
+  },
+  {
+    "tfccode": 4967,
+    "tfcname": "S Veerasamy Chettiar College of Engineering and Technology, Puliangudi Post, Tenkasi District 627855"
+  },
+  {
+    "tfccode": 4968,
+    "tfcname": "Sardar Raja College of Engineering, Alangulam, Tenkasi District 627808"
+  },
+  {
+    "tfccode": 4969,
+    "tfcname": "SCAD College of Engineering and Technology, Cheranmahadevi, Tirunelveli District 627414"
+  },
+  {
+    "tfccode": 4970,
+    "tfcname": "Sree Sowdambika College of Engineering, Aruppukkottai Taluk, Virudhunagar District 626134"
+  },
+  {
+    "tfccode": 4971,
+    "tfcname": "St. Xavier's Catholic College of Engineering, Chunkankadai, Nagercoil, Kanyakumari District 629807"
+  },
+  {
+    "tfccode": 4972,
+    "tfcname": "AMRITA College of Engineering and Technology, Erachakulam Post, Kanyakumari District 629902"
+  },
+  {
+    "tfccode": 4974,
+    "tfcname": "Government College of Engineering, Tirunelveli District 627007"
+  },
+  {
+    "tfccode": 4975,
+    "tfcname": "Dr. G U Pope College of Engineering, Sawyerpuram, Thoothukudi District 628251"
+  },
+  {
+    "tfccode": 4976,
+    "tfcname": "Infant Jesus College of Engineering, Thoothukudi Highway (NH7/A), Thoothukudi District 628851"
+  },
+  {
+    "tfccode": 4977,
+    "tfcname": "Narayanaguru College of Engineering, Manjalumoodu, Kanyakumari District 629151"
+  },
+  {
+    "tfccode": 4978,
+    "tfcname": "Udaya School of Engineering, Ammandivilai Post, Kanyakumari District 629204"
+  },
+  {
+    "tfccode": 4979,
+    "tfcname": "Arul Tharum VPMM College of Engineering and Technology (Formerly V.P.Muthaiah Pillai Meenakshi Ammal Engineering College for Women), Krishnakoil,Virudhunagar-626 190"
+  },
+  {
+    "tfccode": 4980,
+    "tfcname": "Einstein College of Engineering, Seethaparpanallur, Tirunelveli District 627012"
+  },
+  {
+    "tfccode": 4981,
+    "tfcname": "Ponjesly College of Engineering, Vettornimadam Post, Nagercoil, Kanyakumari District 629003"
+  },
+  {
+    "tfccode": 4982,
+    "tfcname": "Vins Christian College of Engineering, Chunkankadai Post, Nagercoil, Kanyakumari District 629807"
+  },
+  {
+    "tfccode": 4983,
+    "tfcname": "Lord Jegannath College of Engineering and Technology, Kumarapuram, Thoppur Post, Kanyakumari District 629402"
+  },
+  {
+    "tfccode": 4984,
+    "tfcname": "Marthandam College of Engineering & Technology, Kuttakuzhi, Veeyanoor Post, Kanyakumari District 629177"
+  },
+  {
+    "tfccode": 4989,
+    "tfcname": "PSN Engineering College, Melathediyoor, Tirunelveli District 627152"
+  },
+  {
+    "tfccode": 4992,
+    "tfcname": "Bethlahem Institute of Engineering, Karungal, Kanyakumari District 629157"
+  },
+  {
+    "tfccode": 4993,
+    "tfcname": "Loyola Institute of Technology and Science, Loyola Nagar, P B No.2, Thovalai, Kanyakumari District 629302"
+  },
+  {
+    "tfccode": 4994,
+    "tfcname": "J P College of Engineering, College Road, Ayakudy, Tenkasi Taluk, Tenkasi District 627852"
+  },
+  {
+    "tfccode": 4995,
+    "tfcname": "P.S.R.R College of Engineering, Appayanaickenpatti, Sevalpatti, Virudhunagar District 626140"
+  },
+  {
+    "tfccode": 4996,
+    "tfcname": "Sri Vidya College of Engineering and Technology, Sivakasi Main Road, P Kumaralinapuram, Virudhunagar District 626005"
+  },
+  {
+    "tfccode": 4998,
+    "tfcname": "Mahakavi Bharathiyar College of Engineering and Technology, Vasudevanallur, Tenkasi District 627758"
+  },
+  {
+    "tfccode": 4999,
+    "tfcname": "Annai Vailankanni College of Engineering, Pothaiyadi Salai, Pottalkulam, Azhagappapuram, Kanyakumari District 629401"
+  },
+  {
+    "tfccode": 5008,
+    "tfcname": "Thiagarajar College of Engineering (Autonomous),Tirupparankundram, Madurai District 625015"
+  },
+  {
+    "tfccode": 5009,
+    "tfcname": "Government College of Engineering, Melachokkanathapuram, Bodinayakkanur, Theni District 625582"
+  },
+  {
+    "tfccode": 5010,
+    "tfcname": "Anna University Regional Campus - Madurai, Kanyakumari National Highway, Keelakuilkudi, Madurai District 625019"
+  },
+  {
+    "tfccode": 5012,
+    "tfcname": "Central Electrochemical Research Institute CECRI), Karaikudi, Sivagangai District 630006"
+  },
+  {
+    "tfccode": 5017,
+    "tfcname": "University College of Engineering, Ramanathapuram, Pullangudi, Ramanathapuram District 623513"
+  },
+  {
+    "tfccode": 5022,
+    "tfcname": "University College of Engineering, Dindigul, Mangarai Pirivu, Reddiyarchathiram, Dindigul District 624622"
+  },
+  {
+    "tfccode": 5502,
+    "tfcname": "Sri Raajaraajan College of Engineering & Technology, Amaravathi Village, Amaravathi Pudur Post, Karaikudi, Sivagangai District 630301"
+  },
+  {
+    "tfccode": 5530,
+    "tfcname": "SSM Institute of Engineering and Technology, Kuttathupatti Village, Sindalaigundu Post, Dindigul District 624002"
+  },
+  {
+    "tfccode": 5532,
+    "tfcname": "Vaigai College of Engineering, Therkutheru, Melur Taluk, Madurai District 625122"
+  },
+  {
+    "tfccode": 5533,
+    "tfcname": "Karaikudi Institute of Technology and Karaikudi Institute of Management, KIT & KIM Technical Campus, Keeranipatti, Thalakkuvur, Karaikudi, Sivagangai District 630307"
+  },
+  {
+    "tfccode": 5536,
+    "tfcname": "Mangayarkarasi College of Engineering, First Street, Mangayarkarasi Nagar, Paravai, Madurai District 625402"
+  },
+  {
+    "tfccode": 5537,
+    "tfcname": "Jainee College of Engineering and Technology, Dindigul-Theni Main Road (Near Vakkampatti), Dindigul District 624303"
+  },
+  {
+    "tfccode": 5703,
+    "tfcname": "Christian College of Engineering and Technology, Oddanchatram, Dindigul District 624619"
+  },
+  {
+    "tfccode": 5720,
+    "tfcname": "Sri Subramanya College of Engineering and Technology, Sukkamanaickanpatti, Palani, Dindigul District 624615"
+  },
+  {
+    "tfccode": 5832,
+    "tfcname": "N P R College of Engineering and Technology, Natham, Dindigul District 624401"
+  },
+  {
+    "tfccode": 5862,
+    "tfcname": "R V S Educational Trust’s Groups of Institutions (Integrated Campus), N Paraipatti Post, Vedasandur Taluk, Dindigul District 624005"
+  },
+  {
+    "tfccode": 5865,
+    "tfcname": "Nadar Saraswathi College of Engineering and Technology, Vadupudupatti, Annanji Post, Theni District 625531"
+  },
+  {
+    "tfccode": 5901,
+    "tfcname": "Alagappa Chettair Government College of Engineering and Technology (Autonomous), Karaikudi, Sivagangai District 630004"
+  },
+  {
+    "tfccode": 5902,
+    "tfcname": "Bharath Niketan Engineering College, Thimmarasanaickanoor, Aundipatti, Theni District 625536"
+  },
+  {
+    "tfccode": 5904,
+    "tfcname": "K L N College of Engineering (Autonomous), Pottapalayam, Sivagangai District 630611"
+  },
+  {
+    "tfccode": 5907,
+    "tfcname": "Mohamed Sathak Engineering College, Kilakarai, Ramanathapuram District 623806"
+  },
+  {
+    "tfccode": 5910,
+    "tfcname": "P S N A Colllege of Engineering and Technology, Dindigul District 624622"
+  },
+  {
+    "tfccode": 5911,
+    "tfcname": "P T R College of Engineering and Technology, Thanapandiyan Nagar, Austinpatty Post, Madurai District 625008"
+  },
+  {
+    "tfccode": 5912,
+    "tfcname": "Pandian Saraswathi Yadav Engineering College, Thirumansolai Post, Sivagangai District 630 561"
+  },
+  {
+    "tfccode": 5913,
+    "tfcname": "R V S College of Engineering, N Paraipatti Post, Dindigul District 624005"
+  },
+  {
+    "tfccode": 5914,
+    "tfcname": "Solamalai College of Engineering, Veerapanjan, Madurai District 625020"
+  },
+  {
+    "tfccode": 5915,
+    "tfcname": "SACS-M A V M M Engineering College, Kidaripatty Post, Madurai District 625301"
+  },
+  {
+    "tfccode": 5919,
+    "tfcname": "St. Michael College of Engineering and Technology, Kalayarkoil, Sivagangai District 630551"
+  },
+  {
+    "tfccode": 5921,
+    "tfcname": "Syed Ammal Engineering College, Achuthan Vayal Post, Ramanathapuram District 623502"
+  },
+  {
+    "tfccode": 5924,
+    "tfcname": "Ganapathy Chettiar College of Engineering and Technology, Melakavanur Post, Paramakudi, Ramanathapuram District 623706"
+  },
+  {
+    "tfccode": 5930,
+    "tfcname": "SBM College of Engineering and Technology, Thamaraipady, T N Paraipatti Pirivu, Dindigul District 624005"
+  },
+  {
+    "tfccode": 5935,
+    "tfcname": "Fatima Michael College of Engineering and Technology, Sengottai Village, Sivagangai Main Road, Madurai District 625020"
+  },
+  {
+    "tfccode": 5942,
+    "tfcname": "Ultra College of Engineering and Technology, Kodikulam, 1 Bit Village, Madurai-Chennai Highway, Madurai District 625104"
+  },
+  {
+    "tfccode": 5986,
+    "tfcname": "Velammal College of Engineering and Technology, Madurai District 625009"
+  },
+  {
+    "tfccode": 5988,
+    "tfcname": "Theni Kammavar Sangam College of Technology, Theni Main Road, Koduvillarpatti Post, Theni District 625534"
+  },
+  {
+    "tfccode": 5990,
+    "tfcname": "Latha Mathavan Engineering College, Kidaripatti Post, Alagarkoil (Via), Melur Taluk, Madurai District 625301"
+  },
+  {
+    "tfccode": 2355,
+    "tfcname": "Cheran College of Engineering, Karur-Coimbatore Main Road, NH-67, K.Paramathi Post, Aravakurichi Taluk, Karur District 639111"
+  },
+  {
+    "tfccode": 1205,
+    "tfcname": "Lord Venkateshwaraa Engineering College, Walajabad Post, Kancheepuram District 631605"
+  },
+  {
+    "tfccode": 5842,
+    "tfcname": "Madurai Institute of Engineering and Technology, Pottapalayam Village, Manamadurai Taluk, Sivagangai District 630611"
+  },
+  {
+    "tfccode": 3859,
+    "tfcname": "Sembodai Rukmani Varatharajan Engineering College, Sembodai Village, Vedaraniam, Nagappattinam District 614820"
+  },
+  {
+    "tfccode": 1514,
+    "tfcname": "Sri Nandhanam College of Engineering and Technology, Molagarampatti, Tirupattur, Vellore-635601"
+  },
+  {
+    "tfccode": 5851,
+    "tfcname": "Veerammal Engineering College, PVP Nagar, K.Singrakottai, Dindigul-624708"
+  },
+  {
+    "tfccode": 3802,
+    "tfcname": "Shri Angalamman College of Engineering and Technology,Siruganoor,Tiruchirapalli-621 105"
+  }
+]}
