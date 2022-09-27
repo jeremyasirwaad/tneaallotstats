@@ -13,17 +13,18 @@ import 'package:carousel_slider/carousel_slider.dart';
 import './models/allotstats.dart';
 import './R1agtfc.dart';
 import './Cusdrawer2.dart';
-import './main.dart';
+import './govtmain.dart';
 import './Homepage.dart';
 
-class MyGoveHomePage extends StatefulWidget {
-  const MyGoveHomePage({Key? key}) : super(key: key);
+
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({Key? key}) : super(key: key);
 
   @override
-  State<MyGoveHomePage> createState() => _MyGovHomePageState();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyGovHomePageState extends State<MyGoveHomePage> {
+class _MyHomePageState extends State<MyHomePage> {
   var agtotalcand = -1;
   var agtotalallocs = -1;
   var agtotalcols = -1;
@@ -39,10 +40,10 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
   var vgadmitftcs = -1;
   Future<dynamic> fetchAlbum() async {
     final response = await http.get(
-        Uri.parse('http://3.110.226.121/api/api/master/stcount/88888'),
+        Uri.parse('http://65.2.37.93/api/api/master/stcount/88888'),
         headers: {
           'x-auth-token':
-              'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzMyOTMxMSwiZXhwIjoxODQzMzI5MzExfQ.Lq9FgqEZGmM11UqsofjPAwxUtJJD-4XcDyBJFMw2gto'
+              'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzI0NjA0MCwiZXhwIjoxODQzMjQ2MDQwfQ.1ZqffhkkKmm8yvOtQQ2ol-r3jr5pjwojiAFzbiuFLRo'
         });
 
     if (response.statusCode == 200) {
@@ -86,8 +87,8 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
   Widget build(BuildContext context) {
     AppBar appBar = AppBar(
       title: Text(
-        "Govt 7.5% Allot - Round 1",
-        style: TextStyle(fontSize: 17),
+        "Gen Allot Stats - Round 1",
+        style: TextStyle(fontSize: 18),
       ),
       centerTitle: true,
       actions: [
@@ -157,7 +158,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Academic Govt 7.5% total candidates",
+                                      "Academic General total candidates",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 14,
@@ -222,7 +223,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Vocational Govt 7.5% total candidates",
+                                      "Vocational General total candidates",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 14,
@@ -292,7 +293,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Academic Govt 7.5% total allotments given",
+                                      "Academic General total allotments given",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 14,
@@ -358,7 +359,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Vocational Govt 7.5% total allotments given",
+                                      "Vocational General total allotments given",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 14,
@@ -433,7 +434,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Acad. Govt 7.5% total candidates to be reported to college",
+                                      "Acad. Gen total candidates to be reported to college",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 14,
@@ -498,7 +499,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Acad. Govt 7.5% total candidates to be reported to TFC",
+                                      "Acad. Gen total candidates to be reported to TFC",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 14,
@@ -567,7 +568,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Voc. Govt 7.5% total candidates to be reported to college",
+                                      "Voc. Gen total candidates to be reported to college",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 14,
@@ -632,7 +633,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Voc. Govt 7.5% total candidates to be reported to TFC",
+                                      "Voc. Gen total candidates to be reported to TFC",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 14,
@@ -701,7 +702,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Acad. Govt 7.5% admitted at college",
+                                      "Acad. Gen admitted at college",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 14,
@@ -766,7 +767,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Acad. Govt 7.5% admitted at TFC",
+                                      "Acad. Gen admitted at TFC",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 14,
@@ -835,7 +836,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Voc. Govt 7.5% admitted at college",
+                                      "Voc. Gen admitted at college",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 14,
@@ -900,7 +901,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Voc. Govt 7.5% admitted at TFC",
+                                      "Voc. Gen admitted at TFC",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 14,

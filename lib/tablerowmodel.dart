@@ -7,6 +7,7 @@ class tablerowmodel extends StatelessWidget {
   final sno;
   final board;
   final count;
+  
 
   @override
   Widget build(BuildContext context) {

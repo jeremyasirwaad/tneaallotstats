@@ -10,6 +10,8 @@ import 'package:fl_chart/fl_chart.dart';
 // import './jsondartmodel/countmodel.dart';
 import 'package:http/http.dart' as http;
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:tneadash2/R1summary.dart';
+import 'package:tneadash2/R1summaryclg_wise.dart';
 import './models/allotstats.dart';
 import './R1agtfc.dart';
 import './main.dart';
@@ -18,6 +20,7 @@ import './R1vgtfc.dart';
 import './R1allgeneral.dart';
 import './R1vgcolldata.dart';
 import './R1allgeneral_TFC.dart';
+import './Homepage.dart';
 
 class Cusdrawer2 extends StatelessWidget {
   const Cusdrawer2({
@@ -75,90 +78,129 @@ class Cusdrawer2 extends StatelessWidget {
                 onTap: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => MyHomePage()),
+                    MaterialPageRoute(builder: (context) => R1Summary()),
                   );
                 },
                 child: Padding(
                   padding: EdgeInsets.only(left: 12.0),
-                  child: ListTile(title: Text('Allotments Stats')),
+                  child: ListTile(title: Text('Summary')),
                 ),
               ),
               GestureDetector(
                 onTap: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => R1allgeneral()),
+                    MaterialPageRoute(
+                        builder: (context) => R1summaryclg_wise()),
                   );
                 },
                 child: Padding(
                   padding: EdgeInsets.only(left: 12.0),
-                  child: ListTile(title: Text('Category Wise Stats - College')),
+                  child: ListTile(
+                      title: Text(
+                          'Category Wise - Provisional Allotments & Joining Stats')),
                 ),
               ),
-              GestureDetector(
-                onTap: () {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => R1allgeneral_TFC()),
-                  );
-                },
-                child: Padding(
-                  padding: EdgeInsets.only(left: 12.0),
-                  child: ListTile(title: Text('Category Wise Stats - TFC')),
-                ),
-              ),
-              GestureDetector(
-                onTap: () {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => R1agtfc()),
-                  );
-                },
-                child: Padding(
-                    padding: EdgeInsets.only(left: 12.0),
-                    child: ListTile(
-                        title: Text(
-                            'Academic General/Govt-7.5% - TFC - Allotment & Joining Stats'))),
-              ),
-              GestureDetector(
-                onTap: () {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => R1agcollsdata()),
-                  );
-                },
-                child: Padding(
-                    padding: EdgeInsets.only(left: 12.0),
-                    child: ListTile(
-                        title: Text(
-                            'Academic General/Govt-7.5% - Colleges - Allotment & Joining Stats'))),
-              ),
-              GestureDetector(
-                onTap: () {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => R1vgtfc()),
-                  );
-                },
-                child: Padding(
-                    padding: EdgeInsets.only(left: 12.0),
-                    child: ListTile(
-                        title: Text(
-                            'Vocational General/Govt-7.5% - TFC - Allotment & Joining Stats'))),
-              ),
-              GestureDetector(
-                onTap: () {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => R1vgcollsdata()),
-                  );
-                },
-                child: Padding(
-                    padding: EdgeInsets.only(left: 12.0),
-                    child: ListTile(
-                        title: Text(
-                            'Vocational General/Govt-7.5% - Colleges - Allotment & Joining Stats'))),
-              ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => MyHomePage()),
+              //     );
+              //   },
+              //   child: Padding(
+              //     padding: EdgeInsets.only(left: 12.0),
+              //     child: ListTile(title: Text('College Wise - Provisional Allotments & Joining Stats')),
+              //   ),
+              // ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => MyHomePage()),
+              //     );
+              //   },
+              //   child: Padding(
+              //     padding: EdgeInsets.only(left: 12.0),
+              //     child: ListTile(title: Text('Allotments Stats')),
+              //   ),
+              // ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => R1allgeneral()),
+              //     );
+              //   },
+              //   child: Padding(
+              //     padding: EdgeInsets.only(left: 12.0),
+              //     child: ListTile(title: Text('Category Wise Stats - College')),
+              //   ),
+              // ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => R1allgeneral_TFC()),
+              //     );
+              //   },
+              //   child: Padding(
+              //     padding: EdgeInsets.only(left: 12.0),
+              //     child: ListTile(title: Text('Category Wise Stats - TFC')),
+              //   ),
+              // ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => R1agtfc()),
+              //     );
+              //   },
+              //   child: Padding(
+              //       padding: EdgeInsets.only(left: 12.0),
+              //       child: ListTile(
+              //           title: Text(
+              //               'Academic General/Govt-7.5% - TFC - Allotment & Joining Stats'))),
+              // ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => R1agcollsdata()),
+              //     );
+              //   },
+              //   child: Padding(
+              //       padding: EdgeInsets.only(left: 12.0),
+              //       child: ListTile(
+              //           title: Text(
+              //               'Academic General/Govt-7.5% - Colleges - Allotment & Joining Stats'))),
+              // ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => R1vgtfc()),
+              //     );
+              //   },
+              //   child: Padding(
+              //       padding: EdgeInsets.only(left: 12.0),
+              //       child: ListTile(
+              //           title: Text(
+              //               'Vocational General/Govt-7.5% - TFC - Allotment & Joining Stats'))),
+              // ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => R1vgcollsdata()),
+              //     );
+              //   },
+              //   child: Padding(
+              //       padding: EdgeInsets.only(left: 12.0),
+              //       child: ListTile(
+              //           title: Text(
+              //               'Vocational General/Govt-7.5% - Colleges - Allotment & Joining Stats'))),
+              // ),
             ],
           ),
           const ExpansionTile(
