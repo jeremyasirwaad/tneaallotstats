@@ -1,0 +1,306 @@
+{
+    "agaandj": [
+        {
+            "_id": 3,
+            "agajcount": 23
+        },
+        {
+            "_id": 9,
+            "agajcount": 98
+        },
+        {
+            "_id": 7,
+            "agajcount": 88
+        },
+        {
+            "_id": 8,
+            "agajcount": 606
+        },
+        {
+            "_id": 2,
+            "agajcount": 811
+        },
+        {
+            "_id": 5,
+            "agajcount": 443
+        },
+        {
+            "_id": 6,
+            "agajcount": 2401
+        },
+        {
+            "_id": 1,
+            "agajcount": 6
+        },
+        {
+            "_id": 4,
+            "agajcount": 757
+        }
+    ],
+    "agaandjjoined": [
+        {
+            "_id": 1,
+            "agajjoined": 5
+        },
+        {
+            "_id": 6,
+            "agajjoined": 2286
+        },
+        {
+            "_id": 4,
+            "agajjoined": 728
+        },
+        {
+            "_id": 3,
+            "agajjoined": 22
+        },
+        {
+            "_id": 2,
+            "agajjoined": 741
+        },
+        {
+            "_id": 5,
+            "agajjoined": 403
+        },
+        {
+            "_id": 8,
+            "agajjoined": 587
+        },
+        {
+            "_id": 9,
+            "agajjoined": 81
+        },
+        {
+            "_id": 7,
+            "agajjoined": 87
+        }
+    ],
+    "agupward": [
+        {
+            "_id": 8,
+            "agupcount": 141
+        },
+        {
+            "_id": 7,
+            "agupcount": 50
+        },
+        {
+            "_id": 9,
+            "agupcount": 70
+        },
+        {
+            "_id": 4,
+            "agupcount": 774
+        },
+        {
+            "_id": 1,
+            "agupcount": 6
+        },
+        {
+            "_id": 6,
+            "agupcount": 2158
+        },
+        {
+            "_id": 3,
+            "agupcount": 5
+        },
+        {
+            "_id": 2,
+            "agupcount": 787
+        },
+        {
+            "_id": 5,
+            "agupcount": 383
+        }
+    ],
+    "agupwardjoined": [
+        {
+            "_id": 3,
+            "agupjoined": 5
+        },
+        {
+            "_id": 9,
+            "agupjoined": 10
+        },
+        {
+            "_id": 7,
+            "agupjoined": 27
+        },
+        {
+            "_id": 8,
+            "agupjoined": 31
+        },
+        {
+            "_id": 5,
+            "agupjoined": 180
+        },
+        {
+            "_id": 2,
+            "agupjoined": 52
+        },
+        {
+            "_id": 6,
+            "agupjoined": 760
+        },
+        {
+            "_id": 1,
+            "agupjoined": 1
+        },
+        {
+            "_id": 4,
+            "agupjoined": 156
+        }
+    ],
+    "vgaandj": [
+        {
+            "_id": 1,
+            "vgajcount": 9
+        },
+        {
+            "_id": 6,
+            "vgajcount": 114
+        },
+        {
+            "_id": 4,
+            "vgajcount": 25
+        },
+        {
+            "_id": 3,
+            "vgajcount": 2
+        },
+        {
+            "_id": 2,
+            "vgajcount": 30
+        },
+        {
+            "_id": 5,
+            "vgajcount": 43
+        },
+        {
+            "_id": 8,
+            "vgajcount": 483
+        },
+        {
+            "_id": 9,
+            "vgajcount": 47
+        },
+        {
+            "_id": 7,
+            "vgajcount": 23
+        }
+    ],
+    "vgaandjjoined": [
+        {
+            "_id": 8,
+            "vgajjoined": 447
+        },
+        {
+            "_id": 7,
+            "vgajjoined": 22
+        },
+        {
+            "_id": 9,
+            "vgajjoined": 39
+        },
+        {
+            "_id": 4,
+            "vgajjoined": 23
+        },
+        {
+            "_id": 1,
+            "vgajjoined": 8
+        },
+        {
+            "_id": 6,
+            "vgajjoined": 101
+        },
+        {
+            "_id": 3,
+            "vgajjoined": 1
+        },
+        {
+            "_id": 2,
+            "vgajjoined": 27
+        },
+        {
+            "_id": 5,
+            "vgajjoined": 36
+        }
+    ],
+    "vgupward": [
+        {
+            "_id": 1,
+            "vgupcount": 6
+        },
+        {
+            "_id": 6,
+            "vgupcount": 2158
+        },
+        {
+            "_id": 4,
+            "vgupcount": 774
+        },
+        {
+            "_id": 3,
+            "vgupcount": 5
+        },
+        {
+            "_id": 2,
+            "vgupcount": 787
+        },
+        {
+            "_id": 5,
+            "vgupcount": 383
+        },
+        {
+            "_id": 8,
+            "vgupcount": 141
+        },
+        {
+            "_id": 9,
+            "vgupcount": 70
+        },
+        {
+            "_id": 7,
+            "vgupcount": 50
+        }
+    ],
+    "vgupwardjoined": [
+        {
+            "_id": 5,
+            "vgupjoined": 180
+        },
+        {
+            "_id": 2,
+            "vgupjoined": 52
+        },
+        {
+            "_id": 6,
+            "vgupjoined": 760
+        },
+        {
+            "_id": 1,
+            "vgupjoined": 1
+        },
+        {
+            "_id": 4,
+            "vgupjoined": 156
+        },
+        {
+            "_id": 9,
+            "vgupjoined": 10
+        },
+        {
+            "_id": 3,
+            "vgupjoined": 5
+        },
+        {
+            "_id": 7,
+            "vgupjoined": 27
+        },
+        {
+            "_id": 8,
+            "vgupjoined": 31
+        }
+    ]
+}

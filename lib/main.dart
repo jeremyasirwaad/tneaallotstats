@@ -10,12 +10,15 @@ import 'package:fl_chart/fl_chart.dart';
 // import './jsondartmodel/countmodel.dart';
 import 'package:http/http.dart' as http;
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:tneadash2/R2Homepage.dart';
 import './models/allotstats.dart';
 import './R1agtfc.dart';
 import './Cusdrawer2.dart';
 import './govtmain.dart';
 import './Homepage.dart';
 import './R1summary.dart';
+import './R2summary.dart';
+import './R3Homepage.dart';
 // import 'package:multilevel_drawer/multilevel_drawer.dart';
 
 void main() {
@@ -33,7 +36,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: const R1Summary(),
+      home: const R3MyHomePage(),
     );
   }
 }

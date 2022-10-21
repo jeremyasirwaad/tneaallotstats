@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tneadash2/R1summarycategory_wisegovt.dart';
+import 'package:tneadash2/R1summarycategory_wise.dart';
 import 'package:tneadash2/R1summaryclg_wisegovt.dart';
 import 'package:tneadash2/tablerowmodelsummaryclg_wise.dart';
 import './Cusdrawer2.dart';
@@ -21,13 +21,13 @@ import './Cusdrawer2.dart';
 import './R1govtagcolldata.dart';
 import './models/R1summarycategorywise.dart';
 
-class R1summarycate_wise extends StatefulWidget {
-  R1summarycate_wise({Key? key}) : super(key: key);
+class R1summarycategovt_wise extends StatefulWidget {
+  R1summarycategovt_wise({Key? key}) : super(key: key);
   @override
-  State<R1summarycate_wise> createState() => _R1summarycategory_wiseState();
+  State<R1summarycategovt_wise> createState() => _R1summarycategory_wiseState();
 }
 
-class _R1summarycategory_wiseState extends State<R1summarycate_wise> {
+class _R1summarycategory_wiseState extends State<R1summarycategovt_wise> {
   List<Agaandj> agaandj = [];
   List<Agaandjjoined> agaandjoined = [];
   List<Agupward> agupward = [];
@@ -268,7 +268,7 @@ class _R1summarycategory_wiseState extends State<R1summarycate_wise> {
 
   Future<dynamic> fetchAlbum() async {
     final response = await http.get(
-        Uri.parse('http://65.2.37.93/api/api/master/stmode2/88888'),
+        Uri.parse('http://3.110.226.121/api/api/master/stmode2/88888'),
         headers: {
           'x-auth-token':
               'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzI0NjA0MCwiZXhwIjoxODQzMjQ2MDQwfQ.1ZqffhkkKmm8yvOtQQ2ol-r3jr5pjwojiAFzbiuFLRo'
@@ -329,7 +329,7 @@ class _R1summarycategory_wiseState extends State<R1summarycate_wise> {
   Widget build(BuildContext context) {
     AppBar appBar = AppBar(
       title: Text(
-        "Category Wise - General - Round 1",
+        "Category Wise - Govt - Round 1",
         style: TextStyle(fontSize: 16),
       ),
       centerTitle: true,

@@ -28,8 +28,8 @@ class tablerowmodelsummaryclg_wise extends StatelessWidget {
                   child: Center(
                       child: Text(
                     cat,
-                    style: TextStyle(fontSize: 10),
-                    // style: GoogleFonts.rubik(),
+                    // style: TextStyle(fontSize: 12),
+                    style: TextStyle(fontSize: 11, fontWeight: FontWeight.w500),
                   )),
                 )),
             Expanded(
@@ -81,7 +81,7 @@ class tablerowmodelsummaryclg_wise extends StatelessWidget {
                         // style: GoogleFonts.rubik(),
                       ))),
             Expanded(
-                child: data1 == -1
+                child: data1 == -1 || data1 == -2
                     ? SpinKitThreeBounce(
                         color: Colors.indigo,
                         size: 10,
@@ -93,7 +93,7 @@ class tablerowmodelsummaryclg_wise extends StatelessWidget {
                         // style: GoogleFonts.rubik(),
                       ))),
             Expanded(
-                child: data2 == -1
+                child: data2 == -1 || data2 == -2
                     ? SpinKitThreeBounce(
                         color: Colors.indigo,
                         size: 10,

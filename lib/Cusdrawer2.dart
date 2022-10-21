@@ -11,7 +11,12 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:http/http.dart' as http;
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:tneadash2/R1summary.dart';
+import 'package:tneadash2/R1summarycategory_wise.dart';
 import 'package:tneadash2/R1summaryclg_wise.dart';
+import 'package:tneadash2/R2agcolldata.dart';
+import 'package:tneadash2/R2agtfc.dart';
+import 'package:tneadash2/R2allgeneral.dart';
+import 'package:tneadash2/R2allgeneral_TFC.dart';
 import './models/allotstats.dart';
 import './R1agtfc.dart';
 import './main.dart';
@@ -21,6 +26,15 @@ import './R1allgeneral.dart';
 import './R1vgcolldata.dart';
 import './R1allgeneral_TFC.dart';
 import './Homepage.dart';
+import './R2Homepage.dart';
+import './R2summary.dart';
+import './R2summarycategory_wise.dart';
+import './R2summaryclg_wise.dart';
+import './R3Homepage.dart';
+import './R3agcolldata.dart';
+import './R3agtfc.dart';
+import './R3allgeneral.dart';
+import './R3allgeneral_TFC.dart';
 
 class Cusdrawer2 extends StatelessWidget {
   const Cusdrawer2({
@@ -98,21 +112,24 @@ class Cusdrawer2 extends StatelessWidget {
                   padding: EdgeInsets.only(left: 12.0),
                   child: ListTile(
                       title: Text(
+                          'College Wise - Provisional Allotments & Joining Stats')),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => R1summarycate_wise()),
+                  );
+                },
+                child: Padding(
+                  padding: EdgeInsets.only(left: 12.0),
+                  child: ListTile(
+                      title: Text(
                           'Category Wise - Provisional Allotments & Joining Stats')),
                 ),
               ),
-              // GestureDetector(
-              //   onTap: () {
-              //     Navigator.pushReplacement(
-              //       context,
-              //       MaterialPageRoute(builder: (context) => MyHomePage()),
-              //     );
-              //   },
-              //   child: Padding(
-              //     padding: EdgeInsets.only(left: 12.0),
-              //     child: ListTile(title: Text('College Wise - Provisional Allotments & Joining Stats')),
-              //   ),
-              // ),
               // GestureDetector(
               //   onTap: () {
               //     Navigator.pushReplacement(
@@ -203,7 +220,11 @@ class Cusdrawer2 extends StatelessWidget {
               // ),
             ],
           ),
-          const ExpansionTile(
+          ExpansionTile(
+            // trailing: Icon(
+            //   Icons.keyboard_arrow_down,
+            //   color: Colors.indigo,
+            // ),
             title: Padding(
               padding: EdgeInsets.only(left: 10),
               child: Text(
@@ -215,50 +236,219 @@ class Cusdrawer2 extends StatelessWidget {
               ),
             ),
             children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(left: 12.0),
-                child: ListTile(
-                  title: Text(
-                    'Round 2 Not Yet Started',
-                    style: TextStyle(color: Colors.red),
-                  ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => R2Summary()),
+                  );
+                },
+                child: Padding(
+                  padding: EdgeInsets.only(left: 12.0),
+                  child: ListTile(title: Text('Summary')),
                 ),
               ),
-              // Padding(
-              //   padding: EdgeInsets.only(left: 12.0),
-              //   child: ListTile(title: Text('Allotments Stats')),
-              // ),
-              // Padding(
-              //     padding: EdgeInsets.only(left: 12.0),
-              //     child:
-              //         ListTile(title: Text('TFC - College Allotment Stats'))),
-              // Padding(
-              //     padding: EdgeInsets.only(left: 12.0),
-              //     child: ListTile(title: Text('Joining Stats'))),
-            ],
-          ),
-          const ExpansionTile(
-              title: Padding(
-                padding: EdgeInsets.only(left: 10),
-                child: Text(
-                  'Round 3',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 17,
-                  ),
-                ),
-              ),
-              children: <Widget>[
-                Padding(
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => R2summaryclg_wise()),
+                  );
+                },
+                child: Padding(
                   padding: EdgeInsets.only(left: 12.0),
                   child: ListTile(
-                    title: Text(
-                      'Round 3 Not Yet Started',
-                      style: TextStyle(color: Colors.red),
-                    ),
-                  ),
-                )
-              ]),
+                      title: Text(
+                          'College Wise - Provisional Allotments & Joining Stats')),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => R2summarycate_wise()),
+                  );
+                },
+                child: Padding(
+                  padding: EdgeInsets.only(left: 12.0),
+                  child: ListTile(
+                      title: Text(
+                          'Category Wise - Provisional Allotments & Joining Stats')),
+                ),
+              ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => R1Summary()),
+              //     );
+              //   },
+              //   child: Padding(
+              //     padding: EdgeInsets.only(left: 12.0),
+              //     child: ListTile(title: Text('Summary')),
+              //   ),
+              // ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(
+              //           builder: (context) => R1summaryclg_wise()),
+              //     );
+              //   },
+              //   child: Padding(
+              //     padding: EdgeInsets.only(left: 12.0),
+              //     child: ListTile(
+              //         title: Text(
+              //             'Category Wise - Provisional Allotments & Joining Stats')),
+              //   ),
+              // ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => R2MyHomePage()),
+              //     );
+              //   },
+              //   child: Padding(
+              //     padding: EdgeInsets.only(left: 12.0),
+              //     child: ListTile(title: Text('Allotments Stats')),
+              //   ),
+              // ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => R2allgeneral()),
+              //     );
+              //   },
+              //   child: Padding(
+              //     padding: EdgeInsets.only(left: 12.0),
+              //     child: ListTile(title: Text('Category Wise Stats - College')),
+              //   ),
+              // ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => R2allgeneral_TFC()),
+              //     );
+              //   },
+              //   child: Padding(
+              //     padding: EdgeInsets.only(left: 12.0),
+              //     child: ListTile(title: Text('Category Wise Stats - TFC')),
+              //   ),
+              // ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => R2agtfc()),
+              //     );
+              //   },
+              //   child: Padding(
+              //       padding: EdgeInsets.only(left: 12.0),
+              //       child: ListTile(
+              //           title: Text(
+              //               'Academic General/Govt-7.5% - TFC - Allotment & Joining Stats'))),
+              // ),
+              // GestureDetector(
+              //   onTap: () {
+              //     Navigator.pushReplacement(
+              //       context,
+              //       MaterialPageRoute(builder: (context) => R2agcollsdata()),
+              //     );
+              //   },
+              //   child: Padding(
+              //       padding: EdgeInsets.only(left: 12.0),
+              //       child: ListTile(
+              //           title: Text(
+              //               'Academic General/Govt-7.5% - Colleges - Allotment & Joining Stats'))),
+              // ),
+            ],
+          ),
+          ExpansionTile(
+            // trailing: Icon(
+            //   Icons.keyboard_arrow_down,
+            //   color: Colors.indigo,
+            // ),
+            title: Padding(
+              padding: EdgeInsets.only(left: 10),
+              child: Text(
+                'Round 3',
+                style: TextStyle(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 17,
+                ),
+              ),
+            ),
+            children: <Widget>[
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => R3MyHomePage()),
+                  );
+                },
+                child: Padding(
+                  padding: EdgeInsets.only(left: 12.0),
+                  child: ListTile(title: Text('Allotments Stats')),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => R3allgeneral()),
+                  );
+                },
+                child: Padding(
+                  padding: EdgeInsets.only(left: 12.0),
+                  child: ListTile(title: Text('Category Wise Stats - College')),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => R3allgeneral_TFC()),
+                  );
+                },
+                child: Padding(
+                  padding: EdgeInsets.only(left: 12.0),
+                  child: ListTile(title: Text('Category Wise Stats - TFC')),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => R3agtfc()),
+                  );
+                },
+                child: Padding(
+                    padding: EdgeInsets.only(left: 12.0),
+                    child: ListTile(
+                        title: Text(
+                            'Academic General/Govt-7.5% - TFC - Allotment & Joining Stats'))),
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => R3agcollsdata()),
+                  );
+                },
+                child: Padding(
+                    padding: EdgeInsets.only(left: 12.0),
+                    child: ListTile(
+                        title: Text(
+                            'Academic General/Govt-7.5% - Colleges - Allotment & Joining Stats'))),
+              ),
+            ],
+          ),
           const ExpansionTile(
               title: Padding(
                 padding: EdgeInsets.only(left: 10),

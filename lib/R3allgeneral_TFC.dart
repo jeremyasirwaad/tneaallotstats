@@ -26,14 +26,14 @@ import './govtmain.dart';
 import './models/categorywise.dart';
 import './tablerowmodelallcar.dart';
 
-class R1allgeneral extends StatefulWidget {
-  const R1allgeneral({Key? key}) : super(key: key);
+class R3allgeneral_TFC extends StatefulWidget {
+  const R3allgeneral_TFC({Key? key}) : super(key: key);
 
   @override
-  State<R1allgeneral> createState() => _MyHomePageState();
+  State<R3allgeneral_TFC> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<R1allgeneral> {
+class _MyHomePageState extends State<R3allgeneral_TFC> {
   void calculatedata() {
     int anna_catg = 0;
     int annamalai_catg = 0;
@@ -92,43 +92,6 @@ class _MyHomePageState extends State<R1allgeneral> {
       }
     });
 
-    catvg.forEach((element1) {
-      if (element1.id == 2) {
-        anna_catg += element1.count;
-      }
-
-      if (element1.id == 1) {
-        annamalai_catg += element1.count;
-      }
-
-      if (element1.id == 3) {
-        centralgovt_catg += element1.count;
-      }
-
-      if (element1.id == 4) {
-        govt_aided_catg += element1.count;
-      }
-
-      if (element1.id == 5) {
-        govt_engg_catg += element1.count;
-      }
-
-      if (element1.id == 6) {
-        sf1_catg += element1.count;
-      }
-
-      if (element1.id == 7) {
-        sf2_catg += element1.count;
-      }
-
-      if (element1.id == 8) {
-        sf3_catg += element1.count;
-      }
-      if (element1.id == 9) {
-        univer_catg += element1.count;
-      }
-    });
-
     catagjoined.forEach((element1) {
       if (element1.id == 2) {
         anna_catg_joined = element1.joined;
@@ -163,43 +126,6 @@ class _MyHomePageState extends State<R1allgeneral> {
       }
       if (element1.id == 9) {
         univer_catg_joined = element1.joined;
-      }
-    });
-
-    catvgjoined.forEach((element1) {
-      if (element1.id == 2) {
-        anna_catg_joined += element1.joined;
-      }
-
-      if (element1.id == 1) {
-        annamalai_catg_joined += element1.joined;
-      }
-
-      if (element1.id == 3) {
-        centralgovt_catg_joined += element1.joined;
-      }
-
-      if (element1.id == 4) {
-        govt_aided_catg_joined += element1.joined;
-      }
-
-      if (element1.id == 5) {
-        govt_engg_catg_joined += element1.joined;
-      }
-
-      if (element1.id == 6) {
-        sf1_catg_joined += element1.joined;
-      }
-
-      if (element1.id == 7) {
-        sf2_catg_joined += element1.joined;
-      }
-
-      if (element1.id == 8) {
-        sf3_catg_joined += element1.joined;
-      }
-      if (element1.id == 9) {
-        univer_catg_joined += element1.joined;
       }
     });
 
@@ -287,43 +213,6 @@ class _MyHomePageState extends State<R1allgeneral> {
       }
     });
 
-    catvggovt.forEach((element1) {
-      if (element1.id == 2) {
-        anna_catg += element1.count;
-      }
-
-      if (element1.id == 1) {
-        annamalai_catg += element1.count;
-      }
-
-      if (element1.id == 3) {
-        centralgovt_catg += element1.count;
-      }
-
-      if (element1.id == 4) {
-        govt_aided_catg += element1.count;
-      }
-
-      if (element1.id == 5) {
-        govt_engg_catg += element1.count;
-      }
-
-      if (element1.id == 6) {
-        sf1_catg += element1.count;
-      }
-
-      if (element1.id == 7) {
-        sf2_catg += element1.count;
-      }
-
-      if (element1.id == 8) {
-        sf3_catg += element1.count;
-      }
-      if (element1.id == 9) {
-        univer_catg += element1.count;
-      }
-    });
-
     catagjoinedgovt.forEach((element1) {
       if (element1.id == 2) {
         anna_catg_joined = element1.joined;
@@ -361,43 +250,6 @@ class _MyHomePageState extends State<R1allgeneral> {
       }
     });
 
-    catvgjoinedgovt.forEach((element1) {
-      if (element1.id == 2) {
-        anna_catg_joined += element1.joined;
-      }
-
-      if (element1.id == 1) {
-        annamalai_catg_joined += element1.joined;
-      }
-
-      if (element1.id == 3) {
-        centralgovt_catg_joined += element1.joined;
-      }
-
-      if (element1.id == 4) {
-        govt_aided_catg_joined += element1.joined;
-      }
-
-      if (element1.id == 5) {
-        govt_engg_catg_joined += element1.joined;
-      }
-
-      if (element1.id == 6) {
-        sf1_catg_joined += element1.joined;
-      }
-
-      if (element1.id == 7) {
-        sf2_catg_joined += element1.joined;
-      }
-
-      if (element1.id == 8) {
-        sf3_catg_joined += element1.joined;
-      }
-      if (element1.id == 9) {
-        univer_catg_joined += element1.joined;
-      }
-    });
-
     setState(() {
       ganna_catg = anna_catg;
       gannamalai_catg = annamalai_catg;
@@ -419,19 +271,17 @@ class _MyHomePageState extends State<R1allgeneral> {
       gsf3_catg_joined = sf3_catg_joined;
       guniver_catg_joined = univer_catg_joined;
     });
-    print(ganna_catg);
-    print(ganna_catg_joined);
   }
 
   List<Cat> catag = [];
   List<Catsjoined> catagjoined = [];
-  List<Cat> catvg = [];
-  List<Catsjoined> catvgjoined = [];
+  // List<Cat> catvg = [];
+  // List<Catsjoined> catvgjoined = [];
 
   List<Cat> cataggovt = [];
   List<Catsjoined> catagjoinedgovt = [];
-  List<Cat> catvggovt = [];
-  List<Catsjoined> catvgjoinedgovt = [];
+  // List<Cat> catvggovt = [];
+  // List<Catsjoined> catvgjoinedgovt = [];
 
   int ranna_catg = -1;
   int rannamalai_catg = -1;
@@ -475,7 +325,7 @@ class _MyHomePageState extends State<R1allgeneral> {
 
   Future<dynamic> fetchAlbum() async {
     final response = await http.get(
-        Uri.parse('http://65.2.37.93/api/api/master/stmode/88888'),
+        Uri.parse('http://65.2.37.93/api/api/master/r3stmode/88888'),
         headers: {
           'x-auth-token':
               'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzI0NjA0MCwiZXhwIjoxODQzMjQ2MDQwfQ.1ZqffhkkKmm8yvOtQQ2ol-r3jr5pjwojiAFzbiuFLRo'
@@ -485,10 +335,10 @@ class _MyHomePageState extends State<R1allgeneral> {
       var datadart = Categorywise.fromRawJson(response.body);
 
       setState(() {
-        catag = datadart.catagcols as List<Cat>;
-        catvg = datadart.catvgcols as List<Cat>;
-        catagjoined = datadart.catagcolsjoined as List<Catsjoined>;
-        catvgjoined = datadart.catvgcolsjoined as List<Catsjoined>;
+        catag = datadart.catagtfcs as List<Cat>;
+        // catvg = datadart.catvgtfcs as List<Cat>;
+        catagjoined = datadart.catagtfcsjoined as List<Catsjoined>;
+        // catvgjoined = datadart.catvgtfcsjoined as List<Catsjoined>;
       });
 
       calculatedata();
@@ -502,7 +352,7 @@ class _MyHomePageState extends State<R1allgeneral> {
 
   Future<dynamic> fetchAlbumgovt() async {
     final response = await http.get(
-        Uri.parse('http://3.110.226.121/api/api/master/stmode/88888'),
+        Uri.parse('http://3.110.226.121/api/api/master/r3stmode/88888'),
         headers: {
           'x-auth-token':
               'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzI0NjA0MCwiZXhwIjoxODQzMjQ2MDQwfQ.1ZqffhkkKmm8yvOtQQ2ol-r3jr5pjwojiAFzbiuFLRo'
@@ -512,10 +362,10 @@ class _MyHomePageState extends State<R1allgeneral> {
       var datadart = Categorywise.fromRawJson(response.body);
 
       setState(() {
-        cataggovt = datadart.catagcols as List<Cat>;
-        catvggovt = datadart.catvgcols as List<Cat>;
-        catagjoinedgovt = datadart.catagcolsjoined as List<Catsjoined>;
-        catvgjoinedgovt = datadart.catvgcolsjoined as List<Catsjoined>;
+        cataggovt = datadart.catagtfcs as List<Cat>;
+        // catvggovt = datadart.catvgtfcs as List<Cat>;
+        catagjoinedgovt = datadart.catagtfcsjoined as List<Catsjoined>;
+        // catvgjoinedgovt = datadart.catvgtfcsjoined as List<Catsjoined>;
       });
 
       // print(response.body);
@@ -554,7 +404,7 @@ class _MyHomePageState extends State<R1allgeneral> {
   Widget build(BuildContext context) {
     AppBar appBar = AppBar(
       title: Text(
-        "Category Wise Stats - College",
+        "Round 3 - Category Wise - TFC",
         style: TextStyle(fontSize: 18),
       ),
       centerTitle: true,
@@ -579,6 +429,7 @@ class _MyHomePageState extends State<R1allgeneral> {
                 child: Center(
                     child: Text(
                   "Category",
+                  textAlign: TextAlign.center,
                   style: TextStyle(fontWeight: FontWeight.w500, fontSize: 14),
                 ))),
             Expanded(
@@ -586,31 +437,31 @@ class _MyHomePageState extends State<R1allgeneral> {
               padding: const EdgeInsets.all(8.0),
               child: Center(
                   child: Text(
-                "General Alloted",
+                "Opted for upward (general)",
                 textAlign: TextAlign.center,
-                style: TextStyle(fontWeight: FontWeight.w500, fontSize: 12),
+                style: TextStyle(fontWeight: FontWeight.w500, fontSize: 10),
               )),
             )),
             Expanded(
                 child: Center(
                     child: Text(
-              "General Admitted",
+              "Upward joined at TFC (General)",
               textAlign: TextAlign.center,
-              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 12),
+              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 10),
             ))),
             Expanded(
                 child: Center(
                     child: Text(
-              "Govt Alloted",
+              "Opted for upward   (Govt 7.5%)",
               textAlign: TextAlign.center,
-              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 12),
+              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 10),
             ))),
             Expanded(
                 child: Center(
                     child: Text(
-              "Govt Admitted",
+              "Upward joined at TFC  (Govt 7.5%)",
               textAlign: TextAlign.center,
-              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 12),
+              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 10),
             )))
           ]),
           tablerowmodelallcat("Anna Univ dept Colleges", ranna_catg,
@@ -719,7 +570,7 @@ void onSelected(BuildContext context, int item) {
   switch (item) {
     case 0:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R1allgeneral()),
+        MaterialPageRoute(builder: (context) => R3allgeneral_TFC()),
       );
       break;
     case 1:

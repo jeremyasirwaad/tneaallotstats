@@ -23,14 +23,16 @@ import './R1agtfc.dart';
 import './Cusdrawer2.dart';
 import './R1govtagcolldata.dart';
 import './models/R1summarycollegewise.dart';
+import './R2summaryclg_wise.dart';
+import './R2summaryclg_wisegovt.dart';
 
-class R1summaryclg_wise extends StatefulWidget {
-  R1summaryclg_wise({Key? key}) : super(key: key);
+class R2summaryclg_wise extends StatefulWidget {
+  R2summaryclg_wise({Key? key}) : super(key: key);
   @override
-  State<R1summaryclg_wise> createState() => _R1summaryclg_wiseState();
+  State<R2summaryclg_wise> createState() => _R2summaryclg_wiseState();
 }
 
-class _R1summaryclg_wiseState extends State<R1summaryclg_wise> {
+class _R2summaryclg_wiseState extends State<R2summaryclg_wise> {
   List<Agaandj> agaandj = [];
   List<Agaandjjoined> agaandjoined = [];
   List<Agupward> agupward = [];
@@ -47,7 +49,7 @@ class _R1summaryclg_wiseState extends State<R1summaryclg_wise> {
 
   Future<dynamic> fetchAlbum() async {
     final response = await http.get(
-        Uri.parse('http://65.2.37.93/api/api/master/stboard2/88888'),
+        Uri.parse('http://65.2.37.93/api/api/master/r2stboard2/88888'),
         headers: {
           'x-auth-token':
               'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzI0NjA0MCwiZXhwIjoxODQzMjQ2MDQwfQ.1ZqffhkkKmm8yvOtQQ2ol-r3jr5pjwojiAFzbiuFLRo'
@@ -108,7 +110,7 @@ class _R1summaryclg_wiseState extends State<R1summaryclg_wise> {
   Widget build(BuildContext context) {
     AppBar appBar = AppBar(
       title: Text(
-        "College Wise - General - Round 1",
+        "College Wise - General - Round 2",
         style: TextStyle(fontSize: 16),
       ),
       centerTitle: true,
@@ -491,12 +493,12 @@ void onSelected(BuildContext context, int item) {
   switch (item) {
     case 0:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R1summaryclg_wise()),
+        MaterialPageRoute(builder: (context) => R2summaryclg_wise()),
       );
       break;
     case 1:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R1summaryclg_wisegovt()),
+        MaterialPageRoute(builder: (context) => R2summaryclg_wisegovt()),
       );
       break;
   }

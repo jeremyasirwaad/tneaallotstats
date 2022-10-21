@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:tneadash2/R1govtvgtfc.dart';
+import 'package:tneadash2/R1govtagtfc.dart';
+import 'package:tneadash2/R2govtagtfc.dart';
 import './Cusdrawer2.dart';
 import './tablerowmodel.dart';
 import 'dart:convert';
 import 'dart:ui';
-import 'package:flutter/services.dart';
 import './models/R1allstats.dart';
-import './models/TFCdata.dart';
-
+import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 // import 'package:tneadash/jsondartmodel/cvreportmodel.dart';
@@ -18,26 +17,27 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:http/http.dart' as http;
 import 'package:carousel_slider/carousel_slider.dart';
 import './models/allotstats.dart';
-// import './R1vgtfc.dart';
+import './models/TFCdata.dart';
+import './R1agtfc.dart';
 import './Cusdrawer2.dart';
+import './R3govtagtfc.dart';
 
-class R1vgtfc extends StatefulWidget {
-  R1vgtfc({Key? key}) : super(key: key);
+class R3agtfc extends StatefulWidget {
+  R3agtfc({Key? key}) : super(key: key);
   @override
-  State<R1vgtfc> createState() => _R1vgtfcState();
+  State<R3agtfc> createState() => _R3agtfcState();
 }
 
-class _R1vgtfcState extends State<R1vgtfc> {
+class _R3agtfcState extends State<R3agtfc> {
   List<Agcol> R1TFC = [];
-  List<Agcol> R1FTCori = [];
-
   List<Sjoined> R1TFCjoined = [];
   bool isloading = true;
   List<Tfcdata> Tfclist = [];
+  List<Agcol> R1FTCori = [];
 
   Future<dynamic> fetchAlbum() async {
     final response = await http.get(
-        Uri.parse('http://65.2.37.93/api/api/master/stboard/88888'),
+        Uri.parse('http://65.2.37.93/api/api/master/r3stboard/88888'),
         headers: {
           'x-auth-token':
               'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzI0NjA0MCwiZXhwIjoxODQzMjQ2MDQwfQ.1ZqffhkkKmm8yvOtQQ2ol-r3jr5pjwojiAFzbiuFLRo'
@@ -53,9 +53,9 @@ class _R1vgtfcState extends State<R1vgtfc> {
       setState(() {
         R1FTCori = datadart.agtfcs as List<Agcol>;
         R1FTCori.sort(((a, b) => b.count.compareTo(a.count)));
-        R1TFC = datadart.vgtfcs as List<Agcol>;
+        R1TFC = datadart.agtfcs as List<Agcol>;
         R1TFC.sort(((a, b) => b.count.compareTo(a.count)));
-        R1TFCjoined = datadart.vgtfcsjoined as List<Sjoined>;
+        R1TFCjoined = datadart.agtfcsjoined as List<Sjoined>;
         isloading = false;
       });
     } else {
@@ -98,7 +98,7 @@ class _R1vgtfcState extends State<R1vgtfc> {
   Widget build(BuildContext context) {
     AppBar appBar = AppBar(
       title: Text(
-        "Voc Gen TFC stats - Round 1",
+        "Acad Gen TFC stats - Round 3",
         style: TextStyle(fontSize: 16),
       ),
       centerTitle: true,
@@ -270,7 +270,6 @@ String getjoinednumber(String id, List<Sjoined> R1FTCjoined) {
   var int = R1FTCjoined.firstWhere((element) => element.id == id,
       orElse: () => Sjoined(id: id, joined: 0)).joined;
   // print(int);
-
   return int.toString();
 }
 
@@ -280,8 +279,7 @@ String getTfcnumber(String id, List<Tfcdata> Tfcdatain) {
   var Tfcname = Tfcdatain.firstWhere(
       (element) => element.tfccode.toString() == id,
       orElse: () => Tfcdata()).tfcname;
-  return Tfcname.toString() + " ( TFC code -  " + id + " ) ";
-  ;
+  return Tfcname.toString() + " ( TFC code - " + id + " ) ";
 }
 
 showAlertDialog(BuildContext context) {
@@ -317,12 +315,12 @@ void onSelected(BuildContext context, int item) {
   switch (item) {
     case 0:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R1vgtfc()),
+        MaterialPageRoute(builder: (context) => R3agtfc()),
       );
       break;
     case 1:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R1govtvgtfc()),
+        MaterialPageRoute(builder: (context) => R3govtagtfc()),
       );
       break;
   }
