@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:ui';
+import './const.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -40,12 +41,8 @@ class _R3MyHomePageState extends State<R3MyHomePage> {
   var vgadmitcols = -1;
   var vgadmitftcs = -1;
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(
-        Uri.parse('http://65.2.37.93/api/api/master/r3stcount/88888'),
-        headers: {
-          'x-auth-token':
-              'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzI0NjA0MCwiZXhwIjoxODQzMjQ2MDQwfQ.1ZqffhkkKmm8yvOtQQ2ol-r3jr5pjwojiAFzbiuFLRo'
-        });
+    final response = await http.get(Uri.parse('${ip}r3stcount/88888'),
+        headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       var data = jsonDecode(response.body);
@@ -112,16 +109,22 @@ class _R3MyHomePageState extends State<R3MyHomePage> {
             textTheme: TextTheme().apply(bodyColor: Colors.white),
           ),
           child: PopupMenuButton<int>(
-            color: Colors.indigo,
+            color: Colors.white,
             onSelected: (item) => onSelected(context, item),
             itemBuilder: (context) => [
               PopupMenuItem<int>(
                 value: 0,
-                child: Text('General'),
+                child: Text(
+                  'General',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
               PopupMenuItem<int>(
                 value: 1,
-                child: Text('Govt 7.5%'),
+                child: Text(
+                  'Govt 7.5%',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
             ],
           ),

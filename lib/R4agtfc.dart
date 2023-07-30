@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:tneadash2/R1govtagtfc.dart';
+import 'package:tneadash2/R2govtagtfc.dart';
 import './Cusdrawer2.dart';
 import './tablerowmodel.dart';
+import './const.dart';
 import 'dart:convert';
 import 'dart:ui';
 import './models/R1allstats.dart';
@@ -19,15 +21,15 @@ import './models/allotstats.dart';
 import './models/TFCdata.dart';
 import './R1agtfc.dart';
 import './Cusdrawer2.dart';
-import './const.dart';
+import './R4govtagtfc.dart';
 
-class R1agtfc extends StatefulWidget {
-  R1agtfc({Key? key}) : super(key: key);
+class R4agtfc extends StatefulWidget {
+  R4agtfc({Key? key}) : super(key: key);
   @override
-  State<R1agtfc> createState() => _R1agtfcState();
+  State<R4agtfc> createState() => _R3agtfcState();
 }
 
-class _R1agtfcState extends State<R1agtfc> {
+class _R3agtfcState extends State<R4agtfc> {
   List<Agcol> R1TFC = [];
   List<Sjoined> R1TFCjoined = [];
   bool isloading = true;
@@ -35,8 +37,8 @@ class _R1agtfcState extends State<R1agtfc> {
   List<Agcol> R1FTCori = [];
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http
-        .get(Uri.parse('${ip}stboard/88888'), headers: {'x-auth-token': token});
+    final response = await http.get(Uri.parse('${ip}r4stboard/88888'),
+        headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       // var data = jsonDecode(response.body);
@@ -47,7 +49,9 @@ class _R1agtfcState extends State<R1agtfc> {
 
       setState(() {
         R1FTCori = datadart.agtfcs as List<Agcol>;
+        R1FTCori.sort(((a, b) => b.count.compareTo(a.count)));
         R1TFC = datadart.agtfcs as List<Agcol>;
+        R1TFC.sort(((a, b) => b.count.compareTo(a.count)));
         R1TFCjoined = datadart.agtfcsjoined as List<Sjoined>;
         isloading = false;
       });
@@ -91,7 +95,7 @@ class _R1agtfcState extends State<R1agtfc> {
   Widget build(BuildContext context) {
     AppBar appBar = AppBar(
       title: Text(
-        "Acad Gen TFC stats - Round 1",
+        "Acad Gen TFC stats - Round 4",
         style: TextStyle(fontSize: 16),
       ),
       centerTitle: true,
@@ -314,12 +318,12 @@ void onSelected(BuildContext context, int item) {
   switch (item) {
     case 0:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R1agtfc()),
+        MaterialPageRoute(builder: (context) => R4agtfc()),
       );
       break;
     case 1:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R1govtagtfc()),
+        MaterialPageRoute(builder: (context) => R4govtagtfc()),
       );
       break;
   }

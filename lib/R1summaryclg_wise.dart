@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tneadash2/R1summaryclg_wisegovt.dart';
+import 'package:tneadash2/const.dart';
 import 'package:tneadash2/tablerowmodelsummaryclg_wise.dart';
 import './Cusdrawer2.dart';
 import './tablerowmodel.dart';
@@ -46,12 +47,8 @@ class _R1summaryclg_wiseState extends State<R1summaryclg_wise> {
   List<Tfcdata> Tfclistorigi = [];
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(
-        Uri.parse('http://65.2.37.93/api/api/master/stboard2/88888'),
-        headers: {
-          'x-auth-token':
-              'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzI0NjA0MCwiZXhwIjoxODQzMjQ2MDQwfQ.1ZqffhkkKmm8yvOtQQ2ol-r3jr5pjwojiAFzbiuFLRo'
-        });
+    final response = await http.get(Uri.parse('${ip}stboard2/88888'),
+        headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       var data = jsonDecode(response.body);
@@ -120,16 +117,22 @@ class _R1summaryclg_wiseState extends State<R1summaryclg_wise> {
             textTheme: TextTheme().apply(bodyColor: Colors.white),
           ),
           child: PopupMenuButton<int>(
-            color: Colors.indigo,
+            color: Colors.white,
             onSelected: (item) => onSelected(context, item),
             itemBuilder: (context) => [
               PopupMenuItem<int>(
                 value: 0,
-                child: Text('General'),
+                child: Text(
+                  'General',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
               PopupMenuItem<int>(
                 value: 1,
-                child: Text('Govt 7.5%'),
+                child: Text(
+                  'Govt 7.5%',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
             ],
           ),
@@ -377,7 +380,7 @@ class _R1summaryclg_wiseState extends State<R1summaryclg_wise> {
                                       agupwardjoined),
                                   gettotalallotment(
                                       Tfclist[index].tfccode as int,
-                                      agaandj,
+                                      agaandjoined,
                                       agupward),
                                   gettotaljoined(Tfclist[index].tfccode as int,
                                       agaandjoined, agupwardjoined))),
@@ -443,8 +446,8 @@ int getproviallotgiveninup2(int clgcode, List<Agupwardjoined> agupwardjoined) {
 }
 
 int gettotalallotment(
-    int clgcode, List<Agaandj> agaandj, List<Agupward> agupward) {
-  int data1 = getproviallotgiven(clgcode, agaandj);
+    int clgcode, List<Agaandjjoined> agaandjoined, List<Agupward> agupward) {
+  int data1 = getproviallotjoined(clgcode, agaandjoined);
   int data2 = getproviallotgiveninup(clgcode, agupward);
 
   return data1 + data2;

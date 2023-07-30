@@ -15,7 +15,7 @@ import './R1agtfc.dart';
 import './Cusdrawer2.dart';
 import './govtmain.dart';
 import './Homepage.dart';
-
+import './const.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -39,12 +39,8 @@ class _MyHomePageState extends State<MyHomePage> {
   var vgadmitcols = -1;
   var vgadmitftcs = -1;
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(
-        Uri.parse('http://65.2.37.93/api/api/master/stcount/88888'),
-        headers: {
-          'x-auth-token':
-              'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzI0NjA0MCwiZXhwIjoxODQzMjQ2MDQwfQ.1ZqffhkkKmm8yvOtQQ2ol-r3jr5pjwojiAFzbiuFLRo'
-        });
+    final response = await http
+        .get(Uri.parse('${ip}stcount/88888'), headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       var data = jsonDecode(response.body);
@@ -54,17 +50,15 @@ class _MyHomePageState extends State<MyHomePage> {
 
       setState(() {
         agtotalcand = datadart.agtotalcand![0].agtotalcand as int;
+        vgtotalcand = datadart.vgtotalcand![0].vgtotalcand as int;
         agtotalallocs = datadart.agtotalallots![0].agtotalallots as int;
         agtotalcols = datadart.agtotalcols![0].agtotalcols as int;
         agtotalfts = datadart.agtotaltfcs![0].agtotaltfcs as int;
-        vgtotalcand = datadart.vgtotalcand![0].vgtotalcand as int;
         vgtotalallocs = datadart.vgtotalallots![0].vgtotalallots as int;
         vgtotalcols = datadart.vgtotalcols![0].vgtotalcols as int;
         vgtotalftcs = datadart.vgtotaltfcs![0].vgtotaltfcs as int;
-
         agadmitcols = datadart.agadmitcols![0].agadmitcols as int;
         agadmitftcs = datadart.agadmittfcs![0].agadmittfcs as int;
-
         vgadmitcols = datadart.vgadmitcols![0].vgadmitcols as int;
         vgadmitftcs = datadart.vgadmittfcs![0].vgadmittfcs as int;
       });
@@ -94,21 +88,28 @@ class _MyHomePageState extends State<MyHomePage> {
       actions: [
         Theme(
           data: Theme.of(context).copyWith(
-            dividerColor: Colors.white,
-            iconTheme: IconThemeData(color: Colors.white),
-            textTheme: TextTheme().apply(bodyColor: Colors.white),
+            // dividerColor: Colors.white,
+            iconTheme: IconThemeData(color: Color.fromARGB(255, 30, 51, 211)),
+            textTheme:
+                TextTheme().apply(bodyColor: Color.fromARGB(255, 81, 8, 8)),
           ),
           child: PopupMenuButton<int>(
-            color: Colors.indigo,
+            color: Colors.white,
             onSelected: (item) => onSelected(context, item),
             itemBuilder: (context) => [
               PopupMenuItem<int>(
                 value: 0,
-                child: Text('General'),
+                child: Text(
+                  'General',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
               PopupMenuItem<int>(
                 value: 1,
-                child: Text('Govt 7.5%'),
+                child: Text(
+                  'Govt 7.5%',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
             ],
           ),

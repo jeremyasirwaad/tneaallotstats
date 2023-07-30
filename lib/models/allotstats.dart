@@ -29,75 +29,112 @@ class allotstats {
   allotstats.fromJson(Map<String, dynamic> json) {
     if (json['agtotalcand'] != null) {
       agtotalcand = <Agtotalcand>[];
-      json['agtotalcand'].forEach((v) {
-        agtotalcand!.add(new Agtotalcand.fromJson(v));
-      });
+      if (json['agtotalcand'] == []) {
+        agtotalcand!.add(Agtotalcand(agtotalcand: 0));
+      } else {
+        json['agtotalcand'].forEach((v) {
+          agtotalcand!.add(new Agtotalcand.fromJson(v));
+        });
+      }
     }
     if (json['agtotalallots'] != null) {
       agtotalallots = <Agtotalallots>[];
       json['agtotalallots'].forEach((v) {
         agtotalallots!.add(new Agtotalallots.fromJson(v));
       });
+      if (agtotalallots!.isEmpty) {
+        agtotalallots!.add(Agtotalallots(agtotalallots: 0));
+      }
     }
     if (json['agtotalcols'] != null) {
       agtotalcols = <Agtotalcols>[];
       json['agtotalcols'].forEach((v) {
         agtotalcols!.add(new Agtotalcols.fromJson(v));
       });
+      if (agtotalcols!.isEmpty) {
+        agtotalcols!.add(Agtotalcols(agtotalcols: 0));
+      }
     }
     if (json['agtotaltfcs'] != null) {
       agtotaltfcs = <Agtotaltfcs>[];
       json['agtotaltfcs'].forEach((v) {
         agtotaltfcs!.add(new Agtotaltfcs.fromJson(v));
       });
+      if (agtotaltfcs!.isEmpty) {
+        agtotaltfcs!.add(Agtotaltfcs(agtotaltfcs: 0));
+      }
     }
     if (json['vgtotalcand'] != null) {
       vgtotalcand = <Vgtotalcand>[];
       json['vgtotalcand'].forEach((v) {
         vgtotalcand!.add(new Vgtotalcand.fromJson(v));
       });
+      if (vgtotalcand!.isEmpty) {
+        vgtotalcand!.add(Vgtotalcand(vgtotalcand: 0));
+      }
     }
     if (json['vgtotalallots'] != null) {
       vgtotalallots = <Vgtotalallots>[];
       json['vgtotalallots'].forEach((v) {
         vgtotalallots!.add(new Vgtotalallots.fromJson(v));
       });
+      if (vgtotalallots!.isEmpty) {
+        vgtotalallots!.add(Vgtotalallots(vgtotalallots: 0));
+      }
     }
     if (json['vgtotalcols'] != null) {
       vgtotalcols = <Vgtotalcols>[];
       json['vgtotalcols'].forEach((v) {
         vgtotalcols!.add(new Vgtotalcols.fromJson(v));
       });
+      if (vgtotalcols!.isEmpty) {
+        vgtotalcols!.add(Vgtotalcols(vgtotalcols: 0));
+      }
     }
     if (json['vgtotaltfcs'] != null) {
       vgtotaltfcs = <Vgtotaltfcs>[];
       json['vgtotaltfcs'].forEach((v) {
         vgtotaltfcs!.add(new Vgtotaltfcs.fromJson(v));
       });
+      if (vgtotaltfcs!.isEmpty) {
+        vgtotaltfcs!.add(Vgtotaltfcs(vgtotaltfcs: 0));
+      }
     }
     if (json['agadmitcols'] != null) {
       agadmitcols = <Agadmitcols>[];
       json['agadmitcols'].forEach((v) {
         agadmitcols!.add(new Agadmitcols.fromJson(v));
       });
+      if (agadmitcols!.isEmpty) {
+        agadmitcols!.add(Agadmitcols(agadmitcols: 0));
+      }
     }
     if (json['agadmittfcs'] != null) {
       agadmittfcs = <Agadmittfcs>[];
       json['agadmittfcs'].forEach((v) {
         agadmittfcs!.add(new Agadmittfcs.fromJson(v));
       });
+      if (agadmittfcs!.isEmpty) {
+        agadmittfcs!.add(Agadmittfcs(agadmittfcs: 0));
+      }
     }
     if (json['vgadmitcols'] != null) {
       vgadmitcols = <Vgadmitcols>[];
       json['vgadmitcols'].forEach((v) {
         vgadmitcols!.add(new Vgadmitcols.fromJson(v));
       });
+      if (vgadmitcols!.isEmpty) {
+        vgadmitcols!.add(Vgadmitcols(vgadmitcols: 0));
+      }
     }
     if (json['vgadmittfcs'] != null) {
       vgadmittfcs = <Vgadmittfcs>[];
       json['vgadmittfcs'].forEach((v) {
         vgadmittfcs!.add(new Vgadmittfcs.fromJson(v));
       });
+      if (vgadmittfcs!.isEmpty) {
+        vgadmittfcs!.add(Vgadmittfcs(vgadmittfcs: 0));
+      }
     }
   }
 

@@ -4,10 +4,10 @@ import 'package:tneadash2/R1summaryclg_wisegovt.dart';
 import 'package:tneadash2/tablerowmodelsummaryclg_wise.dart';
 import './Cusdrawer2.dart';
 import './tablerowmodel.dart';
-import './const.dart';
-
 import 'dart:convert';
 import 'dart:ui';
+import './const.dart';
+
 import './models/R1allstats.dart';
 import './models/TFCdata.dart';
 import 'package:flutter/services.dart';
@@ -22,15 +22,15 @@ import './R1agtfc.dart';
 import './Cusdrawer2.dart';
 import './R1govtagcolldata.dart';
 import './models/R1summarycategorywise.dart';
-import './R2summarycategory_wisegovt.dart';
+import './R3summarycategory_wisegovt.dart';
 
-class R2summarycate_wise extends StatefulWidget {
-  R2summarycate_wise({Key? key}) : super(key: key);
+class R3summarycate_wise extends StatefulWidget {
+  R3summarycate_wise({Key? key}) : super(key: key);
   @override
-  State<R2summarycate_wise> createState() => _R2summarycategory_wiseState();
+  State<R3summarycate_wise> createState() => _R2summarycategory_wiseState();
 }
 
-class _R2summarycategory_wiseState extends State<R2summarycate_wise> {
+class _R2summarycategory_wiseState extends State<R3summarycate_wise> {
   List<Agaandj> agaandj = [];
   List<Agaandjjoined> agaandjoined = [];
   List<Agupward> agupward = [];
@@ -270,7 +270,7 @@ class _R2summarycategory_wiseState extends State<R2summarycate_wise> {
   }
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(Uri.parse('${ip}r2stmode2/88888'),
+    final response = await http.get(Uri.parse('${ip}r3stmode2/88888'),
         headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
@@ -328,7 +328,7 @@ class _R2summarycategory_wiseState extends State<R2summarycate_wise> {
   Widget build(BuildContext context) {
     AppBar appBar = AppBar(
       title: Text(
-        "Category Wise - General - Round 2",
+        "Category Wise - General - Round 3",
         style: TextStyle(fontSize: 16),
       ),
       centerTitle: true,
@@ -679,12 +679,12 @@ void onSelected(BuildContext context, int item) {
   switch (item) {
     case 0:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R2summarycate_wise()),
+        MaterialPageRoute(builder: (context) => R3summarycate_wise()),
       );
       break;
     case 1:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R2summarycategovt_wise()),
+        MaterialPageRoute(builder: (context) => R3summarycategovt_wise()),
       );
       break;
   }

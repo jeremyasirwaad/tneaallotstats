@@ -3,9 +3,9 @@ import 'package:tneadash2/R1summaryclg_wisegovt.dart';
 import 'package:tneadash2/tablerowmodelsummaryclg_wise.dart';
 import './Cusdrawer2.dart';
 import './tablerowmodel.dart';
+import 'dart:convert';
 import './const.dart';
 
-import 'dart:convert';
 import 'dart:ui';
 import './models/R1allstats.dart';
 import './models/TFCdata.dart';
@@ -26,15 +26,15 @@ import './Cusdrawer2.dart';
 import './R1govtagcolldata.dart';
 import './models/R1summarycollegewise.dart';
 import './R2summaryclg_wise.dart';
-import './R2summaryclg_wisegovt.dart';
+import './R3summaryclg_wisegovt.dart';
 
-class R2summaryclg_wise extends StatefulWidget {
-  R2summaryclg_wise({Key? key}) : super(key: key);
+class R3summaryclg_wise extends StatefulWidget {
+  R3summaryclg_wise({Key? key}) : super(key: key);
   @override
-  State<R2summaryclg_wise> createState() => _R2summaryclg_wiseState();
+  State<R3summaryclg_wise> createState() => _R2summaryclg_wiseState();
 }
 
-class _R2summaryclg_wiseState extends State<R2summaryclg_wise> {
+class _R2summaryclg_wiseState extends State<R3summaryclg_wise> {
   List<Agaandj> agaandj = [];
   List<Agaandjjoined> agaandjoined = [];
   List<Agupward> agupward = [];
@@ -50,7 +50,7 @@ class _R2summaryclg_wiseState extends State<R2summaryclg_wise> {
   List<Tfcdata> Tfclistorigi = [];
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(Uri.parse('${ip}r2stboard2/88888'),
+    final response = await http.get(Uri.parse('${ip}r3stboard2/88888'),
         headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
@@ -108,7 +108,7 @@ class _R2summaryclg_wiseState extends State<R2summaryclg_wise> {
   Widget build(BuildContext context) {
     AppBar appBar = AppBar(
       title: Text(
-        "College Wise - General - Round 2",
+        "College Wise - General - Round 3",
         style: TextStyle(fontSize: 16),
       ),
       centerTitle: true,
@@ -497,12 +497,12 @@ void onSelected(BuildContext context, int item) {
   switch (item) {
     case 0:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R2summaryclg_wise()),
+        MaterialPageRoute(builder: (context) => R3summaryclg_wise()),
       );
       break;
     case 1:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R2summaryclg_wisegovt()),
+        MaterialPageRoute(builder: (context) => R3summaryclg_wisegovt()),
       );
       break;
   }

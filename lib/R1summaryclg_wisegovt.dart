@@ -7,7 +7,7 @@ import 'dart:ui';
 import './models/R1allstats.dart';
 import './models/TFCdata.dart';
 import 'package:flutter/services.dart';
-
+import './const.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 // import 'package:tneadash/jsondartmodel/cvreportmodel.dart';
@@ -46,12 +46,8 @@ class _R1summaryclg_wiseStategovt extends State<R1summaryclg_wisegovt> {
   List<Tfcdata> Tfclistorigi = [];
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(
-        Uri.parse('http://3.110.226.121/api/api/master/stboard2/88888'),
-        headers: {
-          'x-auth-token':
-              'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzI0NjA0MCwiZXhwIjoxODQzMjQ2MDQwfQ.1ZqffhkkKmm8yvOtQQ2ol-r3jr5pjwojiAFzbiuFLRo'
-        });
+    final response = await http.get(Uri.parse('${gip}stboard2/88888'),
+        headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       var data = jsonDecode(response.body);
@@ -129,16 +125,22 @@ class _R1summaryclg_wiseStategovt extends State<R1summaryclg_wisegovt> {
             textTheme: TextTheme().apply(bodyColor: Colors.white),
           ),
           child: PopupMenuButton<int>(
-            color: Colors.indigo,
+            color: Colors.white,
             onSelected: (item) => onSelected(context, item),
             itemBuilder: (context) => [
               PopupMenuItem<int>(
                 value: 0,
-                child: Text('General'),
+                child: Text(
+                  'General',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
               PopupMenuItem<int>(
                 value: 1,
-                child: Text('Govt 7.5%'),
+                child: Text(
+                  'Govt 7.5%',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
             ],
           ),
@@ -357,19 +359,22 @@ class _R1summaryclg_wiseStategovt extends State<R1summaryclg_wisegovt> {
                           )),
                         ]),
                     ...List.generate(
-                        Tfclist.length,
-                        (index) => tablerowmodelsummaryclg_wise(
-                            Tfclist[index].tfcname,
-                            getproviallotgiven(
-                                Tfclist[index].tfccode as int, agaandj),
-                            getproviallotjoined(
-                                Tfclist[index].tfccode as int, agaandjoined),
-                            getproviallotgiveninup(
-                                Tfclist[index].tfccode as int, agupward),
-                            getproviallotgiveninup2(
-                                Tfclist[index].tfccode as int, agupwardjoined),
-                            100,
-                            100)),
+                      Tfclist.length,
+                      (index) => tablerowmodelsummaryclg_wise(
+                          Tfclist[index].tfcname,
+                          getproviallotgiven(
+                              Tfclist[index].tfccode as int, agaandj),
+                          getproviallotjoined(
+                              Tfclist[index].tfccode as int, agaandjoined),
+                          getproviallotgiveninup(
+                              Tfclist[index].tfccode as int, agupward),
+                          getproviallotgiveninup2(
+                              Tfclist[index].tfccode as int, agupwardjoined),
+                          gettotalallotment(Tfclist[index].tfccode as int,
+                              agaandjoined, agupward),
+                          gettotaljoined(Tfclist[index].tfccode as int,
+                              agaandjoined, agupwardjoined)),
+                    ),
                     Tfclist.isEmpty
                         ? Container(
                             child: Text(

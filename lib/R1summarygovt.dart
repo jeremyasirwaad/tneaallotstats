@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:ui';
-
+import './const.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 // import 'package:tneadash/jsondartmodel/cvreportmodel.dart';
@@ -35,12 +35,8 @@ class _R1summarypagegovt extends State<R1Summarygovt> {
   var vgtotalcols = -1;
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(
-        Uri.parse('http://3.110.226.121/api/api/master/stcount2/88888'),
-        headers: {
-          'x-auth-token':
-              'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzI0NjA0MCwiZXhwIjoxODQzMjQ2MDQwfQ.1ZqffhkkKmm8yvOtQQ2ol-r3jr5pjwojiAFzbiuFLRo'
-        });
+    final response = await http.get(Uri.parse('${gip}stcount2/88888'),
+        headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       var data = jsonDecode(response.body);
@@ -87,16 +83,22 @@ class _R1summarypagegovt extends State<R1Summarygovt> {
             textTheme: TextTheme().apply(bodyColor: Colors.white),
           ),
           child: PopupMenuButton<int>(
-            color: Colors.indigo,
+            color: Colors.white,
             onSelected: (item) => onSelected(context, item),
             itemBuilder: (context) => [
               PopupMenuItem<int>(
                 value: 0,
-                child: Text('General'),
+                child: Text(
+                  'General',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
               PopupMenuItem<int>(
                 value: 1,
-                child: Text('Govt 7.5%'),
+                child: Text(
+                  'Govt 7.5%',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
             ],
           ),

@@ -3,6 +3,8 @@ import 'package:tneadash2/R2govtagcolldata.dart';
 import './Cusdrawer2.dart';
 import './tablerowmodel.dart';
 import 'dart:convert';
+import './const.dart';
+
 import 'dart:ui';
 import './models/R1allstats.dart';
 import './models/TFCdata.dart';
@@ -37,12 +39,8 @@ class _R3agcollsdataState extends State<R3agcollsdata> {
   List<Tfcdata> Tfclist = [];
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(
-        Uri.parse('http://65.2.37.93/api/api/master/r3stboard/88888'),
-        headers: {
-          'x-auth-token':
-              'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzI0NjA0MCwiZXhwIjoxODQzMjQ2MDQwfQ.1ZqffhkkKmm8yvOtQQ2ol-r3jr5pjwojiAFzbiuFLRo'
-        });
+    final response = await http.get(Uri.parse('${ip}r3stboard/88888'),
+        headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       // var data = jsonDecode(response.body);
@@ -112,16 +110,22 @@ class _R3agcollsdataState extends State<R3agcollsdata> {
             textTheme: TextTheme().apply(bodyColor: Colors.white),
           ),
           child: PopupMenuButton<int>(
-            color: Colors.indigo,
+            color: Colors.white,
             onSelected: (item) => onSelected(context, item),
             itemBuilder: (context) => [
               PopupMenuItem<int>(
                 value: 0,
-                child: Text('General'),
+                child: Text(
+                  'General',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
               PopupMenuItem<int>(
                 value: 1,
-                child: Text('Govt 7.5%'),
+                child: Text(
+                  'Govt 7.5%',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
             ],
           ),

@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:tneadash2/R1govtagtfc.dart';
+import 'package:tneadash2/R2agcolldata.dart';
 import './Cusdrawer2.dart';
 import './tablerowmodel.dart';
 import 'dart:convert';
 import 'dart:ui';
 import './models/R1allstats.dart';
+import './models/TFCdata.dart';
 import 'package:flutter/services.dart';
+import './const.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 // import 'package:tneadash/jsondartmodel/cvreportmodel.dart';
@@ -16,27 +18,30 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:http/http.dart' as http;
 import 'package:carousel_slider/carousel_slider.dart';
 import './models/allotstats.dart';
-import './models/TFCdata.dart';
 import './R1agtfc.dart';
 import './Cusdrawer2.dart';
-import './const.dart';
+import './R1agcolldata.dart';
+import './R4agcolldata.dart';
 
-class R1agtfc extends StatefulWidget {
-  R1agtfc({Key? key}) : super(key: key);
+class R4govtagcollsdata extends StatefulWidget {
+  R4govtagcollsdata({Key? key}) : super(key: key);
   @override
-  State<R1agtfc> createState() => _R1agtfcState();
+  State<R4govtagcollsdata> createState() => _R3govtagcollsdataState();
 }
 
-class _R1agtfcState extends State<R1agtfc> {
-  List<Agcol> R1TFC = [];
-  List<Sjoined> R1TFCjoined = [];
+class _R3govtagcollsdataState extends State<R4govtagcollsdata> {
+  List<Agcol> R1colls = [];
+  List<Agcol> R1collsori = [];
+  List<Sjoined> R1collsjoined = [];
   bool isloading = true;
   List<Tfcdata> Tfclist = [];
-  List<Agcol> R1FTCori = [];
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http
-        .get(Uri.parse('${ip}stboard/88888'), headers: {'x-auth-token': token});
+    final response =
+        await http.get(Uri.parse('${gip}r4stboard/88888'), headers: {
+      'x-auth-token':
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzMyOTMxMSwiZXhwIjoxODQzMzI5MzExfQ.Lq9FgqEZGmM11UqsofjPAwxUtJJD-4XcDyBJFMw2gto'
+    });
 
     if (response.statusCode == 200) {
       // var data = jsonDecode(response.body);
@@ -46,9 +51,11 @@ class _R1agtfcState extends State<R1agtfc> {
       var datadart = Receiveddatacode.fromJson(response.body);
 
       setState(() {
-        R1FTCori = datadart.agtfcs as List<Agcol>;
-        R1TFC = datadart.agtfcs as List<Agcol>;
-        R1TFCjoined = datadart.agtfcsjoined as List<Sjoined>;
+        R1collsori = datadart.agcols as List<Agcol>;
+        R1collsori.sort(((a, b) => b.count.compareTo(a.count)));
+        R1colls = datadart.agcols as List<Agcol>;
+        R1colls.sort(((a, b) => b.count.compareTo(a.count)));
+        R1collsjoined = datadart.agcolsjoined as List<Sjoined>;
         isloading = false;
       });
     } else {
@@ -61,13 +68,14 @@ class _R1agtfcState extends State<R1agtfc> {
 
   Future<dynamic> fetchAlbum2() async {
     String data =
-        await DefaultAssetBundle.of(context).loadString("assets/TFC.json");
+        await DefaultAssetBundle.of(context).loadString("assets/CLG.json");
     final jsonResult = jsonDecode(data);
     var tfcdata = tfclist.fromJson(jsonResult);
     setState(() {
       Tfclist = tfcdata.tfcdata as List<Tfcdata>;
     });
     print(jsonResult);
+    print(tfcdata.tfcdata![2].tfccode);
   }
 
   final myController = TextEditingController();
@@ -91,10 +99,10 @@ class _R1agtfcState extends State<R1agtfc> {
   Widget build(BuildContext context) {
     AppBar appBar = AppBar(
       title: Text(
-        "Acad Gen TFC stats - Round 1",
-        style: TextStyle(fontSize: 16),
+        "Acad Gov 7.5% College - Round 4",
+        style: TextStyle(fontSize: 15),
       ),
-      centerTitle: true,
+      // centerTitle: true,
       actions: [
         Theme(
           data: Theme.of(context).copyWith(
@@ -157,11 +165,11 @@ class _R1agtfcState extends State<R1agtfc> {
                               // print(value);
                               if (value == "") {
                                 setState(() {
-                                  R1TFC = R1FTCori;
+                                  R1colls = R1collsori;
                                 });
                               } else {
                                 setState(() {
-                                  R1TFC = R1FTCori.where(
+                                  R1colls = R1collsori.where(
                                           (element) => element.id == value)
                                       .toList();
                                 });
@@ -182,7 +190,7 @@ class _R1agtfcState extends State<R1agtfc> {
                                   onPressed: () {
                                     setState(() {
                                       myController.text = "";
-                                      R1TFC = R1FTCori;
+                                      R1colls = R1collsori;
                                       FocusManager.instance.primaryFocus
                                           ?.unfocus();
                                     });
@@ -191,7 +199,7 @@ class _R1agtfcState extends State<R1agtfc> {
                                 ),
                                 // hintText: "whatever you want",
                                 icon: Icon(Icons.search),
-                                labelText: "Enter TFC Code"),
+                                labelText: "Enter College Code"),
                             keyboardType: TextInputType.numberWithOptions(
                                 signed: true, decimal: true),
                             inputFormatters: <TextInputFormatter>[
@@ -204,11 +212,11 @@ class _R1agtfcState extends State<R1agtfc> {
                             onPressed: () {
                               if (myController.text == "") {
                                 setState(() {
-                                  R1TFC = R1FTCori;
+                                  R1colls = R1collsori;
                                 });
                               } else {
                                 setState(() {
-                                  R1TFC = R1FTCori.where((element) =>
+                                  R1colls = R1collsori.where((element) =>
                                       element.id == myController.text).toList();
                                 });
                               }
@@ -222,7 +230,7 @@ class _R1agtfcState extends State<R1agtfc> {
                           Expanded(
                               child: Center(
                                   child: Text(
-                            "TFC Name",
+                            "College Code",
                             style: TextStyle(
                                 fontWeight: FontWeight.w500, fontSize: 15),
                           ))),
@@ -246,16 +254,17 @@ class _R1agtfcState extends State<R1agtfc> {
                           )))
                         ]),
                     ...List.generate(
-                        R1TFC.length,
+                        R1colls.length,
                         (index) => tablerowmodel(
-                            getTfcnumber(R1TFC[index].id, Tfclist),
-                            R1TFC[index].count.toString(),
-                            getjoinednumber(R1TFC[index].id, R1TFCjoined)
+                            getTfcnumber(R1colls[index].id, Tfclist),
+                            // R1colls[index].id,
+                            R1colls[index].count.toString(),
+                            getjoinednumber(R1colls[index].id, R1collsjoined)
                                 .toString())),
-                    R1TFC.isEmpty
+                    R1colls.isEmpty
                         ? Container(
-                            child:
-                                Text("No Data Matching TFC code, clear search"))
+                            child: Text(
+                                "No Data Matching College code, Clear search"))
                         : Container()
                   ]),
                 ),
@@ -265,10 +274,11 @@ class _R1agtfcState extends State<R1agtfc> {
   }
 }
 
-String getjoinednumber(String id, List<Sjoined> R1FTCjoined) {
-  var int = R1FTCjoined.firstWhere((element) => element.id == id,
+String getjoinednumber(String id, List<Sjoined> R1collsjoined) {
+  var int = R1collsjoined.firstWhere((element) => element.id == id,
       orElse: () => Sjoined(id: id, joined: 0)).joined;
   // print(int);
+
   return int.toString();
 }
 
@@ -278,7 +288,7 @@ String getTfcnumber(String id, List<Tfcdata> Tfcdatain) {
   var Tfcname = Tfcdatain.firstWhere(
       (element) => element.tfccode.toString() == id,
       orElse: () => Tfcdata()).tfcname;
-  return Tfcname.toString() + " ( TFC code - " + id + " ) ";
+  return Tfcname.toString() + " ( Clg code - " + id + " )";
 }
 
 showAlertDialog(BuildContext context) {
@@ -314,12 +324,12 @@ void onSelected(BuildContext context, int item) {
   switch (item) {
     case 0:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R1agtfc()),
+        MaterialPageRoute(builder: (context) => R4agcollsdata()),
       );
       break;
     case 1:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R1govtagtfc()),
+        MaterialPageRoute(builder: (context) => R4govtagcollsdata()),
       );
       break;
   }

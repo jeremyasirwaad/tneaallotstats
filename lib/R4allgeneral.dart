@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:tneadash2/models/categorywise.dart';
 import 'package:tneadash2/models/collegecategorymap.dart';
 import './Cusdrawer2.dart';
-import './const.dart';
-
 import './tablerowmodel.dart';
 import 'dart:convert';
+import './const.dart';
+
 import 'dart:ui';
 import './models/R1allstats.dart';
 import './models/TFCdata.dart';
@@ -28,14 +28,14 @@ import './govtmain.dart';
 import './models/categorywise.dart';
 import './tablerowmodelallcar.dart';
 
-class R3allgeneral_TFC extends StatefulWidget {
-  const R3allgeneral_TFC({Key? key}) : super(key: key);
+class R4allgeneral extends StatefulWidget {
+  const R4allgeneral({Key? key}) : super(key: key);
 
   @override
-  State<R3allgeneral_TFC> createState() => _MyHomePageState();
+  State<R4allgeneral> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<R3allgeneral_TFC> {
+class _MyHomePageState extends State<R4allgeneral> {
   void calculatedata() {
     int anna_catg = 0;
     int annamalai_catg = 0;
@@ -326,17 +326,17 @@ class _MyHomePageState extends State<R3allgeneral_TFC> {
   int guniver_catg_joined = -1;
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(Uri.parse('${ip}r3stmode/88888'),
+    final response = await http.get(Uri.parse('${ip}r4stmode/88888'),
         headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       var datadart = Categorywise.fromRawJson(response.body);
 
       setState(() {
-        catag = datadart.catagtfcs as List<Cat>;
-        // catvg = datadart.catvgtfcs as List<Cat>;
-        catagjoined = datadart.catagtfcsjoined as List<Catsjoined>;
-        // catvgjoined = datadart.catvgtfcsjoined as List<Catsjoined>;
+        catag = datadart.catagcols as List<Cat>;
+        // catvg = datadart.catvgcols as List<Cat>;
+        catagjoined = datadart.catagcolsjoined as List<Catsjoined>;
+        // catvgjoined = datadart.catvgcolsjoined as List<Catsjoined>;
       });
 
       calculatedata();
@@ -349,17 +349,17 @@ class _MyHomePageState extends State<R3allgeneral_TFC> {
   }
 
   Future<dynamic> fetchAlbumgovt() async {
-    final response = await http.get(Uri.parse('${gip}r3stmode/88888'),
+    final response = await http.get(Uri.parse('${gip}r4stmode/88888'),
         headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       var datadart = Categorywise.fromRawJson(response.body);
 
       setState(() {
-        cataggovt = datadart.catagtfcs as List<Cat>;
-        // catvggovt = datadart.catvgtfcs as List<Cat>;
-        catagjoinedgovt = datadart.catagtfcsjoined as List<Catsjoined>;
-        // catvgjoinedgovt = datadart.catvgtfcsjoined as List<Catsjoined>;
+        cataggovt = datadart.catagcols as List<Cat>;
+        // catvggovt = datadart.catvgcols as List<Cat>;
+        catagjoinedgovt = datadart.catagcolsjoined as List<Catsjoined>;
+        // catvgjoinedgovt = datadart.catvgcolsjoined as List<Catsjoined>;
       });
 
       // print(response.body);
@@ -398,7 +398,7 @@ class _MyHomePageState extends State<R3allgeneral_TFC> {
   Widget build(BuildContext context) {
     AppBar appBar = AppBar(
       title: Text(
-        "Round 3 - Category Wise - TFC",
+        "Round 4 - Category Wise - College",
         style: TextStyle(fontSize: 18),
       ),
       centerTitle: true,
@@ -423,7 +423,6 @@ class _MyHomePageState extends State<R3allgeneral_TFC> {
                 child: Center(
                     child: Text(
                   "Category",
-                  textAlign: TextAlign.center,
                   style: TextStyle(fontWeight: FontWeight.w500, fontSize: 14),
                 ))),
             Expanded(
@@ -431,31 +430,31 @@ class _MyHomePageState extends State<R3allgeneral_TFC> {
               padding: const EdgeInsets.all(8.0),
               child: Center(
                   child: Text(
-                "Opted for upward (general)",
+                "General Alloted",
                 textAlign: TextAlign.center,
-                style: TextStyle(fontWeight: FontWeight.w500, fontSize: 10),
+                style: TextStyle(fontWeight: FontWeight.w500, fontSize: 12),
               )),
             )),
             Expanded(
                 child: Center(
                     child: Text(
-              "Upward joined at TFC (General)",
+              "General Admitted",
               textAlign: TextAlign.center,
-              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 10),
+              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 12),
             ))),
             Expanded(
                 child: Center(
                     child: Text(
-              "Opted for upward   (Govt 7.5%)",
+              "Govt Alloted",
               textAlign: TextAlign.center,
-              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 10),
+              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 12),
             ))),
             Expanded(
                 child: Center(
                     child: Text(
-              "Upward joined at TFC  (Govt 7.5%)",
+              "Govt Admitted",
               textAlign: TextAlign.center,
-              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 10),
+              style: TextStyle(fontWeight: FontWeight.w500, fontSize: 12),
             )))
           ]),
           tablerowmodelallcat("Anna Univ dept Colleges", ranna_catg,
@@ -564,7 +563,7 @@ void onSelected(BuildContext context, int item) {
   switch (item) {
     case 0:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R3allgeneral_TFC()),
+        MaterialPageRoute(builder: (context) => R4allgeneral()),
       );
       break;
     case 1:

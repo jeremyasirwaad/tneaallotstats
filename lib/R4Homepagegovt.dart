@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:ui';
 import './const.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 // import 'package:tneadash/jsondartmodel/cvreportmodel.dart';
 // import './models/cusdrawer.dart';
@@ -11,52 +10,67 @@ import 'package:fl_chart/fl_chart.dart';
 // import './jsondartmodel/countmodel.dart';
 import 'package:http/http.dart' as http;
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:tneadash2/R1summarygovt.dart';
+import 'package:tneadash2/R2Homepage.dart';
 import './models/allotstats.dart';
 import './R1agtfc.dart';
 import './Cusdrawer2.dart';
 import './govtmain.dart';
 import './Homepage.dart';
-import './models/R1summaryconvert.dart';
+import './R4Homepage.dart';
 
-class R1Summary extends StatefulWidget {
-  const R1Summary({Key? key}) : super(key: key);
+class R4MyHomePagegovt extends StatefulWidget {
+  const R4MyHomePagegovt({Key? key}) : super(key: key);
 
   @override
-  State<R1Summary> createState() => _R1summarypage();
+  State<R4MyHomePagegovt> createState() => _R3MyHomePagegovtState();
 }
 
-class _R1summarypage extends State<R1Summary> {
+class _R3MyHomePagegovtState extends State<R4MyHomePagegovt> {
   var agtotalcand = -1;
   var agtotalallocs = -1;
   var agtotalcols = -1;
+  var agtotalfts = -1;
 
-  var vgtotalcand = -1;
-  var vgtotalallocs = -1;
-  var vgtotalcols = -1;
-
-  var isloading = true;
+  var agadmitcols = -1;
+  var agadmitftcs = -1;
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(Uri.parse('${ip}stcount2/88888'), headers: {
-      'x-auth-token':
-          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI5MDlmMGMtNWI2ZC00ZmM2LWJlMjMtMzRjZjJjYzdhZjA3In0sImlhdCI6MTY4OTU4NjQwNCwiZXhwIjoxODY5NTg2NDA0fQ.mRG-Ly3B3zFwBEq0gOTYn0DsaIUp5CEIWCE0CHn0eMQ'
-    });
+    final response = await http.get(Uri.parse('${gip}r4stcount/88888'),
+        headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       var data = jsonDecode(response.body);
-      var datadart = R1summaryconvert.fromJson(data);
+      var datadart = allotstats.fromJson(data);
       print(datadart.agtotalcand![0].agtotalcand);
-      print(data);
+      // print(data);
 
       setState(() {
         agtotalcand = datadart.agtotalcand![0].agtotalcand as int;
-        vgtotalcand = datadart.vgtotalcand![0].vgtotalcand as int;
-
-        // agtotalallocs = datadart.agtotalallots![0].agtotalallots as int;
-        // agtotalcols = datadart.agadmitcols![0].agadmitcols as int;
+        agtotalallocs = datadart.agtotalallots![0].agtotalallots as int;
+        agtotalcols = datadart.agtotalcols![0].agtotalcols as int;
+        agtotalfts = datadart.agtotaltfcs![0].agtotaltfcs as int;
+        // vgtotalcand = datadart.vgtotalcand![0].vgtotalcand as int;
         // vgtotalallocs = datadart.vgtotalallots![0].vgtotalallots as int;
-        // vgtotalcols = datadart.vgadmitcols![0].vgadmitcols as int;
+        // vgtotalcols = datadart.vgtotalcols![0].vgtotalcols as int;
+        // vgtotalftcs = datadart.vgtotaltfcs![0].vgtotaltfcs as int;
+
+        if (datadart.agadmitcols!.isEmpty) {
+          agadmitcols = 0;
+        } else {
+          agadmitcols = datadart.agadmitcols![0].agadmitcols as int;
+        }
+
+        if (datadart.agadmittfcs!.isEmpty) {
+          agadmitftcs = 0;
+        } else {
+          agadmitftcs = datadart.agadmittfcs![0].agadmittfcs as int;
+        }
+
+        // agadmitcols = datadart.agadmitcols![0].agadmitcols as int;
+        // agadmitftcs = datadart.agadmittfcs![0].agadmittfcs as int;
+
+        // vgadmitcols = datadart.vgadmitcols![0].vgadmitcols as int;
+        // vgadmitftcs = datadart.vgadmittfcs![0].vgadmittfcs as int;
       });
     } else {
       showAlertDialog(context);
@@ -68,10 +82,6 @@ class _R1summarypage extends State<R1Summary> {
 
   @override
   void initState() {
-    // SystemChrome.setPreferredOrientations([
-    //   DeviceOrientation.landscapeRight,
-    //   DeviceOrientation.landscapeLeft,
-    // ]);
     // TODO: implement initState
     fetchAlbum();
     super.initState();
@@ -81,7 +91,7 @@ class _R1summarypage extends State<R1Summary> {
   Widget build(BuildContext context) {
     AppBar appBar = AppBar(
       title: Text(
-        "Round 1 - Summary",
+        "Govt 7.5% Allot Stats - Round 4",
         style: TextStyle(fontSize: 18),
       ),
       centerTitle: true,
@@ -90,10 +100,10 @@ class _R1summarypage extends State<R1Summary> {
           data: Theme.of(context).copyWith(
             dividerColor: Colors.white,
             iconTheme: IconThemeData(color: Colors.white),
-            textTheme: TextTheme().apply(bodyColor: Colors.indigo),
+            textTheme: TextTheme().apply(bodyColor: Colors.white),
           ),
           child: PopupMenuButton<int>(
-            color: Color.fromARGB(255, 255, 255, 255),
+            color: Colors.white,
             onSelected: (item) => onSelected(context, item),
             itemBuilder: (context) => [
               PopupMenuItem<int>(
@@ -105,8 +115,10 @@ class _R1summarypage extends State<R1Summary> {
               ),
               PopupMenuItem<int>(
                 value: 1,
-                child:
-                    Text('Govt 7.5%', style: TextStyle(color: Colors.indigo)),
+                child: Text(
+                  'Govt 7.5%',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
             ],
           ),
@@ -154,7 +166,7 @@ class _R1summarypage extends State<R1Summary> {
                                 child: Container(
                                   width: 150,
                                   child: Text(
-                                    "Academic General total candidates",
+                                    "Academic Govt total candidates",
                                     style: GoogleFonts.roboto(
                                       fontWeight: FontWeight.w500,
                                       fontSize: 14,
@@ -218,16 +230,13 @@ class _R1summarypage extends State<R1Summary> {
                               right: 15,
                               child: Container(
                                 width: 150,
-                                child: FittedBox(
-                                  fit: BoxFit.fitWidth,
-                                  child: Container(
-                                    width: 150,
-                                    child: Text(
-                                      "Academic Gen total provisional allotments",
-                                      style: GoogleFonts.roboto(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 14,
-                                      ),
+                                child: Container(
+                                  width: 150,
+                                  child: Text(
+                                    "Academic Govt total allotments given",
+                                    style: GoogleFonts.roboto(
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 14,
                                     ),
                                   ),
                                 ),
@@ -249,72 +258,6 @@ class _R1summarypage extends State<R1Summary> {
                                             )
                                           : Text(
                                               agtotalallocs.toString(),
-                                              style: GoogleFonts.rubik(
-                                                  fontWeight: FontWeight.w100,
-                                                  fontSize: 60,
-                                                  color: Colors.indigo),
-                                            ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Padding(
-                      padding: EdgeInsets.only(
-                          left: 8, right: 16, top: 10, bottom: 10),
-                      child: Card(
-                        // color: Colors.re
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0),
-                        ),
-                        elevation: 6,
-                        // color: Colors.black,
-                        child: Container(
-                          height: ctheight / 4 - 10,
-                          child: Stack(children: [
-                            Positioned(
-                              top: 20,
-                              left: 15,
-                              right: 15,
-                              child: Container(
-                                width: 150,
-                                child: FittedBox(
-                                  fit: BoxFit.fitWidth,
-                                  child: Container(
-                                    width: 150,
-                                    child: Text(
-                                      "Academic General Joined College",
-                                      style: GoogleFonts.roboto(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 14,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Positioned.fill(
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Container(
-                                  margin: EdgeInsets.only(top: 20),
-                                  child: FittedBox(
-                                    fit: BoxFit.fitWidth,
-                                    child: Padding(
-                                      padding: EdgeInsets.all(15),
-                                      child: agtotalcols == -1
-                                          ? SpinKitThreeBounce(
-                                              color: Colors.indigo,
-                                              size: 30,
-                                            )
-                                          : Text(
-                                              agtotalcols.toString(),
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
@@ -359,13 +302,16 @@ class _R1summarypage extends State<R1Summary> {
                               right: 15,
                               child: Container(
                                 width: 150,
-                                child: Container(
-                                  width: 150,
-                                  child: Text(
-                                    "Vocational General total candidates",
-                                    style: GoogleFonts.roboto(
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 14,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Acad. Govt total candidates to be reported to college",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -380,17 +326,82 @@ class _R1summarypage extends State<R1Summary> {
                                     fit: BoxFit.fitWidth,
                                     child: Padding(
                                       padding: EdgeInsets.all(15),
-                                      child: vgtotalcand == -1
+                                      child: agtotalcols == -1
                                           ? SpinKitThreeBounce(
                                               color: Colors.indigo,
                                               size: 30,
                                             )
                                           : Text(
-                                              vgtotalcand.toString(),
+                                              agtotalcols.toString(),
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
-                                                  color: Colors.orange),
+                                                  color: Colors.indigo),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 8, right: 16, top: 20),
+                      child: Card(
+                        // color: Colors.re
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Acad. Govt total candidates to be reported to TFC",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: agtotalfts == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              agtotalfts.toString(),
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.indigo),
                                             ),
                                     ),
                                   ),
@@ -430,7 +441,7 @@ class _R1summarypage extends State<R1Summary> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Vocational Gen total provisional allotments",
+                                      "Acad. Govt admitted at college",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 14,
@@ -449,17 +460,17 @@ class _R1summarypage extends State<R1Summary> {
                                     fit: BoxFit.fitWidth,
                                     child: Padding(
                                       padding: EdgeInsets.all(15),
-                                      child: vgtotalallocs == -1
+                                      child: agadmitcols == -1
                                           ? SpinKitThreeBounce(
                                               color: Colors.indigo,
                                               size: 30,
                                             )
                                           : Text(
-                                              vgtotalallocs.toString(),
+                                              agadmitcols.toString(),
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
-                                                  color: Colors.orange),
+                                                  color: Colors.indigo),
                                             ),
                                     ),
                                   ),
@@ -495,7 +506,7 @@ class _R1summarypage extends State<R1Summary> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Vocational General Joined College",
+                                      "Acad. Govt admitted at TFC",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
                                         fontSize: 14,
@@ -514,17 +525,17 @@ class _R1summarypage extends State<R1Summary> {
                                     fit: BoxFit.fitWidth,
                                     child: Padding(
                                       padding: EdgeInsets.all(15),
-                                      child: vgtotalcols == -1
+                                      child: agadmitftcs == -1
                                           ? SpinKitThreeBounce(
                                               color: Colors.indigo,
                                               size: 30,
                                             )
                                           : Text(
-                                              vgtotalcols.toString(),
+                                              agadmitftcs.toString(),
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
-                                                  color: Colors.orange),
+                                                  color: Colors.indigo),
                                             ),
                                     ),
                                   ),
@@ -580,12 +591,12 @@ void onSelected(BuildContext context, int item) {
   switch (item) {
     case 0:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R1Summary()),
+        MaterialPageRoute(builder: (context) => R4MyHomePage()),
       );
       break;
     case 1:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R1Summarygovt()),
+        MaterialPageRoute(builder: (context) => R4MyHomePagegovt()),
       );
       break;
   }

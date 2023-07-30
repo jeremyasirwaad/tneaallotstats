@@ -17,6 +17,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import './models/allotstats.dart';
 import './models/TFCdata.dart';
 import './R1agtfc.dart';
+import './const.dart';
 import './Cusdrawer2.dart';
 
 class R1govtagtfc extends StatefulWidget {
@@ -33,12 +34,10 @@ class _R1govtagtfcState extends State<R1govtagtfc> {
   List<Agcol> R1FTCori = [];
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(
-        Uri.parse('http://3.110.226.121/api/api/master/stboard/88888'),
-        headers: {
-          'x-auth-token':
-              'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzMyOTMxMSwiZXhwIjoxODQzMzI5MzExfQ.Lq9FgqEZGmM11UqsofjPAwxUtJJD-4XcDyBJFMw2gto'
-        });
+    final response = await http.get(Uri.parse('${gip}stboard/88888'), headers: {
+      'x-auth-token':
+          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzMyOTMxMSwiZXhwIjoxODQzMzI5MzExfQ.Lq9FgqEZGmM11UqsofjPAwxUtJJD-4XcDyBJFMw2gto'
+    });
 
     if (response.statusCode == 200) {
       // var data = jsonDecode(response.body);
@@ -105,16 +104,22 @@ class _R1govtagtfcState extends State<R1govtagtfc> {
             textTheme: TextTheme().apply(bodyColor: Colors.white),
           ),
           child: PopupMenuButton<int>(
-            color: Colors.indigo,
+            color: Colors.white,
             onSelected: (item) => onSelected(context, item),
             itemBuilder: (context) => [
               PopupMenuItem<int>(
                 value: 0,
-                child: Text('General'),
+                child: Text(
+                  'General',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
               PopupMenuItem<int>(
                 value: 1,
-                child: Text('Govt 7.5%'),
+                child: Text(
+                  'Govt 7.5%',
+                  style: TextStyle(color: Colors.indigo),
+                ),
               ),
             ],
           ),

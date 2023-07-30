@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tneadash2/models/categorywise.dart';
 import 'package:tneadash2/models/collegecategorymap.dart';
 import './Cusdrawer2.dart';
+import './const.dart';
 import './tablerowmodel.dart';
 import 'dart:convert';
 import 'dart:ui';
@@ -324,12 +325,8 @@ class _MyHomePageState extends State<R2allgeneral_TFC> {
   int guniver_catg_joined = -1;
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(
-        Uri.parse('http://65.2.37.93/api/api/master/r2stmode/88888'),
-        headers: {
-          'x-auth-token':
-              'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzI0NjA0MCwiZXhwIjoxODQzMjQ2MDQwfQ.1ZqffhkkKmm8yvOtQQ2ol-r3jr5pjwojiAFzbiuFLRo'
-        });
+    final response = await http.get(Uri.parse('${ip}r2stmode/88888'),
+        headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       var datadart = Categorywise.fromRawJson(response.body);
@@ -351,12 +348,8 @@ class _MyHomePageState extends State<R2allgeneral_TFC> {
   }
 
   Future<dynamic> fetchAlbumgovt() async {
-    final response = await http.get(
-        Uri.parse('http://3.110.226.121/api/api/master/r2stmode/88888'),
-        headers: {
-          'x-auth-token':
-              'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzI0NjA0MCwiZXhwIjoxODQzMjQ2MDQwfQ.1ZqffhkkKmm8yvOtQQ2ol-r3jr5pjwojiAFzbiuFLRo'
-        });
+    final response = await http.get(Uri.parse('${gip}r2stmode/88888'),
+        headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       var datadart = Categorywise.fromRawJson(response.body);

@@ -23,15 +23,15 @@ import './Cusdrawer2.dart';
 import './R1govtagcolldata.dart';
 import './models/R1summarycollegewise.dart';
 
-import './R2summaryclg_wise.dart';
+import './R3summaryclg_wise.dart';
 
-class R2summaryclg_wisegovt extends StatefulWidget {
-  R2summaryclg_wisegovt({Key? key}) : super(key: key);
+class R3summaryclg_wisegovt extends StatefulWidget {
+  R3summaryclg_wisegovt({Key? key}) : super(key: key);
   @override
-  State<R2summaryclg_wisegovt> createState() => _R2summaryclg_wiseStategovt();
+  State<R3summaryclg_wisegovt> createState() => _R2summaryclg_wiseStategovt();
 }
 
-class _R2summaryclg_wiseStategovt extends State<R2summaryclg_wisegovt> {
+class _R2summaryclg_wiseStategovt extends State<R3summaryclg_wisegovt> {
   List<Agaandj> agaandj = [];
   List<Agaandjjoined> agaandjoined = [];
   List<Agupward> agupward = [];
@@ -47,7 +47,7 @@ class _R2summaryclg_wiseStategovt extends State<R2summaryclg_wisegovt> {
   List<Tfcdata> Tfclistorigi = [];
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(Uri.parse('${gip}r2stboard2/88888'),
+    final response = await http.get(Uri.parse('${gip}r3stboard2/88888'),
         headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
@@ -114,7 +114,7 @@ class _R2summaryclg_wiseStategovt extends State<R2summaryclg_wisegovt> {
   Widget build(BuildContext context) {
     AppBar appBar = AppBar(
       title: Text(
-        "College Wise - Govt - Round 2",
+        "College Wise - Govt - Round 3",
         style: TextStyle(fontSize: 16),
       ),
       centerTitle: true,
@@ -469,12 +469,12 @@ void onSelected(BuildContext context, int item) {
   switch (item) {
     case 0:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R2summaryclg_wise()),
+        MaterialPageRoute(builder: (context) => R3summaryclg_wise()),
       );
       break;
     case 1:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R2summaryclg_wisegovt()),
+        MaterialPageRoute(builder: (context) => R3summaryclg_wisegovt()),
       );
       break;
   }

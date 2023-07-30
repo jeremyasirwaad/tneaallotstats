@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:tneadash2/models/categorywise.dart';
 import 'package:tneadash2/models/collegecategorymap.dart';
 import './Cusdrawer2.dart';
-import './const.dart';
-
 import './tablerowmodel.dart';
 import 'dart:convert';
+import './const.dart';
+
 import 'dart:ui';
 import './models/R1allstats.dart';
 import './models/TFCdata.dart';
@@ -28,14 +28,14 @@ import './govtmain.dart';
 import './models/categorywise.dart';
 import './tablerowmodelallcar.dart';
 
-class R3allgeneral_TFC extends StatefulWidget {
-  const R3allgeneral_TFC({Key? key}) : super(key: key);
+class R4allgeneral_TFC extends StatefulWidget {
+  const R4allgeneral_TFC({Key? key}) : super(key: key);
 
   @override
-  State<R3allgeneral_TFC> createState() => _MyHomePageState();
+  State<R4allgeneral_TFC> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<R3allgeneral_TFC> {
+class _MyHomePageState extends State<R4allgeneral_TFC> {
   void calculatedata() {
     int anna_catg = 0;
     int annamalai_catg = 0;
@@ -326,7 +326,7 @@ class _MyHomePageState extends State<R3allgeneral_TFC> {
   int guniver_catg_joined = -1;
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(Uri.parse('${ip}r3stmode/88888'),
+    final response = await http.get(Uri.parse('${ip}r4stmode/88888'),
         headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
@@ -349,7 +349,7 @@ class _MyHomePageState extends State<R3allgeneral_TFC> {
   }
 
   Future<dynamic> fetchAlbumgovt() async {
-    final response = await http.get(Uri.parse('${gip}r3stmode/88888'),
+    final response = await http.get(Uri.parse('${gip}r4stmode/88888'),
         headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
@@ -398,7 +398,7 @@ class _MyHomePageState extends State<R3allgeneral_TFC> {
   Widget build(BuildContext context) {
     AppBar appBar = AppBar(
       title: Text(
-        "Round 3 - Category Wise - TFC",
+        "Round 4 - Category Wise - TFC",
         style: TextStyle(fontSize: 18),
       ),
       centerTitle: true,
@@ -564,7 +564,7 @@ void onSelected(BuildContext context, int item) {
   switch (item) {
     case 0:
       Navigator.of(context).push(
-        MaterialPageRoute(builder: (context) => R3allgeneral_TFC()),
+        MaterialPageRoute(builder: (context) => R4allgeneral_TFC()),
       );
       break;
     case 1:
