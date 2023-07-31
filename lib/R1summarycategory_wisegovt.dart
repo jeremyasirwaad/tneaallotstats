@@ -268,7 +268,7 @@ class _R1summarycategory_wiseState extends State<R1summarycategovt_wise> {
   }
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(Uri.parse('${gip}stmode2/88888'),
+    final response = await http.get(Uri.parse('${gip}r1stmode2/88888'),
         headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {

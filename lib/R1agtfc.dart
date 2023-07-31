@@ -35,8 +35,8 @@ class _R1agtfcState extends State<R1agtfc> {
   List<Agcol> R1FTCori = [];
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http
-        .get(Uri.parse('${ip}stboard/88888'), headers: {'x-auth-token': token});
+    final response = await http.get(Uri.parse('${ip}r1stboard/88888'),
+        headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       // var data = jsonDecode(response.body);

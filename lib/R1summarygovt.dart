@@ -35,7 +35,7 @@ class _R1summarypagegovt extends State<R1Summarygovt> {
   var vgtotalcols = -1;
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(Uri.parse('${gip}stcount2/88888'),
+    final response = await http.get(Uri.parse('${gip}r1stcount2/88888'),
         headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {

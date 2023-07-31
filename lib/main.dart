@@ -37,7 +37,27 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: const MyHomePage(),
+      home: homepagedecider(),
     );
+  }
+}
+
+Widget homepagedecider() {
+  final DateTime round1 = DateTime(2023, 8, 1, 0, 0);
+  final DateTime round2 = DateTime(2023, 8, 13, 0, 0);
+  final DateTime round3 = DateTime(2023, 8, 26, 0, 0);
+  final DateTime round4 = DateTime(2023, 9, 3, 0, 0);
+  DateTime today = DateTime.now();
+
+  if (today.compareTo(round3) > 0) {
+    return const R3MyHomePage();
+  }
+  if (today.compareTo(round2) > 0) {
+    return const R2MyHomePage();
+  }
+  if (today.compareTo(round1) > 0) {
+    return const MyHomePage();
+  } else {
+    return const MyHomePage();
   }
 }

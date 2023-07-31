@@ -46,7 +46,7 @@ class _R1summaryclg_wiseStategovt extends State<R1summaryclg_wisegovt> {
   List<Tfcdata> Tfclistorigi = [];
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(Uri.parse('${gip}stboard2/88888'),
+    final response = await http.get(Uri.parse('${gip}r1stboard2/88888'),
         headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {

@@ -476,8 +476,8 @@ class _MyHomePageState extends State<R1allgeneral> {
   int guniver_catg_joined = -1;
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http
-        .get(Uri.parse('${ip}stmode/88888'), headers: {'x-auth-token': token});
+    final response = await http.get(Uri.parse('${ip}r1stmode/88888'),
+        headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       var datadart = Categorywise.fromRawJson(response.body);
@@ -499,8 +499,8 @@ class _MyHomePageState extends State<R1allgeneral> {
   }
 
   Future<dynamic> fetchAlbumgovt() async {
-    final response = await http
-        .get(Uri.parse('${gip}stmode/88888'), headers: {'x-auth-token': token});
+    final response = await http.get(Uri.parse('${gip}r1stmode/88888'),
+        headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       var datadart = Categorywise.fromRawJson(response.body);

@@ -39,8 +39,8 @@ class _MyHomePageState extends State<MyHomePage> {
   var vgadmitcols = -1;
   var vgadmitftcs = -1;
   Future<dynamic> fetchAlbum() async {
-    final response = await http
-        .get(Uri.parse('${ip}stcount/88888'), headers: {'x-auth-token': token});
+    final response = await http.get(Uri.parse('${ip}r1stcount/88888'),
+        headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       var data = jsonDecode(response.body);

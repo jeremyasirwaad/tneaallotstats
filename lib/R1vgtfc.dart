@@ -38,8 +38,8 @@ class _R1vgtfcState extends State<R1vgtfc> {
   List<Tfcdata> Tfclist = [];
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http
-        .get(Uri.parse('${ip}stboard/88888'), headers: {'x-auth-token': token});
+    final response = await http.get(Uri.parse('${ip}r1stboard/88888'),
+        headers: {'x-auth-token': token});
 
     if (response.statusCode == 200) {
       // var data = jsonDecode(response.body);

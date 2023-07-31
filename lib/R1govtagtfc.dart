@@ -34,7 +34,8 @@ class _R1govtagtfcState extends State<R1govtagtfc> {
   List<Agcol> R1FTCori = [];
 
   Future<dynamic> fetchAlbum() async {
-    final response = await http.get(Uri.parse('${gip}stboard/88888'), headers: {
+    final response =
+        await http.get(Uri.parse('${gip}r1stboard/88888'), headers: {
       'x-auth-token':
           'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNTZlZjAyNDEtODNjOC00YzM5LTgzYzktOTBjZmUxNTRkNjNlIn0sImlhdCI6MTY2MzMyOTMxMSwiZXhwIjoxODQzMzI5MzExfQ.Lq9FgqEZGmM11UqsofjPAwxUtJJD-4XcDyBJFMw2gto'
     });
