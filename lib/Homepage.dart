@@ -88,7 +88,6 @@ class _MyHomePageState extends State<MyHomePage> {
       actions: [
         Theme(
           data: Theme.of(context).copyWith(
-            // dividerColor: Colors.white,
             iconTheme: IconThemeData(color: Color.fromARGB(255, 30, 51, 211)),
             textTheme:
                 TextTheme().apply(bodyColor: Color.fromARGB(255, 81, 8, 8)),
@@ -131,13 +130,707 @@ class _MyHomePageState extends State<MyHomePage> {
         drawer: Cusdrawer2(),
         body: ListView(children: [
           Container(
-            // height: ctheight,
             child: Column(children: [
+              SizedBox(
+                height: 30,
+              ),
+              Text(
+                "Special Reservation Statistics",
+                textAlign: TextAlign.center,
+                style: GoogleFonts.roboto(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 19,
+                ),
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                          left: 16, right: 8, top: 20, bottom: 20),
+                      child: Card(
+                        // color: Color.fromARGB(255, 148, 118, 255),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Academic General Eligible Sports",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: agtotalcand == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              "2204",
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.pink),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                          left: 8, right: 16, top: 20, bottom: 20),
+                      child: Card(
+                        // color: Color.fromARGB(255, 148, 118, 255),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Academic General Sports allotment",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: agtotalallocs == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              "395",
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.pink),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 16, right: 8, top: 0),
+                      child: Card(
+                        // color: Color.fromARGB(255, 148, 118, 255),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Academic General Eligible Exservicemen",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: agtotalcols == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              "1220",
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.pink),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 8, right: 16, top: 0),
+                      child: Card(
+                        // color: Colors.re
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Acad.Gen Exserv allotment",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: agtotalfts == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              "136",
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.pink),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
               Row(
                 children: [
                   Expanded(
                     child: Padding(
                       padding: EdgeInsets.only(left: 16, right: 8, top: 20),
+                      child: Card(
+                        // color: Color.fromARGB(255, 148, 118, 255),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Academic General Eligible Dap",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: agtotalcols == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              "351",
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.pink),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 8, right: 16, top: 20),
+                      child: Card(
+                        // color: Colors.re
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Acad.Gen Dap allotment",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: agtotalfts == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              "162",
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.pink),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 16, right: 8, top: 20),
+                      child: Card(
+                        // color: Color.fromARGB(255, 148, 118, 255),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Vocational Eligible Exservicemen",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: agtotalcols == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              "2",
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.pink),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 8, right: 16, top: 20),
+                      child: Card(
+                        // color: Colors.re
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Vocational Exserv allotment",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: agtotalfts == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              "1",
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.pink),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 16, right: 8, top: 20),
+                      child: Card(
+                        // color: Color.fromARGB(255, 148, 118, 255),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Vocational Eligible Dap",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: agtotalcols == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              "3",
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.pink),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 8, right: 16, top: 20),
+                      child: Card(
+                        // color: Colors.re
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Vocational Dap  allotment",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: agtotalfts == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              "1",
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.pink),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 50,
+              ),
+              Text(
+                "Academic Statistics",
+                textAlign: TextAlign.center,
+                style: GoogleFonts.roboto(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 19,
+                ),
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                          left: 16, right: 8, top: 20, bottom: 20),
                       child: Card(
                         // color: Color.fromARGB(255, 148, 118, 255),
                         shape: RoundedRectangleBorder(
@@ -202,77 +895,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsets.only(left: 8, right: 16, top: 10),
-                      child: Card(
-                        // color: Colors.re
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0),
-                        ),
-                        elevation: 6,
-                        // color: Colors.black,
-                        child: Container(
-                          height: ctheight / 4 - 10,
-                          child: Stack(children: [
-                            Positioned(
-                              top: 20,
-                              left: 15,
-                              right: 15,
-                              child: Container(
-                                width: 150,
-                                child: FittedBox(
-                                  fit: BoxFit.fitWidth,
-                                  child: Container(
-                                    width: 150,
-                                    child: Text(
-                                      "Vocational General total candidates",
-                                      style: GoogleFonts.roboto(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 14,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Positioned.fill(
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Container(
-                                  margin: EdgeInsets.only(top: 20),
-                                  child: FittedBox(
-                                    fit: BoxFit.fitWidth,
-                                    child: Padding(
-                                      padding: EdgeInsets.all(15),
-                                      child: vgtotalcand == -1
-                                          ? SpinKitThreeBounce(
-                                              color: Colors.indigo,
-                                              size: 30,
-                                            )
-                                          : Text(
-                                              vgtotalcand.toString(),
-                                              style: GoogleFonts.rubik(
-                                                  fontWeight: FontWeight.w100,
-                                                  fontSize: 60,
-                                                  color: Colors.orange),
-                                            ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    child: Padding(
                       padding: EdgeInsets.only(
-                          left: 16, right: 8, top: 20, bottom: 20),
+                          left: 8, right: 16, top: 20, bottom: 20),
                       child: Card(
                         // color: Color.fromARGB(255, 148, 118, 255),
                         shape: RoundedRectangleBorder(
@@ -324,72 +948,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
                                                   color: Colors.indigo),
-                                            ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Padding(
-                      padding: EdgeInsets.only(
-                          left: 8, right: 16, top: 10, bottom: 10),
-                      child: Card(
-                        // color: Colors.re
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0),
-                        ),
-                        elevation: 6,
-                        // color: Colors.black,
-                        child: Container(
-                          height: ctheight / 4 - 10,
-                          child: Stack(children: [
-                            Positioned(
-                              top: 20,
-                              left: 15,
-                              right: 15,
-                              child: Container(
-                                width: 150,
-                                child: FittedBox(
-                                  fit: BoxFit.fitWidth,
-                                  child: Container(
-                                    width: 150,
-                                    child: Text(
-                                      "Vocational General total allotments given",
-                                      style: GoogleFonts.roboto(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 14,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Positioned.fill(
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Container(
-                                  margin: EdgeInsets.only(top: 20),
-                                  child: FittedBox(
-                                    fit: BoxFit.fitWidth,
-                                    child: Padding(
-                                      padding: EdgeInsets.all(15),
-                                      child: vgtotalallocs == -1
-                                          ? SpinKitThreeBounce(
-                                              color: Colors.indigo,
-                                              size: 30,
-                                            )
-                                          : Text(
-                                              vgtotalallocs.toString(),
-                                              style: GoogleFonts.rubik(
-                                                  fontWeight: FontWeight.w100,
-                                                  fontSize: 60,
-                                                  color: Colors.orange),
                                             ),
                                     ),
                                   ),
@@ -569,140 +1127,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                   child: Container(
                                     width: 150,
                                     child: Text(
-                                      "Voc. Gen total candidates to be reported to college",
-                                      style: GoogleFonts.roboto(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 14,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Positioned.fill(
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Container(
-                                  margin: EdgeInsets.only(top: 20),
-                                  child: FittedBox(
-                                    fit: BoxFit.fitWidth,
-                                    child: Padding(
-                                      padding: EdgeInsets.all(15),
-                                      child: vgtotalcols == -1
-                                          ? SpinKitThreeBounce(
-                                              color: Colors.indigo,
-                                              size: 30,
-                                            )
-                                          : Text(
-                                              vgtotalcols.toString(),
-                                              style: GoogleFonts.rubik(
-                                                  fontWeight: FontWeight.w100,
-                                                  fontSize: 60,
-                                                  color: Colors.orange),
-                                            ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 8, right: 16, top: 20),
-                      child: Card(
-                        // color: Colors.re
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0),
-                        ),
-                        elevation: 6,
-                        // color: Colors.black,
-                        child: Container(
-                          height: ctheight / 4 - 10,
-                          child: Stack(children: [
-                            Positioned(
-                              top: 20,
-                              left: 15,
-                              right: 15,
-                              child: Container(
-                                width: 150,
-                                child: FittedBox(
-                                  fit: BoxFit.fitWidth,
-                                  child: Container(
-                                    width: 150,
-                                    child: Text(
-                                      "Voc. Gen total candidates to be reported to TFC",
-                                      style: GoogleFonts.roboto(
-                                        fontWeight: FontWeight.w500,
-                                        fontSize: 14,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Positioned.fill(
-                              child: Align(
-                                alignment: Alignment.center,
-                                child: Container(
-                                  margin: EdgeInsets.only(top: 20),
-                                  child: FittedBox(
-                                    fit: BoxFit.fitWidth,
-                                    child: Padding(
-                                      padding: EdgeInsets.all(15),
-                                      child: vgtotalftcs == -1
-                                          ? SpinKitThreeBounce(
-                                              color: Colors.indigo,
-                                              size: 30,
-                                            )
-                                          : Text(
-                                              vgtotalftcs.toString(),
-                                              style: GoogleFonts.rubik(
-                                                  fontWeight: FontWeight.w100,
-                                                  fontSize: 60,
-                                                  color: Colors.orange),
-                                            ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                children: [
-                  Expanded(
-                    child: Padding(
-                      padding: EdgeInsets.only(left: 16, right: 8, top: 20),
-                      child: Card(
-                        // color: Color.fromARGB(255, 148, 118, 255),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0),
-                        ),
-                        elevation: 6,
-                        // color: Colors.black,
-                        child: Container(
-                          height: ctheight / 4 - 10,
-                          child: Stack(children: [
-                            Positioned(
-                              top: 20,
-                              left: 15,
-                              right: 15,
-                              child: Container(
-                                width: 150,
-                                child: FittedBox(
-                                  fit: BoxFit.fitWidth,
-                                  child: Container(
-                                    width: 150,
-                                    child: Text(
                                       "Acad. Gen admitted at college",
                                       style: GoogleFonts.roboto(
                                         fontWeight: FontWeight.w500,
@@ -798,6 +1222,296 @@ class _MyHomePageState extends State<MyHomePage> {
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
                                                   color: Colors.indigo),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 50,
+              ),
+              Text(
+                "Vocational Statistics",
+                textAlign: TextAlign.center,
+                style: GoogleFonts.roboto(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 19,
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                          left: 16, right: 8, top: 10, bottom: 20),
+                      child: Card(
+                        // color: Colors.re
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Vocational General total candidates",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: vgtotalcand == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              vgtotalcand.toString(),
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.orange),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(
+                          left: 8, right: 16, top: 10, bottom: 20),
+                      child: Card(
+                        // color: Colors.re
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Vocational General total allotments given",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: vgtotalallocs == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              vgtotalallocs.toString(),
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.orange),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+              Divider(
+                color: Colors.grey,
+                endIndent: 40,
+                indent: 40,
+                thickness: 1.5,
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 16, right: 8, top: 10),
+                      child: Card(
+                        // color: Color.fromARGB(255, 148, 118, 255),
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Voc. Gen total candidates to be reported to college",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: vgtotalcols == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              vgtotalcols.toString(),
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.orange),
+                                            ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 8, right: 16, top: 20),
+                      child: Card(
+                        // color: Colors.re
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0),
+                        ),
+                        elevation: 6,
+                        // color: Colors.black,
+                        child: Container(
+                          height: ctheight / 4 - 10,
+                          child: Stack(children: [
+                            Positioned(
+                              top: 20,
+                              left: 15,
+                              right: 15,
+                              child: Container(
+                                width: 150,
+                                child: FittedBox(
+                                  fit: BoxFit.fitWidth,
+                                  child: Container(
+                                    width: 150,
+                                    child: Text(
+                                      "Voc. Gen total candidates to be reported to TFC",
+                                      style: GoogleFonts.roboto(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Container(
+                                  margin: EdgeInsets.only(top: 20),
+                                  child: FittedBox(
+                                    fit: BoxFit.fitWidth,
+                                    child: Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: vgtotalftcs == -1
+                                          ? SpinKitThreeBounce(
+                                              color: Colors.indigo,
+                                              size: 30,
+                                            )
+                                          : Text(
+                                              vgtotalftcs.toString(),
+                                              style: GoogleFonts.rubik(
+                                                  fontWeight: FontWeight.w100,
+                                                  fontSize: 60,
+                                                  color: Colors.orange),
                                             ),
                                     ),
                                   ),
@@ -945,11 +1659,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-              SizedBox(
-                height: 30,
-              )
             ]),
           ),
+          SizedBox(
+            height: 60,
+          )
         ]));
   }
 }

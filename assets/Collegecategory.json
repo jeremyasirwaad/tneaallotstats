@@ -377,12 +377,7 @@
     "catname": "Self Financing Colleges Tier3",
     "catno": 8
   },
-  {
-    "ccode": 1205,
-    "cname": "Lord Venkateshwaraa Engineering College, Walajabad Post, Kancheepuram District 631605",
-    "catname": "Self Financing Colleges Tier3",
-    "catno": 8
-  },
+  
   {
     "ccode": 1207,
     "cname": "Kings Engineering College, Sriperumpudur Taluk, Kancheepuram District 602105",
@@ -629,12 +624,7 @@
     "catname": "Self Financing Colleges Tier1",
     "catno": 6
   },
-  {
-    "ccode": 1333,
-    "cname": "Vi Institute of Technology, Sirunkundram Village & Post, Chengalpattu District 603108",
-    "catname": "Self Financing Colleges Tier3",
-    "catno": 8
-  },
+
   {
     "ccode": 1334,
     "cname": "ARS College of Engineering, Maraimalai Nagar Post, Chengalpattu District 603209",
@@ -983,12 +973,7 @@
     "catname": "Self Financing Colleges Tier3",
     "catno": 8
   },
-  {
-    "ccode": 1533,
-    "cname": "Panimalar Engineering College Chennai City Campus, No.23, Railway Colony 2nd Street, Nelson Manickam Road, Chennai - 600029",
-    "catname": "Self Financing Colleges Tier3",
-    "catno": 8
-  },
+
   {
     "ccode": 1605,
     "cname": "Idhaya Engineering College for Women, Chinnasalem, Kallakkurichi District 606201",
@@ -1085,12 +1070,7 @@
     "catname": "Self Financing Colleges Tier3",
     "catno": 8
   },
-  {
-    "ccode": 2355,
-    "cname": "Cheran College of Engineering, Karur-Coimbatore Main Road, NH-67, K.Paramathi Post, Aravakurichi Taluk, Karur District 639111",
-    "catname": "Self Financing Colleges Tier3",
-    "catno": 8
-  },
+  
   {
     "ccode": 2356,
     "cname": "Arulmurugan College of Engineering, Karvazhi Road, Thennilai Post, Karur District 639206",
@@ -1139,12 +1119,7 @@
     "catname": "Self Financing Colleges Tier3",
     "catno": 8
   },
-  {
-    "ccode": 2606,
-    "cname": "Jayam College of Engineering and Technology, Nallanur Post, Dharmapuri District 636813",
-    "catname": "Self Financing Colleges Tier3",
-    "catno": 8
-  },
+
   {
     "ccode": 2607,
     "cname": "K S Rangasamy College of Technology (Autonomous), Tiruchengode, Namakkal District 637215",
@@ -1397,12 +1372,7 @@
     "catname": "Self Financing Colleges Tier3",
     "catno": 8
   },
-  {
-    "ccode": 2665,
-    "cname": "Mahendra Institute of Engineering and Technology, Mahendrapuri, Mallasamudram, Namakkal District 637503",
-    "catname": "Self Financing Colleges Tier2",
-    "catno": 7
-  },
+
   {
     "ccode": 2673,
     "cname": "Sree Sakthi Engineering College, Bettathapuram, Bilichi Village, Karamadai, Coimbatore District 641104",
@@ -2532,8 +2502,20 @@
     "catno": 8
   },
   {
-    "ccode": 5720,
-    "cname": "Sri Subramanya College of Engineering and Technology, Sukkamanaickanpatti, Palani, Dindigul District 624615",
+    "ccode": 1398,
+    "cname": "Chennai Institute of Technology and Applied Research Sarathy Nagar Puthuper Village  Kundrathur Chennai 600069",
+    "catname": "Self Financing Colleges Tier3",
+    "catno": 8
+  },
+  {
+    "ccode": 2378,
+    "cname": "Cherraan College of Technology, Cheran Nagar, Thittuparai, Kangeyam, Tirupur District 6387018",
+    "catname": "Self Financing Colleges Tier3",
+    "catno": 8
+  },
+  {
+    "ccode": 4986,
+    "cname": "Noorul Islam College of Engineering and Technology, No.10/47, Haji Manzil Main Road, Thuckalay, Kanyakumari 629175",
     "catname": "Self Financing Colleges Tier3",
     "catno": 8
   },
