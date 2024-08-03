@@ -53,10 +53,10 @@ class Cusdrawer2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final DateTime round1 = DateTime(2023, 8, 1, 0, 0);
-    final DateTime round2 = DateTime(2023, 8, 13, 0, 0);
-    final DateTime round3 = DateTime(2023, 8, 26, 0, 0);
-    final DateTime round4 = DateTime(2023, 9, 3, 0, 0);
+    final DateTime round1 = DateTime(2024, 8, 1, 0, 0);
+    final DateTime round2 = DateTime(2024, 8, 10, 0, 0);
+    final DateTime round3 = DateTime(2024, 8, 23, 0, 0);
+    final DateTime round4 = DateTime(2024, 8, 27, 0, 0);
 
     DateTime today = DateTime.now(); // Get the current date and time
     // DateTime today =
@@ -80,7 +80,7 @@ class Cusdrawer2 extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 20),
             child: Text(
-              "TNEA ALLOTMENT STATS - 2023",
+              "TNEA ALLOTMENT STATS - 2024",
               style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
