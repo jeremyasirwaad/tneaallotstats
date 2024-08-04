@@ -25,6 +25,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
   var agtotalcand = -1;
   var agtotalallocs = -1;
   var agtotalcols = -1;
@@ -79,6 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+
     AppBar appBar = AppBar(
       title: Text(
         "Gen Allot Stats - Round 1",
@@ -194,7 +196,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "2204",
+                                              "2113",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
@@ -260,7 +262,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "395",
+                                              "371",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
@@ -329,7 +331,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "1220",
+                                              "1240",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
@@ -394,7 +396,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "136",
+                                              "138",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
@@ -463,7 +465,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "351",
+                                              "411",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
@@ -528,7 +530,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "162",
+                                              "230",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
@@ -597,7 +599,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "2",
+                                              "3",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
@@ -662,7 +664,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "1",
+                                              "2",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
@@ -731,7 +733,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "3",
+                                              "5",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
@@ -796,7 +798,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "1",
+                                              "3",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,

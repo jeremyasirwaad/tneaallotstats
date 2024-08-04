@@ -43,10 +43,9 @@ class MyApp extends StatelessWidget {
 }
 
 Widget homepagedecider() {
-  final DateTime round1 = DateTime(2023, 8, 1, 0, 0);
-  final DateTime round2 = DateTime(2023, 8, 13, 0, 0);
-  final DateTime round3 = DateTime(2023, 8, 26, 0, 0);
-  final DateTime round4 = DateTime(2023, 9, 3, 0, 0);
+  final DateTime round1 = DateTime(2024, 8, 1, 0, 0);
+  final DateTime round2 = DateTime(2024, 8, 10, 0, 0);
+  final DateTime round3 = DateTime(2024, 8, 23, 0, 0);
   DateTime today = DateTime.now();
 
   if (today.compareTo(round3) > 0) {
