@@ -198,7 +198,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "226",
+                                              "282",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
@@ -333,7 +333,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "9",
+                                              "11",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
@@ -398,7 +398,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "5",
+                                              "6",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
@@ -467,7 +467,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "76",
+                                              "109",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
@@ -601,7 +601,7 @@ class _MyGovHomePageState extends State<MyGoveHomePage> {
                                               size: 30,
                                             )
                                           : Text(
-                                              "1",
+                                              "2",
                                               style: GoogleFonts.rubik(
                                                   fontWeight: FontWeight.w100,
                                                   fontSize: 60,
