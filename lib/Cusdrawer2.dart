@@ -80,7 +80,7 @@ class Cusdrawer2 extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 20),
             child: Text(
-              "TNEA ALLOTMENT STATS - 2024",
+              "TNEA ALLOTMENT STATS - 2025",
               style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
