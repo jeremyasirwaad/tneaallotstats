@@ -1,0 +1,2 @@
+/Users/jeremyasirwaad/development/tneaallotstats/android/app/.cxx/Debug/462k3b5s/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/jeremyasirwaad/development/tneaallotstats/android/app/.cxx/Debug/462k3b5s/armeabi-v7a/CMakeFiles/rebuild_cache.dir

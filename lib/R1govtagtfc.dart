@@ -1,11 +1,11 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide CarouselController;
 import './Cusdrawer2.dart';
 import './tablerowmodel.dart';
 import 'dart:convert';
 import 'dart:ui';
 import './models/R1allstats.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide CarouselController;
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 // import 'package:tneadash/jsondartmodel/cvreportmodel.dart';
 // import './models/cusdrawer.dart';
@@ -13,7 +13,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:fl_chart/fl_chart.dart';
 // import './jsondartmodel/countmodel.dart';
 import 'package:http/http.dart' as http;
-import 'package:carousel_slider/carousel_slider.dart';
+
 import './models/allotstats.dart';
 import './models/TFCdata.dart';
 import './R1agtfc.dart';

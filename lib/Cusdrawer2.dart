@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:ui';
 
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide CarouselController;
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 // import 'package:tneadash/jsondartmodel/cvreportmodel.dart';
 // import './models/cusdrawer.dart';
@@ -9,7 +9,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:fl_chart/fl_chart.dart';
 // import './jsondartmodel/countmodel.dart';
 import 'package:http/http.dart' as http;
-import 'package:carousel_slider/carousel_slider.dart';
+
 import 'package:tneadash2/R1summary.dart';
 import 'package:tneadash2/R1summarycategory_wise.dart';
 import 'package:tneadash2/R1summaryclg_wise.dart';
@@ -53,10 +53,10 @@ class Cusdrawer2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final DateTime round1 = DateTime(2024, 8, 1, 0, 0);
-    final DateTime round2 = DateTime(2024, 8, 10, 0, 0);
-    final DateTime round3 = DateTime(2024, 8, 23, 0, 0);
-    final DateTime round4 = DateTime(2024, 8, 27, 0, 0);
+    final DateTime round1 = DateTime(2025, 7, 19, 0, 0);
+    final DateTime round2 = DateTime(2025, 7, 31, 0, 0);
+    final DateTime round3 = DateTime(2025, 8, 12, 0, 0);
+    final DateTime round4 = DateTime(2026, 8, 27, 0, 0);
 
     DateTime today = DateTime.now(); // Get the current date and time
     // DateTime today =
@@ -623,6 +623,49 @@ class Cusdrawer2 extends StatelessWidget {
           //           ),
           //         ],
           // ),
+          SizedBox(
+            height: 30,
+          ),
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, '/config');
+            },
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+              child: Container(
+                padding: EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.indigo.shade50,
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(color: Colors.indigo.shade200),
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.settings_outlined,
+                      color: Colors.indigo.shade600,
+                      size: 20,
+                    ),
+                    SizedBox(width: 12),
+                    Text(
+                      'Configuration Settings',
+                      style: TextStyle(
+                        color: Colors.indigo.shade700,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 16,
+                      ),
+                    ),
+                    Spacer(),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      color: Colors.indigo.shade600,
+                      size: 16,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
           SizedBox(
             height: 30,
           ),
